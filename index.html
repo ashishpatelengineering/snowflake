@@ -828,7 +828,7 @@ const sectionsData = [
       },
       {
         type: "msq",
-        text: "According to the transcript, which of the following are disadvantages of the shared-disk architecture? (Select all that apply)",
+        text: "Which of the following are disadvantages of the shared-disk architecture? (Select all that apply)",
         options: [
           "A single point of failure for storage",
           "Bandwidth or network latency limitations from multiple nodes communicating with one centralized storage device",
@@ -841,7 +841,7 @@ const sectionsData = [
       },
       {
         type: "mcq",
-        text: "What advantage does the shared-disk architecture have, according to the transcript?",
+        text: "What advantage does the shared-disk architecture have?",
         options: [
           "It is relatively simple to manage and acts as a single source of truth",
           "It is generally cheaper because it uses off-the-shelf commodity hardware",
@@ -854,7 +854,7 @@ const sectionsData = [
       },
       {
         type: "msq",
-        text: "Which benefits does the transcript attribute to co-locating compute and storage on each node in the shared nothing architecture? (Select all that apply)",
+        text: "Which benefits come from co-locating compute and storage on each node in the shared nothing architecture? (Select all that apply)",
         options: [
           "It avoids the bandwidth and network latency limitations of communicating with a centralized storage device",
           "It is generally cheaper, since each node can be made from off-the-shelf commodity hardware",
@@ -867,7 +867,7 @@ const sectionsData = [
       },
       {
         type: "msq",
-        text: "According to the transcript, which of the following were weaknesses of the shared nothing architecture? (Select all that apply)",
+        text: "Which of the following were weaknesses of the shared nothing architecture? (Select all that apply)",
         options: [
           "Shuffling data between nodes was expensive as the cluster scaled, and poorly distributed data caused poor performance",
           "It was difficult to redistribute data among the nodes once it was ingested",
@@ -894,7 +894,7 @@ const sectionsData = [
       },
       {
         type: "mcq",
-        text: "How many physically separated but logically integrated layers make up Snowflake's multi-cluster shared data architecture, based on the main layers discussed in the transcript?",
+        text: "How many physically separated but logically integrated layers make up Snowflake's multi-cluster shared data architecture?",
         options: [
           "Three main layers, plus a fourth cloud agnostic layer that will not feature on the exam",
           "Two layers: storage and compute",
@@ -920,7 +920,7 @@ const sectionsData = [
       },
       {
         type: "msq",
-        text: "Which of the following describe the query processing layer and virtual warehouses, according to the transcript? (Select all that apply)",
+        text: "Which of the following describe the query processing layer and virtual warehouses? (Select all that apply)",
         options: [
           "It is made up of separate compute clusters that Snowflake calls virtual warehouses",
           "Users issue SQL commands to create virtual warehouses, which Snowflake then provisions and manages",
@@ -934,7 +934,7 @@ const sectionsData = [
       },
       {
         type: "msq",
-        text: "Which responsibilities does the transcript assign to the cloud services layer? (Select all that apply)",
+        text: "Which responsibilities belong to the cloud services layer? (Select all that apply)",
         options: [
           "Handling authentication to Snowflake",
           "Managing the cloud infrastructure",
@@ -947,7 +947,7 @@ const sectionsData = [
       },
       {
         type: "mcq",
-        text: "What does the transcript mean by describing Snowflake's architecture as 'service oriented'?",
+        text: "What does it mean to describe Snowflake's architecture as 'service oriented'?",
         options: [
           "Each layer under the hood is a separate physical service, or collection of services, that communicates over a network via RESTful interfaces",
           "Snowflake offers customer support services around the clock",
@@ -960,7 +960,7 @@ const sectionsData = [
       },
       {
         type: "msq",
-        text: "Because storage, compute, and management services are decoupled in Snowflake's architecture, which capabilities does the transcript say this allows? (Select all that apply)",
+        text: "Because storage, compute, and management services are decoupled in Snowflake's architecture, which capabilities does this allow? (Select all that apply)",
         options: [
           "Storage, compute, and management services can be scaled independently of one another",
           "There is no hard limit on how much each layer can scale, since data can be added to storage and compute can be scaled out near infinitely",
@@ -973,7 +973,7 @@ const sectionsData = [
       },
       {
         type: "mcq",
-        text: "What does the transcript give as an example of workload isolation enabled by the multi-cluster aspect of Snowflake's architecture?",
+        text: "What is an example of workload isolation enabled by the multi-cluster aspect of Snowflake's architecture?",
         options: [
           "Allowing analytics and pipeline jobs to not contend for resources by running on separate, isolated virtual warehouses",
           "Allowing all queries to run on a single shared virtual warehouse for consistency",
@@ -986,7 +986,7 @@ const sectionsData = [
       },
       {
         type: "mcq",
-        text: "What is the purpose of the fourth layer, the cloud agnostic layer, mentioned in the transcript?",
+        text: "What is the purpose of the fourth layer, the cloud agnostic layer?",
         options: [
           "It ensures that the three main layers perform identically on any of the cloud providers an account is deployed into",
           "It stores all table data organized into databases",
@@ -999,7 +999,7 @@ const sectionsData = [
       },
       {
         type: "mcq",
-        text: "Does the transcript say the cloud agnostic layer is tested on the SnowPro Core exam?",
+        text: "Is the cloud agnostic layer tested on the SnowPro Core exam?",
         options: [
           "No, the transcript explicitly says this layer will not feature on the exam, though it's good to know",
           "Yes, it is one of the most heavily tested layers",
