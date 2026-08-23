@@ -1904,49 +1904,864 @@ const sectionsData = [
     id: "snowflake-editions",
     navLabel: "10. Snowflake Editions",
     title: "10. Snowflake Editions",
-    meta: "Awaiting transcript for this lecture",
-    pending: true,
-    questions: []
+    meta: "Based on the \"Snowflake Editions\" lecture transcript",
+    questions: [
+      {
+        type: "mcq",
+        text: "What are the four Snowflake account editions?",
+        options: [
+          "Standard, Enterprise, Business Critical, and Virtual Private Snowflake",
+          "Basic, Pro, Premium, and Enterprise",
+          "Free, Standard, Enterprise, and Ultimate",
+          "Trial, Standard, Enterprise, and Government"
+        ],
+        correct: [0],
+        explanation: "A Snowflake account can be created as one of four editions: Standard, Enterprise, Business Critical, and Virtual Private Snowflake.",
+        source: "Snowflake Editions lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-editions"
+      },
+      {
+        type: "mcq",
+        text: "What does the Snowflake edition primarily affect?",
+        options: [
+          "The amount charged for compute and data storage, since the dollar value per compute credit increases with higher editions",
+          "Only the number of users allowed on the account",
+          "Only which programming languages can be used with Snowpark",
+          "Only the maximum number of databases allowed"
+        ],
+        correct: [0],
+        explanation: "The Snowflake edition affects the amount charged for compute and data storage, with the dollar value per Snowflake compute credit increasing as you go up the editions.",
+        source: "Snowflake Editions lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-editions"
+      },
+      {
+        type: "msq",
+        text: "Which of the following are included with the Standard edition? (Select all that apply)",
+        options: [
+          "Basic ANSI Standard SQL features, including most DDL and DML statements",
+          "Advanced DML statements such as multi-table insert, merge, and window functions",
+          "Snowflake's Continuous Data Protection suite, including time travel and network policies",
+          "Multi-cluster warehouses"
+        ],
+        correct: [0, 1, 2],
+        explanation: "Standard edition includes basic ANSI Standard SQL features (most DDL and DML statements), advanced DML statements like multi-table insert, merge, and window functions, and Snowflake's Continuous Data Protection suite, which includes time travel and network policies. Multi-cluster warehouses are an Enterprise edition feature.",
+        source: "Snowflake Editions lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-editions"
+      },
+      {
+        type: "msq",
+        text: "What does the Enterprise edition add on top of Standard edition? (Select all that apply)",
+        options: [
+          "Multi-cluster warehouses",
+          "An increased period of time you can go back and recover data",
+          "Private connectivity to the account",
+          "A completely separate, walled-off environment from all other accounts"
+        ],
+        correct: [0, 1],
+        explanation: "Enterprise edition includes all Standard edition features plus additional features for large-scale enterprises, including multi-cluster warehouses and an increased time travel period for data recovery. Private connectivity is a Business Critical feature, and a fully walled-off environment describes VPS.",
+        source: "Snowflake Editions lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/warehouses-overview"
+      },
+      {
+        type: "msq",
+        text: "Which capabilities does the Business Critical edition offer? (Select all that apply)",
+        options: [
+          "Higher levels of data protection and enhanced security for organizations with sensitive data, such as healthcare or banking",
+          "Private connectivity to the Snowflake account",
+          "The ability to use a customer-managed key to encrypt data residing in Snowflake",
+          "A completely separate environment walled off from all other Snowflake accounts"
+        ],
+        correct: [0, 1, 2],
+        explanation: "Business Critical edition offers higher levels of data protection and enhanced security for organizations with sensitive data (like healthcare or banking), and includes private connectivity and the ability to use a customer-managed key for encryption. It also includes all Enterprise and Standard features. A completely walled-off environment is specific to VPS.",
+        source: "Snowflake Editions lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-editions"
+      },
+      {
+        type: "mcq",
+        text: "What distinguishes Virtual Private Snowflake (VPS) from the other editions?",
+        options: [
+          "It includes all Business Critical features and below, but runs in a completely separate environment walled off from all other Snowflake accounts, so shared services like the metadata store are not shared",
+          "It is a free tier meant for evaluation only",
+          "It removes access to SQL entirely in favor of a GUI-only interface",
+          "It is only available on Google Cloud Platform"
+        ],
+        correct: [0],
+        explanation: "VPS offers the highest level of security for organizations with strict data protection requirements, such as governmental bodies and financial institutions. It includes all Business Critical features and below, but in a completely separate environment walled off from all other Snowflake accounts, meaning services like the metadata store are not shared as they normally would be.",
+        source: "Snowflake Editions lecture",
+        docLink: "https://docs.snowflake.com/en/collaboration/virtual-private-snowflake/about-vps-collaboration"
+      }
+    ]
   },
   {
     id: "snowflake-object-model",
     navLabel: "11. Snowflake Object Model",
     title: "11. Snowflake Object Model",
-    meta: "Awaiting transcript for this lecture",
-    pending: true,
-    questions: []
+    meta: "Based on the \"Snowflake Object Model\" lecture transcript",
+    questions: [
+      {
+        type: "mcq",
+        text: "What is an object in Snowflake?",
+        options: [
+          "Something you can interact with and issue commands against, such as CREATE TABLE or DROP STREAM",
+          "Only a synonym for a database",
+          "Only something that stores raw file data",
+          "A term reserved exclusively for user accounts"
+        ],
+        correct: [0],
+        explanation: "An object in Snowflake is simply something you can interact with, something you can issue commands against, such as CREATE TABLE or DROP STREAM.",
+        source: "Snowflake Object Model lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
+      },
+      {
+        type: "msq",
+        text: "Which of the following are examples of Snowflake objects? (Select all that apply)",
+        options: [
+          "Databases, schemas, and tables",
+          "Streams, stages, and pipes",
+          "An account object",
+          "A cloud provider's data center"
+        ],
+        correct: [0, 1, 2],
+        explanation: "The lecture points to classic objects like databases, schemas, and tables, Snowflake-specific objects like streams, stages, and pipes, and even an account object used to manage account properties. A cloud provider's data center is infrastructure, not a Snowflake object.",
+        source: "Snowflake Object Model lecture"
+      },
+      {
+        type: "mcq",
+        text: "What does it mean that every object in Snowflake is securable?",
+        options: [
+          "Privileges on objects, such as the ability to read a table, can be granted to roles, which are then granted to users, determining what a user can see and do",
+          "Every object requires a separate password to access",
+          "Objects can only be accessed from a single IP address",
+          "Objects are automatically encrypted with a unique key per user"
+        ],
+        correct: [0],
+        explanation: "Every object in Snowflake is securable, meaning privileges on objects, such as the ability to read a table, can be granted to roles. Roles are then granted to users, which determines what a user can see and do in Snowflake.",
+        source: "Snowflake Object Model lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/security-access-control-overview"
+      },
+      {
+        type: "mcq",
+        text: "How is the relationship structure of Snowflake's object hierarchy described?",
+        options: [
+          "Objects fit into a hierarchy with one-to-many relationships",
+          "All objects exist independently with no hierarchy at all",
+          "Objects form a strict one-to-one relationship at every level",
+          "Only tables participate in any hierarchy; all other objects are standalone"
+        ],
+        correct: [0],
+        explanation: "Snowflake objects fit into a hierarchy with one-to-many relationships, for example one account can have many databases, and one database can have many schemas.",
+        source: "Snowflake Object Model lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
+      },
+      {
+        type: "mcq",
+        text: "How is an organization described?",
+        options: [
+          "A special type of administrative Snowflake account where a business entity can manage one or more standard Snowflake accounts it owns",
+          "A synonym for a database within an account",
+          "A billing-only construct with no ability to manage accounts",
+          "A role that grants access to a single table"
+        ],
+        correct: [0],
+        explanation: "An organization is described as more of a special type of administrative Snowflake account, where a business entity can manage one or more standard Snowflake accounts they own.",
+        source: "Snowflake Object Model lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/organizations"
+      },
+      {
+        type: "mcq",
+        text: "How is a standard account described?",
+        options: [
+          "A private collection of services Snowflake ringfences for personal use, accessible via a unique URL",
+          "A shared, multi-tenant workspace with no isolation between customers",
+          "A synonym for a virtual warehouse",
+          "A free trial-only construct that disappears after 30 days regardless of edition"
+        ],
+        correct: [0],
+        explanation: "A standard account is a private collection of services Snowflake ringfences for personal use, accessible via a unique URL made up of an organization identifier and an account identifier.",
+        source: "Snowflake Object Model lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/admin-account-identifier"
+      },
+      {
+        type: "mcq",
+        text: "Do all newly created Snowflake accounts exist within an organization, and is using organization-level features required?",
+        options: [
+          "Yes, all newly created accounts exist within an organization, but using organization features is optional",
+          "No, accounts only join an organization if the customer explicitly requests it",
+          "Yes, and organization features are mandatory for every account",
+          "Organizations only exist for Business Critical edition and above"
+        ],
+        correct: [0],
+        explanation: "All newly created accounts exist within an organization, but using the organization features is optional, since you might only need to use one account.",
+        source: "Snowflake Object Model lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/organizations"
+      },
+      {
+        type: "mcq",
+        text: "What are account-level objects typically used for?",
+        options: [
+          "Configuring different parts of the account, such as which users exist and how many virtual warehouses there are, rather than holding data",
+          "Storing the actual table data for the account",
+          "Only tracking billing invoices",
+          "Only managing the account's cloud provider region"
+        ],
+        correct: [0],
+        explanation: "Account-level objects typically don't hold data, but are used to configure different parts of the account, such as which users exist and how many virtual warehouses are available.",
+        source: "Snowflake Object Model lecture"
+      },
+      {
+        type: "mcq",
+        text: "What is the first main way data is organized within a Snowflake account?",
+        options: [
+          "Databases, with one account able to have many databases",
+          "Roles, with one account able to have many roles",
+          "Virtual warehouses, with one account able to have many warehouses",
+          "Stages, with one account able to have many stages"
+        ],
+        correct: [0],
+        explanation: "Databases form the first main way data stored in Snowflake can be organized. One account can have many databases, split for example by business, technical, security, or regulatory reasons, or by environment such as development or production.",
+        source: "Snowflake Object Model lecture"
+      },
+      {
+        type: "mcq",
+        text: "What is a schema, and what is its relationship to a database?",
+        options: [
+          "A logical container or namespace within a database that organizes related tables, views, and other objects; one schema belongs to one database",
+          "A physical storage location entirely separate from any database",
+          "A synonym for an account object",
+          "A container that can span and be shared across multiple databases"
+        ],
+        correct: [0],
+        explanation: "Schemas are logical containers or namespaces within a database that allow organizing related tables, views, and other database objects. One schema belongs to one database.",
+        source: "Snowflake Object Model lecture"
+      },
+      {
+        type: "mcq",
+        text: "Which database object is arguably the most important?",
+        options: [
+          "The table, since it's the logical representation of stored data that you primarily interact with",
+          "The stage, since it's used for all data loading",
+          "The sequence, since it generates unique identifiers",
+          "The pipe, since it automates ingestion"
+        ],
+        correct: [0],
+        explanation: "The table is described as arguably the most important database object, since it's the logical representation of stored data and what you'll primarily interact with.",
+        source: "Snowflake Object Model lecture"
+      }
+    ]
   },
   {
     id: "organizations-accounts-databases-schemas",
     navLabel: "12. Organizations, Accounts, Databases & Schemas",
     title: "12. Organizations, Accounts, Databases & Schemas",
-    meta: "Awaiting transcript for this lecture",
-    pending: true,
-    questions: []
+    meta: "Based on the \"Organizations, Accounts, Databases & Schemas\" lecture transcript",
+    questions: [
+      {
+        type: "mcq",
+        text: "With how many cloud providers is a single Snowflake account associated?",
+        options: [
+          "A single cloud provider, AWS, GCP, or Azure",
+          "All three cloud providers simultaneously",
+          "Exactly two cloud providers for redundancy",
+          "No specific cloud provider; it's chosen dynamically per query"
+        ],
+        correct: [0],
+        explanation: "Each account is associated with a single cloud provider, Amazon Web Services, Google Cloud Platform, or Microsoft Azure, meaning the underlying compute, storage, and services layer resources come from that provider.",
+        source: "Organizations, Accounts, Databases & Schemas lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-cloud-platforms"
+      },
+      {
+        type: "msq",
+        text: "What does the geographic region a Snowflake account is provisioned in affect? (Select all that apply)",
+        options: [
+          "The price of compute and storage",
+          "Which regulatory certifications can be achieved",
+          "Which Snowflake features are accessible, though these are similar between regions",
+          "Network latency experienced when connecting from a different region",
+          "The Snowflake edition the account must use"
+        ],
+        correct: [0, 1, 2, 3],
+        explanation: "The region affects the price of compute and storage, which regulatory certifications can be achieved, which features are accessible (though similar across regions), and the network latency experienced if connecting from a different region. It does not dictate which edition must be used.",
+        source: "Organizations, Accounts, Databases & Schemas lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-cloud-platforms"
+      },
+      {
+        type: "mcq",
+        text: "Can a Snowflake account's edition be changed after it's first created?",
+        options: [
+          "Yes, each account is created as a single edition, but it can be changed later",
+          "No, the edition is permanent for the lifetime of the account",
+          "Only by deleting and recreating the account entirely",
+          "Only during the first 24 hours after account creation"
+        ],
+        correct: [0],
+        explanation: "Each account is created as a single Snowflake edition, but it can be changed later on.",
+        source: "Organizations, Accounts, Databases & Schemas lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/organizations-manage-accounts-editions"
+      },
+      {
+        type: "mcq",
+        text: "What happens automatically when you create a standard account via self-service, like a trial account?",
+        options: [
+          "Snowflake automatically generates an organization, a metadata container to manage one or more accounts",
+          "Snowflake requires you to manually create an organization first",
+          "No organization is created unless you explicitly request one from Snowflake support",
+          "An organization is only created once you add a second account"
+        ],
+        correct: [0],
+        explanation: "When creating a standard account via self-service, Snowflake also automatically generates an organization, essentially a metadata container to manage one or more accounts.",
+        source: "Organizations, Accounts, Databases & Schemas lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/organizations"
+      },
+      {
+        type: "mcq",
+        text: "What is the difference between a single-account organization and a multiple-account organization?",
+        options: [
+          "A single-account organization has just one standard account, while a multiple-account organization has many, often for different departments, projects, or locations",
+          "A single-account organization can only use the Standard edition",
+          "A multiple-account organization requires a separate Snowflake contract for each account",
+          "There is no functional difference between the two"
+        ],
+        correct: [0],
+        explanation: "A single-account organization has just one standard account, like a trial account or what a small to medium company might use. A multiple-account organization is when a bigger entity creates many standard accounts, perhaps for different departments, projects, or locations.",
+        source: "Organizations, Accounts, Databases & Schemas lecture"
+      },
+      {
+        type: "mcq",
+        text: "Which system-defined role, present on newly provisioned standard accounts, provides the permissions needed to create an organization account?",
+        options: [
+          "ORGADMIN",
+          "ACCOUNTADMIN",
+          "SYSADMIN",
+          "SECURITYADMIN"
+        ],
+        correct: [0],
+        explanation: "Newly provisioned standard accounts come with a system-defined role called ORGADMIN, which among other tasks provides the permissions to create an organization account.",
+        source: "Organizations, Accounts, Databases & Schemas lecture"
+      },
+      {
+        type: "mcq",
+        text: "What is an organization account?",
+        options: [
+          "A special type of account, with a different URL, used to manage the lifecycle of standard Snowflake accounts, including creating, renaming, deleting, and viewing them",
+          "A regular standard account with no special permissions",
+          "An account type only available on the VPS edition",
+          "A read-only account used purely for auditing"
+        ],
+        correct: [0],
+        explanation: "An organization account is a special type of account with a different URL, used to manage standard Snowflake accounts, including creating more of them, renaming, deleting, and viewing them with the SHOW ACCOUNTS command.",
+        source: "Organizations, Accounts, Databases & Schemas lecture",
+        docLink: "https://docs.snowflake.com/en/sql-reference/sql/show-organization-accounts"
+      },
+      {
+        type: "msq",
+        text: "Once inside an organization account, which of the following can be set up and administered? (Select all that apply)",
+        options: [
+          "Snowflake features that use multiple accounts within an organization, such as database replication and failover",
+          "Monitoring usage and billing across multiple accounts by querying organization usage views",
+          "Creating and managing the lifecycle of standard accounts in the organization",
+          "Directly editing the data inside another account's tables without any role or privilege check"
+        ],
+        correct: [0, 1, 2],
+        explanation: "From the organization account, you can set up features that span multiple accounts, like database replication and failover, monitor usage and billing across accounts via organization usage views, and manage the full lifecycle of accounts in the organization. Normal privilege and role checks still apply; there's no bypass for editing another account's data directly.",
+        source: "Organizations, Accounts, Databases & Schemas lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/replication-intro"
+      },
+      {
+        type: "mcq",
+        text: "What are the two components that make up an account's URL?",
+        options: [
+          "The organization name and the account name",
+          "The cloud provider name and the region name",
+          "The username and the password",
+          "The edition name and the role name"
+        ],
+        correct: [0],
+        explanation: "The account URL primarily consists of two components: first the organization name, identifying the Snowflake organization, and second the account name, identifying the specific account within that organization.",
+        source: "Organizations, Accounts, Databases & Schemas lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/admin-account-identifier"
+      },
+      {
+        type: "mcq",
+        text: "When creating an account via the self-service signup form, how are the organization and account names generated?",
+        options: [
+          "Snowflake automatically generates a seven-character alphanumeric string for each name",
+          "The user must choose both names before the account can be created",
+          "Names are generated from the user's email address",
+          "Names default to 'org1' and 'account1' until manually changed"
+        ],
+        correct: [0],
+        explanation: "When creating an account via the self-service form, Snowflake automatically generates a seven-character alphanumeric string for each of the organization and account names. If provisioned through Snowflake support, you can request specific meaningful names instead.",
+        source: "Organizations, Accounts, Databases & Schemas lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/admin-account-identifier"
+      },
+      {
+        type: "mcq",
+        text: "For non-UI tools like SnowSQL, Python connectors, or third-party applications, what is the 'account identifier' referring to?",
+        options: [
+          "The combination of the organization name and account name, separated by a dash",
+          "Only the account name, with the organization name omitted entirely",
+          "A separate numeric ID unrelated to the organization or account name",
+          "The cloud provider's internal resource ID"
+        ],
+        correct: [0],
+        explanation: "For non-UI tools, configuration guides ask for the account or account name, but actually mean the combination of the organization name and account name, separated by a dash. This combination is called the account identifier.",
+        source: "Organizations, Accounts, Databases & Schemas lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/admin-account-identifier"
+      },
+      {
+        type: "msq",
+        text: "Which of the following are naming rules for both databases and schemas? (Select all that apply)",
+        options: [
+          "The name must be unique within its parent (database name unique in the account; schema name unique in the database)",
+          "The identifier must start with an alphabetic character",
+          "It cannot contain spaces or special characters unless the entire identifier is enclosed in double quotes",
+          "Identifiers enclosed in double quotes are case sensitive; those without are not",
+          "Names must always be entirely lowercase, even when double-quoted"
+        ],
+        correct: [0, 1, 2, 3],
+        explanation: "Both database and schema names must be unique within their parent, must start with an alphabetic character, cannot contain spaces or special characters unless wrapped in double quotes, and double-quoted identifiers are case sensitive while unquoted ones are not. There's no rule forcing lowercase.",
+        source: "Organizations, Accounts, Databases & Schemas lecture",
+        docLink: "https://docs.snowflake.com/en/sql-reference/identifiers-syntax"
+      },
+      {
+        type: "msq",
+        text: "Which of the following are valid ways to create a new database? (Select all that apply)",
+        options: [
+          "Cloning another database in the same account",
+          "Replicating a database and its child objects to another account",
+          "Creating it from a share object provided by another Snowflake account",
+          "Importing it directly from a competitor's data warehouse export file"
+        ],
+        correct: [0, 1, 2],
+        explanation: "Databases can be created from a clone of another database in the same account, replicated (along with child objects) to another account, or created from a share object provided by another Snowflake account. Direct import from another vendor's export format isn't one of the methods described.",
+        source: "Organizations, Accounts, Databases & Schemas lecture"
+      },
+      {
+        type: "mcq",
+        text: "What is formed by combining the database name and the schema name together?",
+        options: [
+          "A namespace, which can be prepended to a table name or set as the session context using USE DATABASE and USE SCHEMA",
+          "A new account identifier",
+          "A virtual warehouse name",
+          "A role name"
+        ],
+        correct: [0],
+        explanation: "The database name and schema name together form a namespace. You can prepend this namespace to a table name to reference it globally, or set it as the session context using the USE DATABASE and USE SCHEMA commands, after which you don't need to qualify table names.",
+        source: "Organizations, Accounts, Databases & Schemas lecture",
+        docLink: "https://docs.snowflake.com/en/sql-reference/sql/use-database"
+      }
+    ]
   },
   {
     id: "table-types",
     navLabel: "13. Table Types",
     title: "13. Table Types",
-    meta: "Awaiting transcript for this lecture",
-    pending: true,
-    questions: []
+    meta: "Based on the \"Table Types\" lecture transcript",
+    questions: [
+      {
+        type: "mcq",
+        text: "What are the four basic table types in Snowflake?",
+        options: [
+          "Permanent, temporary, transient, and external",
+          "Standard, materialized, secure, and dynamic",
+          "Primary, replica, staging, and archive",
+          "Managed, unmanaged, hybrid, and iceberg"
+        ],
+        correct: [0],
+        explanation: "The four basic table types are permanent, temporary, transient, and external. Each has different requirements around data retention.",
+        source: "Table Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/tables-temp-transient"
+      },
+      {
+        type: "mcq",
+        text: "What is the permanent table, and what is its maximum time travel retention period?",
+        options: [
+          "The default and most commonly used table type, existing until explicitly dropped, with up to 90 days of time travel on Enterprise edition or higher (1 day on Standard)",
+          "A table that only exists for the duration of a session, with no time travel available at all",
+          "A table with no default type distinction, and unlimited time travel on all editions",
+          "A table type available only on VPS edition, with a fixed 30-day time travel period"
+        ],
+        correct: [0],
+        explanation: "The permanent table is the default table type and the most commonly used. It exists until explicitly dropped, and can set a time travel retention period of up to 90 days on Enterprise edition or higher, or a maximum of 1 day on Standard edition.",
+        source: "Table Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/data-time-travel"
+      },
+      {
+        type: "mcq",
+        text: "What fail-safe period do permanent tables have?",
+        options: [
+          "A non-configurable period of seven days",
+          "A configurable period of up to 30 days",
+          "No fail-safe period at all",
+          "A fail-safe period equal to whatever the time travel period is set to"
+        ],
+        correct: [0],
+        explanation: "Permanent tables have access to the non-configurable seven-day fail-safe period, during which Snowflake can restore deleted data.",
+        source: "Table Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/data-failsafe"
+      },
+      {
+        type: "msq",
+        text: "Which of the following describe temporary tables? (Select all that apply)",
+        options: [
+          "They store non-permanent, transitory data, such as a step in a complex ETL process",
+          "They persist only for the duration of a session, and are completely purged once the session ends",
+          "A temporary table cannot be converted to another type of table",
+          "They can be given a time travel retention period of up to 90 days on Enterprise edition"
+        ],
+        correct: [0, 1, 2],
+        explanation: "Temporary tables store non-permanent transitory data, persist only for the session's duration and are purged once it ends, and cannot be converted to another table type. Their time travel retention period is capped at 1 day regardless of edition, so 90 days is not available even on Enterprise.",
+        source: "Table Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/tables-temp-transient"
+      },
+      {
+        type: "mcq",
+        text: "What is the maximum time travel retention period for a temporary table, and does it have a fail-safe period?",
+        options: [
+          "A maximum of 1 day regardless of Snowflake edition, and no fail-safe period at all",
+          "Up to 90 days on Enterprise edition, with a standard 7-day fail-safe period",
+          "Exactly 30 days on all editions, with no fail-safe period",
+          "0 days of time travel and a 7-day fail-safe period"
+        ],
+        correct: [0],
+        explanation: "Temporary tables have a maximum time travel retention period of 1 day regardless of the Snowflake edition, and they do not have a fail-safe period. Once a session ends, the table data cannot be recovered by Snowflake.",
+        source: "Table Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/tables-temp-transient"
+      },
+      {
+        type: "mcq",
+        text: "How do transient tables differ from permanent tables?",
+        options: [
+          "Transient tables exist until explicitly dropped, like permanent tables, but have a maximum time travel retention period of 1 day regardless of edition and no fail-safe period",
+          "Transient tables are automatically dropped at the end of every session, like temporary tables",
+          "Transient tables cannot be queried using SQL",
+          "Transient tables always have a longer fail-safe period than permanent tables"
+        ],
+        correct: [0],
+        explanation: "Transient tables are similar to permanent tables in that they exist until explicitly dropped. However, they have a maximum time travel retention period of 1 day regardless of edition, and no fail-safe period, meaning data can't be recovered by Snowflake support once that 1-day window has passed.",
+        source: "Table Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/tables-temp-transient"
+      },
+      {
+        type: "mcq",
+        text: "Why might you choose a transient table over a permanent table?",
+        options: [
+          "Because fail-safe storage contributes to storage costs, and transient tables don't have a fail-safe period, potentially reducing cost",
+          "Because transient tables support a longer time travel period than permanent tables",
+          "Because transient tables are the only type that supports semi-structured data",
+          "Because transient tables automatically replicate to another region"
+        ],
+        correct: [0],
+        explanation: "Table data in fail-safe contributes to storage costs, so avoiding the fail-safe period by using a transient table is one reason you might choose it over a permanent table.",
+        source: "Table Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/data-cdp-storage-costs"
+      },
+      {
+        type: "msq",
+        text: "Which of the following describe external tables? (Select all that apply)",
+        options: [
+          "They provide the ability to query data that resides outside of Snowflake, for example in an AWS S3 bucket",
+          "They are read-only, and generally slower to return a result when queried",
+          "They do not support time travel or fail-safe",
+          "They store a full physical copy of the external data inside Snowflake's storage layer"
+        ],
+        correct: [0, 1, 2],
+        explanation: "External tables let you query data residing outside Snowflake, such as in an S3 bucket, by overlaying a structure onto it and recording metadata about the staged files. They are read-only, generally slower to query, and do not support time travel or fail-safe. The actual data stays outside Snowflake; it isn't copied into Snowflake's storage layer.",
+        source: "Table Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/tables-external-intro"
+      },
+      {
+        type: "mcq",
+        text: "Besides the four basic table types, which more specialized table types are covered later in the course?",
+        options: [
+          "Iceberg and dynamic tables",
+          "Hybrid and secure tables",
+          "Materialized and clustered tables",
+          "Shared and cloned tables"
+        ],
+        correct: [0],
+        explanation: "Beyond the four basic table types, the lecture mentions Snowflake also has more specialized tables like Iceberg and dynamic tables, which are covered in greater detail later in the course.",
+        source: "Table Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/tables-iceberg"
+      }
+    ]
   },
   {
     id: "view-types",
     navLabel: "14. View Types",
     title: "14. View Types",
-    meta: "Awaiting transcript for this lecture",
-    pending: true,
-    questions: []
+    meta: "Based on the \"View Types\" lecture transcript",
+    questions: [
+      {
+        type: "mcq",
+        text: "What does a standard view store?",
+        options: [
+          "A SELECT query definition, not any data",
+          "A full physical copy of the underlying table's data",
+          "Only column names, with no query logic at all",
+          "A compiled binary of the query execution plan"
+        ],
+        correct: [0],
+        explanation: "A standard view is an object that stores a SELECT query definition, not any data. When a query is executed against the view, the data is retrieved from the source table.",
+        source: "View Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/views-introduction"
+      },
+      {
+        type: "msq",
+        text: "Which of the following are true of standard views? (Select all that apply)",
+        options: [
+          "They can be joined to tables or other views, and referenced in subqueries",
+          "They support ORDER BY, GROUP BY, and WHERE clauses",
+          "They don't contribute to storage costs, since they don't store any data",
+          "If the source table is dropped, querying the view returns an 'object does not exist' error"
+        ],
+        correct: [0, 1, 2, 3],
+        explanation: "Standard views can be used much like a table: joined, referenced in subqueries, and used with ORDER BY, GROUP BY, and WHERE. Since they store no data, they don't contribute to storage costs. If the source table is dropped, querying the view returns an object does not exist error.",
+        source: "View Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/views-introduction"
+      },
+      {
+        type: "mcq",
+        text: "What is one common function of a standard view?",
+        options: [
+          "Restricting the contents of a table, by revealing only a subset of its columns or rows",
+          "Permanently deleting rows from the source table",
+          "Automatically indexing the source table for faster writes",
+          "Converting a table from row-oriented to columnar storage"
+        ],
+        correct: [0],
+        explanation: "One function of a standard view is to restrict the contents of a table, revealing only a subset of the columns or a subset of the rows.",
+        source: "View Types lecture"
+      },
+      {
+        type: "mcq",
+        text: "How does a materialized view differ from a standard view?",
+        options: [
+          "Instead of storing no data, the result of a materialized view's query definition is actively maintained as a pre-computed dataset",
+          "A materialized view cannot reference more than one table",
+          "A materialized view is only available with the VPS edition",
+          "A materialized view is identical to a standard view in every respect"
+        ],
+        correct: [0],
+        explanation: "Materialized views also store a query definition, but instead of storing no data, the result of that query definition is actively maintained, what Snowflake calls a pre-computed dataset.",
+        source: "View Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/views-materialized"
+      },
+      {
+        type: "mcq",
+        text: "Why is a materialized view described as a 'serverless feature'?",
+        options: [
+          "Because it doesn't make use of user-managed virtual warehouses; Snowflake charges compute for the background process that keeps it up to date",
+          "Because it can only be queried through a REST API, never SQL",
+          "Because it requires no compute or storage cost whatsoever",
+          "Because it cannot be secured with the secure keyword"
+        ],
+        correct: [0],
+        explanation: "Materialized views are called a serverless feature because they don't make use of user-managed virtual warehouses. Instead, Snowflake charges compute for the background process that periodically updates the view with the latest results of the defined query.",
+        source: "View Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/views-materialized"
+      },
+      {
+        type: "msq",
+        text: "Which cost implications does a materialized view have? (Select all that apply)",
+        options: [
+          "Compute cost, charged for the background process that keeps the view updated",
+          "An additional storage cost to store the pre-computed results",
+          "No cost of any kind, since it's described as serverless",
+          "A one-time flat fee charged only when the view is first created"
+        ],
+        correct: [0, 1],
+        explanation: "Materialized views incur compute cost for the background refresh process, and an additional storage cost to store the results. Being 'serverless' refers to not using a user-managed warehouse, not to being free.",
+        source: "View Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/views-materialized"
+      },
+      {
+        type: "mcq",
+        text: "What use case for materialized views is discussed further in the performance section?",
+        options: [
+          "Boosting the performance of external tables",
+          "Replacing the need for permanent tables entirely",
+          "Enabling multi-cluster warehouses",
+          "Bypassing the need for role-based access control"
+        ],
+        correct: [0],
+        explanation: "Materialized views can be used to boost the performance of external tables, a use case discussed further in the performance management section of the course.",
+        source: "View Types lecture"
+      },
+      {
+        type: "msq",
+        text: "What does designating a view as secure do? (Select all that apply)",
+        options: [
+          "Makes the query definition only visible to authorized users, so commands like GET_DDL and DESCRIBE won't return it to unauthorized users",
+          "Bypasses certain query optimizer optimizations that might otherwise inadvertently expose hidden data",
+          "Can be applied to both standard and materialized views",
+          "Guarantees identical or better performance compared to a non-secure view"
+        ],
+        correct: [0, 1, 2],
+        explanation: "Marking a view as secure makes its query definition visible only to authorized users (GET_DDL and DESCRIBE won't reveal it to others), bypasses optimizer optimizations that could otherwise expose hidden data, and applies to both standard and materialized views. However, bypassing those optimizations can mean worse performance, not better.",
+        source: "View Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/views-secure"
+      },
+      {
+        type: "mcq",
+        text: "What is a potential trade-off of making a view secure?",
+        options: [
+          "A secure view might have worse performance under certain circumstances, since it doesn't make use of some query optimizations",
+          "A secure view can no longer be joined to any table",
+          "A secure view loses the ability to be queried at all",
+          "A secure view can only be created by the ACCOUNTADMIN role"
+        ],
+        correct: [0],
+        explanation: "Although making a view secure helps ensure sensitive data isn't shown to the wrong audience, a secure view might, under certain circumstances, have worse performance, since it doesn't make use of certain query optimizer optimizations.",
+        source: "View Types lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/views-secure"
+      },
+      {
+        type: "mcq",
+        text: "Which commands can be used to check the type of a table or view?",
+        options: [
+          "SHOW VIEWS, SHOW TABLES, and SHOW MATERIALIZED VIEWS, or an icon in the UI's object browser",
+          "DESCRIBE ACCOUNT only",
+          "SELECT * FROM INFORMATION_SCHEMA.EDITIONS",
+          "There is no way to check a table or view's type"
+        ],
+        correct: [0],
+        explanation: "You can check the type of a table or view by executing the SHOW VIEWS, SHOW TABLES, and SHOW MATERIALIZED VIEWS commands, or by identifying it in the UI via an icon in the object browser.",
+        source: "View Types lecture"
+      }
+    ]
   },
   {
     id: "worksheets-vs-workspaces",
     navLabel: "15. Update: Worksheets vs. Workspaces",
     title: "15. Update: Worksheets vs. Workspaces",
-    meta: "Awaiting transcript for this lecture",
-    pending: true,
-    questions: []
+    meta: "Based on the \"Update: Worksheets vs. Workspaces\" lecture transcript",
+    questions: [
+      {
+        type: "mcq",
+        text: "What change does this update lecture describe Snowflake introducing?",
+        options: [
+          "Workspaces, a new primary environment for running SQL code that will eventually replace Worksheets",
+          "A brand new SQL dialect that replaces ANSI SQL entirely",
+          "The removal of the Snowsight UI in favor of SnowSQL only",
+          "A new billing model based on number of worksheets created"
+        ],
+        correct: [0],
+        explanation: "Snowflake is introducing Workspaces, which changes the primary environment in which SQL code is run, and will eventually replace Worksheets as the standard environment.",
+        source: "Update: Worksheets vs. Workspaces lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces"
+      },
+      {
+        type: "mcq",
+        text: "Does the hands-on SQL code for this course work differently depending on whether it's run in Worksheets or Workspaces?",
+        options: [
+          "No, the hands-on SQL code works identically across both environments",
+          "Yes, entirely different SQL syntax is required for each",
+          "Yes, Workspaces only supports Python, not SQL",
+          "Yes, Worksheets can only run SELECT statements"
+        ],
+        correct: [0],
+        explanation: "The hands-on SQL code works identically across both the Worksheets and Workspaces environments, even though the surrounding interface differs.",
+        source: "Update: Worksheets vs. Workspaces lecture"
+      },
+      {
+        type: "mcq",
+        text: "During the transition period, is it still fine to keep using Worksheets?",
+        options: [
+          "Yes, it's perfectly fine and secure to continue using Worksheets for the time being, since both environments run in parallel",
+          "No, Worksheets stopped working the moment Workspaces was announced",
+          "Only if you disable Workspaces entirely first",
+          "Only for Business Critical edition accounts"
+        ],
+        correct: [0],
+        explanation: "For now, Worksheets and Workspaces will run in parallel while people migrate. It's perfectly fine and secure to continue using Worksheets for the time being.",
+        source: "Update: Worksheets vs. Workspaces lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight-worksheets-gs"
+      },
+      {
+        type: "mcq",
+        text: "How is a Workspace structured, compared to a Worksheet?",
+        options: [
+          "A Workspace is composed of a directory of files, similar to Visual Studio Code, rather than a single standalone file like a Worksheet",
+          "A Workspace and a Worksheet are structurally identical, just with different names",
+          "A Workspace can only contain one file, while a Worksheet can contain many",
+          "A Workspace stores files locally on the user's machine, not in Snowflake"
+        ],
+        correct: [0],
+        explanation: "A Workspace is a bit like Visual Studio Code: instead of Snowflake storing a standalone file (like a worksheet), a Workspace is composed of a directory of files, which can include SQL files that run just like a worksheet.",
+        source: "Update: Worksheets vs. Workspaces lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces"
+      },
+      {
+        type: "mcq",
+        text: "Where do you navigate to in Snowsight to find Workspaces?",
+        options: [
+          "Projects, then Workspaces",
+          "Admin, then Workspaces",
+          "Data, then Workspaces",
+          "Monitoring, then Workspaces"
+        ],
+        correct: [0],
+        explanation: "To access Workspaces, you navigate to Projects, then Workspaces.",
+        source: "Update: Worksheets vs. Workspaces lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces"
+      },
+      {
+        type: "mcq",
+        text: "How do you add an existing SQL file to a Workspace?",
+        options: [
+          "Go to Add, then upload files, and choose the relevant SQL file from the local directory",
+          "Paste the file's raw bytes directly into the browser address bar",
+          "Email the file to Snowflake support for manual upload",
+          "Files cannot be added to a Workspace; only new files can be created there"
+        ],
+        correct: [0],
+        explanation: "To add a file to a Workspace, you go to Add, then upload files, and choose the relevant SQL file from your local directory, then double-click it to open it.",
+        source: "Update: Worksheets vs. Workspaces lecture"
+      },
+      {
+        type: "msq",
+        text: "Which of the following areas are part of the Workspace layout? (Select all that apply)",
+        options: [
+          "Context (database, schema, warehouse, role) shown in the top right corner",
+          "A place to run statements in the top left",
+          "A database explorer in the bottom left",
+          "A worksheets area for dragging over and migrating existing worksheets",
+          "A dedicated billing dashboard built into every Workspace"
+        ],
+        correct: [0, 1, 2, 3],
+        explanation: "The Workspace layout includes context shown in the top right, a place to run statements in the top left, a database explorer in the bottom left, and a worksheets area for migrating existing worksheets by dragging them over. There's no dedicated billing dashboard built into a Workspace.",
+        source: "Update: Worksheets vs. Workspaces lecture"
+      },
+      {
+        type: "mcq",
+        text: "How can Workspaces be set as the default SQL editor for an account?",
+        options: [
+          "By going to the username in the bottom left, then Settings, then General, where SQL Worksheets can be set to open in Workspaces for all users",
+          "By contacting Snowflake support and requesting a manual account migration",
+          "By dropping and recreating the account entirely",
+          "It cannot currently be set as a default; each user must choose it every session"
+        ],
+        correct: [0],
+        explanation: "Workspaces can be set as the default SQL editor for an account by going to the username in the bottom left, then Settings, then General, where an option specifies that SQL Worksheets will open in Workspaces for all users.",
+        source: "Update: Worksheets vs. Workspaces lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces"
+      },
+      {
+        type: "mcq",
+        text: "What happens to the Worksheets link in Snowsight's Global Nav once Workspaces is enabled?",
+        options: [
+          "The link to Workspaces in the Global Nav replaces the Worksheets link",
+          "Both links remain permanently, side by side, with no change",
+          "The Worksheets link is renamed but keeps its original icon and behavior",
+          "The Global Nav is removed entirely and replaced with a command palette"
+        ],
+        correct: [0],
+        explanation: "The link to Workspaces in the Global Nav (the navigation menu) replaces the Worksheets link.",
+        source: "Update: Worksheets vs. Workspaces lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight-navigation"
+      }
+    ]
   },
   {
     id: "databases-schemas-tables-views-hands-on",
