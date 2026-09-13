@@ -460,37 +460,104 @@ const sectionsData = [
     id: "provisioning-snowflake-trial-account-hands-on",
     navLabel: "3. Provisioning a Snowflake Trial Account: Hands-on",
     title: "3. Provisioning a Snowflake Trial Account: Hands-on",
-    meta: "Based on the \"Provisioning a Snowflake Trial Account\" lecture transcript. Note: Snowsight's navigation menu has since been restructured; see the note below.",
+    meta: "Based on the updated \"Provisioning a Snowflake Trial Account\" lecture transcript",
     questions: [
       {
         type: "mcq",
-        text: "Where do you start the process of creating a Snowflake trial account?",
+        text: "How is a Snowflake trial account described?",
         options: [
-          "signup.snowflake.com",
-          "trial.snowflake.com",
-          "console.snowflake.com",
-          "app.snowflake.com"
+          "A fully featured private sandbox where you can ingest as much data as you want and query it",
+          "A read-only demo environment with no ability to load data",
+          "A shared environment where trial users share the same tables",
+          "A local desktop application with no cloud component"
         ],
         correct: [0],
-        explanation: "The signup process starts at signup.snowflake.com, where a 30-day free trial can be started.",
+        explanation: "The Snowflake trial account is described as your own fully featured private sandbox in which you can ingest as much data as you want and query it.",
         source: "Provisioning a Snowflake Trial Account lecture"
       },
       {
         type: "mcq",
-        text: "How long does the Snowflake free trial last?",
+        text: "At signup.snowflake.com, what are the two trial options presented?",
         options: [
-          "30 days",
-          "14 days",
-          "60 days",
-          "90 days"
+          "AI Data Cloud and Snowflake CoCo",
+          "Standard and Enterprise",
+          "Free Forever and Pro Trial",
+          "Individual and Organization"
         ],
         correct: [0],
-        explanation: "The Snowflake trial account offers a 30-day free trial.",
+        explanation: "The two sign-up options presented are AI Data Cloud and Snowflake CoCo.",
+        source: "Provisioning a Snowflake Trial Account lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/admin-trial-account"
+      },
+      {
+        type: "mcq",
+        text: "How does the AI Data Cloud trial option compare to the Snowflake CoCo option?",
+        options: [
+          "AI Data Cloud has access to almost every Snowflake feature except Snowflake CoCo, which the CoCo option adds on top",
+          "AI Data Cloud is a smaller, feature-limited version of the CoCo option",
+          "The two options are functionally identical, differing only in name",
+          "AI Data Cloud is a paid-only tier with no free trial available"
+        ],
+        correct: [0],
+        explanation: "The AI Data Cloud option has access to almost every Snowflake feature available, with the exception of Snowflake CoCo. The CoCo option includes everything AI Data Cloud has, plus CoCo.",
         source: "Provisioning a Snowflake Trial Account lecture"
       },
       {
         type: "mcq",
-        text: "Which edition and cloud provider are selected for the trial account used in this course?",
+        text: "What is Snowflake CoCo?",
+        options: [
+          "Snowflake's implementation of an AI agent that takes autonomous actions, like running SQL, executing local commands, or editing files, observing results and deciding its next step in a repeating loop until the task is done",
+          "A new virtual warehouse size larger than X6Large",
+          "A dashboard for monitoring account-wide billing only",
+          "A replacement for the Snowsight UI with no agentic capabilities"
+        ],
+        correct: [0],
+        explanation: "CoCo is Snowflake's implementation of an AI agent, a large language model that doesn't just answer in one response, but takes actions like running SQL, executing local commands, or editing files. It observes the results and decides its next step, repeating that loop autonomously until the task is done.",
+        source: "Provisioning a Snowflake Trial Account lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/cortex-code/cortex-code"
+      },
+      {
+        type: "msq",
+        text: "What are the trial and billing terms for the two sign-up options? (Select all that apply)",
+        options: [
+          "Both options are 30-day free trials with $400 of Snowflake credits",
+          "In the CoCo option, $40 of that $400 budget is reserved specifically for CoCo inference",
+          "The CoCo option requires card details upfront, since a $20 monthly subscription fee applies for CoCo inference after the trial ends",
+          "The AI Data Cloud option also requires card details upfront"
+        ],
+        correct: [0, 1, 2],
+        explanation: "Both options are 30-day free trials with $400 of Snowflake credits, but the CoCo option reserves $40 of that budget for CoCo inference, leaving less budget for things like storage and compute. The CoCo option also requires card details upfront, since a $20 monthly subscription fee applies for CoCo inference once the trial ends. The lecture doesn't say the AI Data Cloud option requires card details.",
+        source: "Provisioning a Snowflake Trial Account lecture"
+      },
+      {
+        type: "mcq",
+        text: "Why does this course choose not to use CoCo, even though it covers Snowflake's AI features?",
+        options: [
+          "The course's purpose is to understand Snowflake's core and fundamental parts and construct SQL independently, and relying on an agent to do that for you while learning can be counterproductive",
+          "CoCo is not yet available on any trial account",
+          "CoCo cannot generate SQL of any kind",
+          "CoCo is only available on Business Critical edition and above"
+        ],
+        correct: [0],
+        explanation: "The course's purpose is to understand the core and fundamental parts of Snowflake, including how to construct SQL independently. Relying on an agent to do things for you while trying to learn can be counterproductive, so CoCo isn't used for things like SQL generation in this course, by design.",
+        source: "Provisioning a Snowflake Trial Account lecture"
+      },
+      {
+        type: "mcq",
+        text: "How could you try Snowflake CoCo later, after finishing the course on an AI Data Cloud trial?",
+        options: [
+          "Wait for the trial to expire, then sign up again with the same email using the CoCo version, remembering to cancel auto-enrollment into the CoCo subscription if you don't want ongoing charges",
+          "CoCo cannot be added to an existing trial or account under any circumstances",
+          "Immediately switch your existing trial to CoCo mid-trial with one click",
+          "Contact Snowflake support to manually enable it on the same trial for free indefinitely"
+        ],
+        correct: [0],
+        explanation: "You can wait for your trial account to expire and sign up again using the same email, but with the CoCo version. You'll need to cancel the auto-enrollment into the CoCo subscription if you don't want to keep paying beyond the trial.",
+        source: "Provisioning a Snowflake Trial Account lecture"
+      },
+      {
+        type: "mcq",
+        text: "Which edition and cloud provider are selected for the trial account used in the course?",
         options: [
           "Enterprise edition, on Amazon Web Services",
           "Standard edition, on Google Cloud Platform",
@@ -500,7 +567,7 @@ const sectionsData = [
         correct: [0],
         explanation: "Enterprise edition is selected so the trial account has all the features needed for the course, and Amazon Web Services is selected as the cloud provider.",
         source: "Provisioning a Snowflake Trial Account lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-cloud-platforms",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-editions"
       },
       {
         type: "mcq",
@@ -525,105 +592,300 @@ const sectionsData = [
           "By verifying a phone number via SMS"
         ],
         correct: [0],
-        explanation: "After a few minutes, Snowflake sends an email containing an activation button, which redirects to the welcome page for the new account.",
+        explanation: "After about a minute, Snowflake sends an account activation link to the registered email. Clicking the activation button in that email redirects to the welcome page for the new account.",
         source: "Provisioning a Snowflake Trial Account lecture"
       },
       {
         type: "mcq",
-        text: "What is Snowsight?",
+        text: "What is the first thing set up on the account's welcome page, after signing up?",
         options: [
-          "Snowflake's updated user interface",
-          "A third-party BI tool that connects to Snowflake",
-          "Snowflake's command-line client",
-          "A Snowflake monitoring add-on that must be purchased separately"
+          "An initial user, such as one named 'admin', along with a password",
+          "A billing contact and payment method",
+          "A custom domain name for the account",
+          "A default virtual warehouse size"
         ],
         correct: [0],
-        explanation: "Snowsight is Snowflake's updated user interface, and the trial account's homepage opens here after account setup.",
-        source: "Provisioning a Snowflake Trial Account lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight",
+        explanation: "On the welcome page, you create your initial user, for example naming it 'admin', and select a memorable password, then click Get started.",
+        source: "Provisioning a Snowflake Trial Account lecture"
       },
+      {
+        type: "mcq",
+        text: "What are you greeted with immediately after completing account setup?",
+        options: [
+          "The homepage for the Snowsight user interface, with a detailed tour covered in the next lecture",
+          "A command-line terminal with no graphical interface",
+          "A billing invoice for the first month",
+          "An empty account requiring manual activation of every feature"
+        ],
+        correct: [0],
+        explanation: "Once setup is complete, you're greeted with the homepage for the Snowsight user interface. The lecture notes that a quick tour of the UI, to make sure you know where everything is, comes in the next video.",
+        source: "Provisioning a Snowflake Trial Account lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight-quick-tour"
+      }
+    ]
+  },
+  {
+    id: "snowflake-ui-tour",
+    navLabel: "4. Snowflake UI Tour",
+    title: "4. Snowflake UI Tour",
+    meta: "Based on the \"Snowflake UI Tour\" lecture transcript",
+    questions: [
       {
         type: "msq",
-        text: "As of current Snowflake documentation, which of the following are top-level groupings in the Snowsight navigation menu? (Select all that apply)",
+        text: "What can be found in the menu at the bottom left of the Snowsight screen, under the username? (Select all that apply)",
         options: [
-          "Projects",
-          "Ingestion",
-          "Transformation",
-          "AI & ML",
-          "Monitoring",
-          "Marketplace",
-          "Governance & security",
-          "Compute",
-          "Admin",
-          "Data and Data Products"
+          "The currently logged-in user and the currently active role",
+          "The account identifier, which uniquely identifies the account",
+          "Settings for the current user, and, with sufficient permissions, account-level and organization-level settings",
+          "Connection details for configuring a secure connection outside of Snowflake",
+          "A live feed of every other user's currently running queries"
         ],
-        correct: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-        explanation: "Per current Snowflake documentation, Snowsight's navigation menu groups features under: Projects, Ingestion, Transformation, AI & ML, Monitoring, Marketplace, Governance & security, Compute, and Admin. This is a change from how the menu looked when this course was recorded, which used headings like Home, Data, and Data Products. If your course video shows a different layout, it's referring to an older version of the interface.",
-        source: "Provisioning a Snowflake Trial Account lecture, updated to match current Snowsight",
-        docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight-navigation"
-      },
-      {
-        type: "mcq",
-        text: "What is the current default SQL editing experience in Snowsight, and what did it replace?",
-        options: [
-          "Workspaces, which replaced Legacy Worksheets as the default SQL editor",
-          "Legacy Worksheets, which has always been and remains the only SQL editor",
-          "SnowSQL, which replaced the Snowsight UI entirely",
-          "Notebooks, which replaced both Worksheets and Workspaces"
-        ],
-        correct: [0],
-        explanation: "Workspaces is now the default SQL editing experience in Snowsight, having replaced Legacy Worksheets for most accounts. Workspaces adds file-and-folder organization, sharing, and Git integration. This course was recorded when Worksheets was still the primary experience, so if you're following along in a live Snowflake account, expect to see Workspaces instead of what's shown in the video.",
-        source: "Provisioning a Snowflake Trial Account lecture, updated to match current Snowsight",
-        docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces"
-      },
-      {
-        type: "mcq",
-        text: "What was described in this lecture as an interactive space for writing and executing SQL queries and Snowpark Python code, stored within Snowsight and linked to the account?",
-        options: [
-          "A Worksheet",
-          "A static text file that cannot be edited after creation",
-          "A feature only available on Business Critical edition",
-          "A tool exclusively for managing billing"
-        ],
-        correct: [0],
-        explanation: "Worksheets were described this way at the time of recording. This underlying concept still exists, but the editing experience itself has since been replaced by Workspaces as the default, which adds file-and-folder organization and Git integration.",
-        source: "Provisioning a Snowflake Trial Account lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight-worksheets-gs"
-      },
-      {
-        type: "mcq",
-        text: "What is found in the object browser on the far left of a worksheet?",
-        options: [
-          "Objects like databases, schemas, and tables",
-          "A list of all Snowflake billing invoices",
-          "A list of connected third-party applications",
-          "Query execution history only"
-        ],
-        correct: [0],
-        explanation: "The object browser on the far left of a worksheet shows objects like databases, schemas, and tables.",
-        source: "Provisioning a Snowflake Trial Account lecture",
+        correct: [0, 1, 2, 3],
+        explanation: "This menu shows the current user and active role, the account identifier, a Settings area for user, account, and organization-level settings, and a Connection details page with what's needed to connect outside of Snowflake, such as the account identifier or account URL. It does not show other users' running queries.",
+        source: "Snowflake UI Tour lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight-quick-tour"
       },
       {
-        type: "msq",
-        text: "Which of the following are found by clicking the username at the bottom left of the Snowsight UI? (Select all that apply)",
+        type: "mcq",
+        text: "Why does the currently active role matter in Snowsight?",
         options: [
-          "The role currently active in the UI",
-          "The account's unique trial account identifier",
-          "The current credit consumption limit",
-          "A list of all users in the account"
+          "It determines the level of permissions you have, affecting what features you can use and what data you can access",
+          "It only changes the visual theme of the interface",
+          "It has no effect until you connect via SnowSQL",
+          "It only controls billing, not data access"
+        ],
+        correct: [0],
+        explanation: "Roles determine what level of permissions you have. Changing the active role affects what Snowsight features you can use and what data you have access to.",
+        source: "Snowflake UI Tour lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/security-access-control-overview"
+      },
+      {
+        type: "msq",
+        text: "What can be searched for using the search bar at the top of the Snowsight homepage? (Select all that apply)",
+        options: [
+          "Data assets in your account, like databases and tables",
+          "Datasets available via the Snowflake Marketplace",
+          "Snowflake documentation",
+          "The source code of Snowflake's own execution engine"
+        ],
+        correct: [0, 1, 2],
+        explanation: "The search bar can be used for finding data assets in your account like databases and tables, datasets available via the Snowflake Marketplace, and for quickly accessing documentation.",
+        source: "Snowflake UI Tour lecture"
+      },
+      {
+        type: "mcq",
+        text: "What is a Workspace, as introduced on the Snowsight homepage?",
+        options: [
+          "An area where you can organize, edit, and run multiple files across projects, with a default one called 'My Workspace'",
+          "A single read-only SQL file with no ability to create new files",
+          "A billing dashboard for tracking compute credits",
+          "A synonym for a virtual warehouse"
+        ],
+        correct: [0],
+        explanation: "A Workspace is an area where you can work on multiple files across projects. New files, such as a blank SQL file, reside in a default workspace called 'My Workspace.' In summary, workspaces are where you organize, edit, and run your files.",
+        source: "Snowflake UI Tour lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces"
+      },
+      {
+        type: "msq",
+        text: "Under the Ingestion heading in the navigation menu, what do 'Add data' and 'Copy history' cover? (Select all that apply)",
+        options: [
+          "Add data is for manual, UI-based data loading",
+          "Copy history records when the COPY INTO command was executed to load data into tables",
+          "Add data is for scheduling recurring transformation jobs",
+          "Copy history is where virtual warehouses are resized"
         ],
         correct: [0, 1],
-        explanation: "Clicking the username at the bottom left shows the currently active role, which determines what you can do and see, and the account's unique trial account identifier, which is needed to connect to Snowflake outside of the UI.",
-        source: "Provisioning a Snowflake Trial Account lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight-quick-tour",
+        explanation: "Ingestion covers the first step in the data engineering lifecycle: getting data into Snowflake. Add data is for manual UI-based data loading, and Copy history records when the COPY INTO command was executed to load data into tables.",
+        source: "Snowflake UI Tour lecture",
+        docLink: "https://docs.snowflake.com/en/sql-reference/sql/copy-into-table"
+      },
+      {
+        type: "msq",
+        text: "Which of the following fall under the Transformation heading in the navigation menu? (Select all that apply)",
+        options: [
+          "dbt, with Snowsight providing a native home to build, test, and version control dbt projects against a git repo",
+          "Dynamic tables, which keep transformed data automatically refreshed without manual logic",
+          "Tasks, which handle scheduling to run workflows on a timer or trigger",
+          "Network policies, which restrict which IP ranges can connect to the account"
+        ],
+        correct: [0, 1, 2],
+        explanation: "Transformation covers the next step in the data engineering lifecycle: processing raw data. It includes dbt (with native build, test, and version control support against a git repo), dynamic tables (auto-refreshed transformed data), and tasks (scheduling workflows on a timer or trigger). Network policies belong to Governance & Security, not Transformation.",
+        source: "Snowflake UI Tour lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/data-engineering/dbt-projects-on-snowflake"
+      },
+      {
+        type: "mcq",
+        text: "How does the AI and ML section of the navigation menu split?",
+        options: [
+          "It splits into Cortex AI, a collection of AI features using large language models, and Machine Learning, for building more traditional models like regression and clustering",
+          "It splits into Free Tier and Paid Tier AI features",
+          "It splits into Cortex AI for images only and Machine Learning for text only",
+          "It has no further split; AI and ML is a single flat feature list"
+        ],
+        correct: [0],
+        explanation: "AI and ML splits into two halves: Cortex AI, a collection of AI features using large language models, and Machine Learning, for building more traditional models like regression, classification, and clustering.",
+        source: "Snowflake UI Tour lecture",
+        docLink: "https://docs.snowflake.com/en/guides-overview-ai-features"
+      },
+      {
+        type: "msq",
+        text: "Which of the following are described as part of the Monitoring section, this account's observability layer? (Select all that apply)",
+        options: [
+          "Query history, for monitoring individual or grouped queries executed in the account",
+          "Traces and logs, for deeper observability such as setting event levels and reviewing telemetry data",
+          "Performance explorer, for analyzing and optimizing query performance more broadly, spotting patterns rather than one query at a time",
+          "Alerts, for automatic notification when data meets specific conditions or changes over time",
+          "Compute pools, for running Snowpark Container Services workloads"
+        ],
+        correct: [0, 1, 2, 3],
+        explanation: "Monitoring includes query history, traces and logs, performance explorer, and alerts, all covered in this lecture as observability tools. Compute pools belong to the Manage section, not Monitoring.",
+        source: "Snowflake UI Tour lecture"
+      },
+      {
+        type: "mcq",
+        text: "What does the Snowflake Marketplace let you do?",
+        options: [
+          "Download publicly available datasets to quickly import into your account, and access native apps others have made",
+          "Only purchase additional compute credits",
+          "Only manage user roles and permissions",
+          "Only configure network policies"
+        ],
+        correct: [0],
+        explanation: "The Marketplace is where you go to download publicly available datasets, allowing you to quickly import them into your Snowflake account, and to get access to native apps others have made.",
+        source: "Snowflake UI Tour lecture"
+      },
+      {
+        type: "mcq",
+        text: "What is the Horizon Catalog?",
+        options: [
+          "The place to browse your account's data assets, such as the databases shipped with the trial account",
+          "A billing summary page only",
+          "A tool exclusively for creating virtual warehouses",
+          "A synonym for the Snowflake Marketplace"
+        ],
+        correct: [0],
+        explanation: "The Horizon Catalog is the place to browse your account's data assets. Under Catalog, you can see the databases that ship with the trial account by default, including the sample data database made up of schemas and tables.",
+        source: "Snowflake UI Tour lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/snowflake-horizon"
+      },
+      {
+        type: "mcq",
+        text: "What two sides does Data Sharing cover?",
+        options: [
+          "The consumer side, accessing what's been shared with you, and the provider side, publishing and managing listings",
+          "Only the provider side; consumers cannot access shared data through this section",
+          "Only internal sharing within the same account",
+          "Only sharing that goes through the public Marketplace"
+        ],
+        correct: [0],
+        explanation: "Data sharing covers both the consumer side, accessing what's been shared with you, and the provider side, publishing and managing listings, whether internal, private to another account, or sold on the public marketplace.",
+        source: "Snowflake UI Tour lecture"
+      },
+      {
+        type: "msq",
+        text: "Which of the following fall under Governance and Security in the navigation menu? (Select all that apply)",
+        options: [
+          "Users and roles, for managing user and role objects and access control grants",
+          "Trust Center, for a centralized dashboard of account security, compliance, and operational health",
+          "Network policies, for restricting which IP ranges can connect to the account",
+          "Tags, for classifying and tracking objects for sensitivity or ownership",
+          "Compute, for managing virtual warehouses"
+        ],
+        correct: [0, 1, 2, 3],
+        explanation: "Governance and Security includes users and roles, Trust Center, network policies, and tags, all part of managing account access, security posture, and compliance. Compute (virtual warehouses) belongs to the Manage section, not Governance and Security.",
+        source: "Snowflake UI Tour lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/trust-center/overview"
+      },
+      {
+        type: "mcq",
+        text: "What does the Trust Center provide?",
+        options: [
+          "A centralized dashboard of your account's security, compliance, and operational health",
+          "A place to purchase additional Snowflake editions",
+          "A tool exclusively for creating dynamic tables",
+          "A log of every SQL query ever run on the account, with no aggregation"
+        ],
+        correct: [0],
+        explanation: "The Trust Center gives you a centralized dashboard of your account's security, compliance, and operational health.",
+        source: "Snowflake UI Tour lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/trust-center/overview"
+      },
+      {
+        type: "mcq",
+        text: "What do network policies do?",
+        options: [
+          "Restrict which IP ranges can connect to the account",
+          "Restrict which SQL statements a role can execute",
+          "Restrict how many virtual warehouses can be created",
+          "Restrict which cloud provider an account can be deployed to"
+        ],
+        correct: [0],
+        explanation: "Network policies restrict which IP ranges can connect to your account.",
+        source: "Snowflake UI Tour lecture"
+      },
+      {
+        type: "msq",
+        text: "Under the Manage section of the navigation menu, which of the following are covered? (Select all that apply)",
+        options: [
+          "Compute, for managing virtual warehouses",
+          "Compute pools, for creating and managing container-based compute resources used by Snowpark Container Services",
+          "The ability to create a Snowflake-managed instance of the Postgres relational database",
+          "Admin, covering cost and billing, account settings, integrations, and Partner Connect",
+          "Data Sharing, for publishing listings to the Marketplace"
+        ],
+        correct: [0, 1, 2, 3],
+        explanation: "The Manage section covers Compute (virtual warehouses), Compute pools (container-based compute for Snowpark Container Services, used for things like notebooks on container runtime, custom apps, or ML workloads), a Snowflake-managed Postgres instance, and Admin (billing, account settings, integrations, and Partner Connect). Data Sharing is covered earlier in the navigation menu, separately from Manage.",
+        source: "Snowflake UI Tour lecture",
+        docLink: "https://docs.snowflake.com/en/developer-guide/native-apps/container-about"
+      },
+      {
+        type: "mcq",
+        text: "What are compute pools used for?",
+        options: [
+          "Creating and managing container-based compute resources used by Snowpark Container Services, such as for notebooks on container runtime, custom apps, or ML workloads",
+          "Pooling together multiple virtual warehouses into a single billing line item",
+          "Storing table data outside of the standard storage layer",
+          "Managing user passwords and multifactor authentication"
+        ],
+        correct: [0],
+        explanation: "Compute pools let you create and manage container-based compute resources used by Snowpark Container Services, such as for notebooks on container runtime, custom apps, or ML workloads.",
+        source: "Snowflake UI Tour lecture",
+        docLink: "https://docs.snowflake.com/en/developer-guide/native-apps/container-about"
+      },
+      {
+        type: "mcq",
+        text: "What does the Admin section broadly let you do?",
+        options: [
+          "Manage cost and billing, configure account settings, set up integrations with external systems, and connect with partner tools through Partner Connect",
+          "Only reset user passwords",
+          "Only create new virtual warehouses",
+          "Only browse the Snowflake Marketplace"
+        ],
+        correct: [0],
+        explanation: "Broadly, Admin lets you manage cost and billing, configure account settings, set up integrations with external systems and services, and connect with partner tools through Partner Connect.",
+        source: "Snowflake UI Tour lecture"
+      },
+      {
+        type: "mcq",
+        text: "What is Organization Hub?",
+        options: [
+          "A place to monitor organization-wide billing, security, and query health, not used in this course",
+          "The primary place to write and run SQL queries",
+          "A synonym for the Snowflake Marketplace",
+          "A tool for creating individual virtual warehouses"
+        ],
+        correct: [0],
+        explanation: "Organization Hub lets you monitor organization-wide billing, security, and query health. The lecture notes it won't be used in this course, so it's not covered in depth.",
+        source: "Snowflake UI Tour lecture",
+        docLink: "https://docs.snowflake.com/en/user-guide/organizations"
       }
     ]
   },
   {
     id: "section-4",
-    navLabel: "4. Snowflake Features & Architecture (Intro)",
-    title: "4. Snowflake AI Data Cloud Features and Architecture: Introduction",
+    navLabel: "5. Snowflake Features & Architecture (Intro)",
+    title: "5. Snowflake AI Data Cloud Features and Architecture: Introduction",
     meta: "Based on the section introduction video transcript",
     questions: [
       {
@@ -715,8 +977,8 @@ const sectionsData = [
   },
   {
     id: "what-is-snowflake",
-    navLabel: "5. What is Snowflake?",
-    title: "5. What is Snowflake?",
+    navLabel: "6. What is Snowflake?",
+    title: "6. What is Snowflake?",
     meta: "Based on the \"What is Snowflake?\" lecture transcript",
     questions: [
       {
@@ -1112,8 +1374,8 @@ const sectionsData = [
   },
   {
     id: "multi-cluster-shared-data-architecture",
-    navLabel: "6. Multi-cluster Shared Data Architecture",
-    title: "6. Multi-cluster Shared Data Architecture",
+    navLabel: "7. Multi-cluster Shared Data Architecture",
+    title: "7. Multi-cluster Shared Data Architecture",
     meta: "Based on the \"Multi-cluster Shared Data Architecture\" lecture transcript",
     questions: [
       {
@@ -1365,8 +1627,8 @@ const sectionsData = [
   },
   {
     id: "storage-layer-overview",
-    navLabel: "7. Storage Layer Overview",
-    title: "7. Storage Layer Overview",
+    navLabel: "8. Storage Layer Overview",
+    title: "8. Storage Layer Overview",
     meta: "Based on the \"Storage Layer Overview\" lecture transcript",
     questions: [
       {
@@ -1549,8 +1811,8 @@ const sectionsData = [
   },
   {
     id: "query-processing-layer-overview",
-    navLabel: "8. Query Processing Layer Overview",
-    title: "8. Query Processing Layer Overview",
+    navLabel: "9. Query Processing Layer Overview",
+    title: "9. Query Processing Layer Overview",
     meta: "Based on the \"Query Processing Layer Overview\" lecture transcript",
     questions: [
       {
@@ -1757,8 +2019,8 @@ const sectionsData = [
   },
   {
     id: "services-layer-overview",
-    navLabel: "9. Services Layer Overview",
-    title: "9. Services Layer Overview",
+    navLabel: "10. Services Layer Overview",
+    title: "10. Services Layer Overview",
     meta: "Based on the \"Services Layer Overview\" lecture transcript",
     questions: [
       {
@@ -1902,8 +2164,8 @@ const sectionsData = [
   },
   {
     id: "snowflake-editions",
-    navLabel: "10. Snowflake Editions",
-    title: "10. Snowflake Editions",
+    navLabel: "11. Snowflake Editions",
+    title: "11. Snowflake Editions",
     meta: "Based on the \"Snowflake Editions\" lecture transcript",
     questions: [
       {
@@ -1994,8 +2256,8 @@ const sectionsData = [
   },
   {
     id: "snowflake-object-model",
-    navLabel: "11. Snowflake Object Model",
-    title: "11. Snowflake Object Model",
+    navLabel: "12. Snowflake Object Model",
+    title: "12. Snowflake Object Model",
     meta: "Based on the \"Snowflake Object Model\" lecture transcript",
     questions: [
       {
@@ -2151,8 +2413,8 @@ const sectionsData = [
   },
   {
     id: "organizations-accounts-databases-schemas",
-    navLabel: "12. Organizations, Accounts, Databases & Schemas",
-    title: "12. Organizations, Accounts, Databases & Schemas",
+    navLabel: "13. Organizations, Accounts, Databases & Schemas",
+    title: "13. Organizations, Accounts, Databases & Schemas",
     meta: "Based on the \"Organizations, Accounts, Databases & Schemas\" lecture transcript",
     questions: [
       {
@@ -2354,8 +2616,8 @@ const sectionsData = [
   },
   {
     id: "table-types",
-    navLabel: "13. Table Types",
-    title: "13. Table Types",
+    navLabel: "14. Table Types",
+    title: "14. Table Types",
     meta: "Based on the \"Table Types\" lecture transcript",
     questions: [
       {
@@ -2488,8 +2750,8 @@ const sectionsData = [
   },
   {
     id: "view-types",
-    navLabel: "14. View Types",
-    title: "14. View Types",
+    navLabel: "15. View Types",
+    title: "15. View Types",
     meta: "Based on the \"View Types\" lecture transcript",
     questions: [
       {
@@ -2633,8 +2895,8 @@ const sectionsData = [
   },
   {
     id: "worksheets-vs-workspaces",
-    navLabel: "15. Update: Worksheets vs. Workspaces",
-    title: "15. Update: Worksheets vs. Workspaces",
+    navLabel: "16. Update: Worksheets vs. Workspaces",
+    title: "16. Update: Worksheets vs. Workspaces",
     meta: "Based on the \"Update: Worksheets vs. Workspaces\" lecture transcript",
     questions: [
       {
@@ -2765,120 +3027,120 @@ const sectionsData = [
   },
   {
     id: "databases-schemas-tables-views-hands-on",
-    navLabel: "16. Databases, Schemas, Tables & Views: Hands-on",
-    title: "16. Databases, Schemas, Tables & Views: Hands-on",
+    navLabel: "17. Databases, Schemas, Tables & Views: Hands-on",
+    title: "17. Databases, Schemas, Tables & Views: Hands-on",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "open-table-formats-iceberg",
-    navLabel: "17. Open Table Formats & Apache Iceberg Table Type",
-    title: "17. Open Table Formats & Apache Iceberg Table Type [COF-C03]",
+    navLabel: "18. Open Table Formats & Apache Iceberg Table Type",
+    title: "18. Open Table Formats & Apache Iceberg Table Type [COF-C03]",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "parameters",
-    navLabel: "18. Parameters",
-    title: "18. Parameters [COF-C03]",
+    navLabel: "19. Parameters",
+    title: "19. Parameters [COF-C03]",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "parameters-hands-on",
-    navLabel: "19. Parameters: Hands-on",
-    title: "19. Parameters: Hands-on [COF-C03]",
+    navLabel: "20. Parameters: Hands-on",
+    title: "20. Parameters: Hands-on [COF-C03]",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "user-defined-functions",
-    navLabel: "20. User Defined Functions (UDFs)",
-    title: "20. User Defined Functions (UDFs)",
+    navLabel: "21. User Defined Functions (UDFs)",
+    title: "21. User Defined Functions (UDFs)",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "stored-procedures",
-    navLabel: "21. Stored Procedures",
-    title: "21. Stored Procedures",
+    navLabel: "22. Stored Procedures",
+    title: "22. Stored Procedures",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "udfs-external-functions-stored-procedures-hands-on",
-    navLabel: "22. UDFs, External Functions & Stored Procedures: Hands-on",
-    title: "22. UDFs, External Functions & Stored Procedures: Hands-on",
+    navLabel: "23. UDFs, External Functions & Stored Procedures: Hands-on",
+    title: "23. UDFs, External Functions & Stored Procedures: Hands-on",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "sequences",
-    navLabel: "23. Sequences",
-    title: "23. Sequences",
+    navLabel: "24. Sequences",
+    title: "24. Sequences",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "tasks-streams",
-    navLabel: "24. Tasks & Streams",
-    title: "24. Tasks & Streams",
+    navLabel: "25. Tasks & Streams",
+    title: "25. Tasks & Streams",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "dynamic-tables-hands-on",
-    navLabel: "25. Dynamic Tables: Hands-on",
-    title: "25. Dynamic Tables: Hands-on [COF-C03]",
+    navLabel: "26. Dynamic Tables: Hands-on",
+    title: "26. Dynamic Tables: Hands-on [COF-C03]",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "snowsql-hands-on",
-    navLabel: "26. SnowSQL: Hands-on",
-    title: "26. SnowSQL: Hands-on",
+    navLabel: "27. SnowSQL: Hands-on",
+    title: "27. SnowSQL: Hands-on",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "ide-integrations-vscode",
-    navLabel: "27. IDE Integrations: Visual Studio Code",
-    title: "27. IDE Integrations: Visual Studio Code [COF-C03]",
+    navLabel: "28. IDE Integrations: Visual Studio Code",
+    title: "28. IDE Integrations: Visual Studio Code [COF-C03]",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "connectors-drivers-partnered-tools",
-    navLabel: "28. Connectors, Drivers & Partnered Tools",
-    title: "28. Connectors, Drivers & Partnered Tools",
+    navLabel: "29. Connectors, Drivers & Partnered Tools",
+    title: "29. Connectors, Drivers & Partnered Tools",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "snowflake-scripting",
-    navLabel: "29. Snowflake Scripting",
-    title: "29. Snowflake Scripting",
+    navLabel: "30. Snowflake Scripting",
+    title: "30. Snowflake Scripting",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
   },
   {
     id: "billing-overview",
-    navLabel: "30. Billing Overview",
-    title: "30. Billing Overview",
+    navLabel: "31. Billing Overview",
+    title: "31. Billing Overview",
     meta: "Awaiting transcript for this lecture",
     pending: true,
     questions: []
