@@ -320,8 +320,8 @@ const sectionsData = [
         text: "What is recommended as a first step when preparing for the SnowPro Core exam?",
         options: [
           "Download and read Snowflake's official study guide, since it lists the exam topics and their percentage weightings",
-          "Skip straight to hands-on practice without reviewing any guide",
           "Only study the newest Snowflake features",
+          "Skip straight to hands-on practice without reviewing any guide",
           "Memorize the full Snowflake SQL reference"
         ],
         correct: [0],
@@ -333,9 +333,9 @@ const sectionsData = [
         text: "How does the COF-C03 study guide's domain structure compare to COF-C02's?",
         options: [
           "COF-C03 has five domains instead of six, with slightly different weightings, though the topics remain mostly the same",
+          "COF-C03 removed all domains from C02 and replaced them entirely",
           "COF-C03 has twice as many domains as COF-C02",
-          "COF-C03 and COF-C02 have an identical domain structure",
-          "COF-C03 removed all domains from C02 and replaced them entirely"
+          "COF-C03 and COF-C02 have an identical domain structure"
         ],
         correct: [0],
         explanation: "COF-C03 restructures the study guide to five domains instead of six, with slightly different weightings, but the underlying topics remain mostly the same.",
@@ -345,26 +345,26 @@ const sectionsData = [
         type: "mcq",
         text: "One topic newly called out in the COF-C03 study guide is:",
         options: [
-          "Data clean rooms",
           "Time travel",
-          "Zero-copy cloning",
-          "Streams and tasks"
+          "Data clean rooms",
+          "Streams and tasks",
+          "Zero-copy cloning"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "The COF-C03 study guide now calls out data clean rooms as a new topic.",
         source: "Course Structure lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/cleanrooms/overview",
+        docLink: "https://docs.snowflake.com/en/user-guide/cleanrooms/overview"
       },
       {
         type: "mcq",
         text: "If someone is already studying for COF-C02 before its retirement date, what is recommended?",
         options: [
+          "Take both exams simultaneously",
           "Go ahead and complete COF-C02, since that certification remains valid for two years after completion",
-          "Immediately switch all study material to COF-C03",
           "Wait until both versions are retired before taking either",
-          "Take both exams simultaneously"
+          "Immediately switch all study material to COF-C03"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "For anyone already studying C02 before the transition period ends, it's recommended to go ahead with C02, since it remains valid for two years after completion.",
         source: "Course Structure lecture"
       }
@@ -380,12 +380,12 @@ const sectionsData = [
         type: "mcq",
         text: "Where can the SQL and resource files needed for the hands-on lessons be downloaded from?",
         options: [
-          "A \"Resources\" dropdown attached to the lecture, which downloads a zip file",
           "A separate paid add-on course",
-          "Snowflake's official GitHub repository",
-          "An email sent after course completion"
+          "An email sent after course completion",
+          "A \"Resources\" dropdown attached to the lecture, which downloads a zip file",
+          "Snowflake's official GitHub repository"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "The SQL and resource files for the hands-on lessons are available in a \"Resources\" dropdown attached to the lecture, which downloads a zip file.",
         source: "Making the Most of This Course lecture"
       },
@@ -395,8 +395,8 @@ const sectionsData = [
         options: [
           "100 questions in 115 minutes",
           "80 questions in 90 minutes",
-          "100 questions in 90 minutes",
-          "150 questions in 120 minutes"
+          "150 questions in 120 minutes",
+          "100 questions in 90 minutes"
         ],
         correct: [0],
         explanation: "The exam has 100 questions, with 115 minutes given to complete them.",
@@ -406,12 +406,12 @@ const sectionsData = [
         type: "mcq",
         text: "What score is needed to pass the SnowPro Core exam?",
         options: [
-          "75% or higher",
-          "60% or higher",
+          "50% or higher",
           "90% or higher",
-          "50% or higher"
+          "60% or higher",
+          "75% or higher"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "A score of 75% or higher is needed to pass.",
         source: "Making the Most of This Course lecture"
       },
@@ -419,12 +419,12 @@ const sectionsData = [
         type: "mcq",
         text: "In the standard multiple-choice question format described for this exam, how many answer options are typically given, and how many must be selected?",
         options: [
-          "Four answer options, select one",
-          "Five answer options, select two",
           "Three answer options, select one",
+          "Five answer options, select two",
+          "Four answer options, select one",
           "Six answer options, select three"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "The typical format has four answer options, and you select one, though some questions provide an additional option and require selecting two values.",
         source: "Making the Most of This Course lecture"
       },
@@ -432,12 +432,12 @@ const sectionsData = [
         type: "mcq",
         text: "What technique is recommended for handling more challenging questions during the exam?",
         options: [
-          "Flag the challenging questions in the exam software and return to them at the end",
-          "Always answer with your very first instinct and never revisit it",
           "Skip the exam and reschedule immediately",
-          "Guess randomly and move on without flagging"
+          "Always answer with your very first instinct and never revisit it",
+          "Guess randomly and move on without flagging",
+          "Flag the challenging questions in the exam software and return to them at the end"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "One recommended technique is to flag more challenging questions in the exam software and return to them at the end, since research shows trusting your first instinct unequivocally isn't always the best strategy.",
         source: "Making the Most of This Course lecture"
       },
@@ -445,12 +445,12 @@ const sectionsData = [
         type: "mcq",
         text: "Where should questions about the course or its content be posted?",
         options: [
-          "The Q&A section on Udemy",
-          "A private email address only",
+          "The Snowflake community forum",
           "A public GitHub issue tracker",
-          "The Snowflake community forum"
+          "The Q&A section on Udemy",
+          "A private email address only"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Questions about the course or its content should be posted in the Q&A section on Udemy.",
         source: "Making the Most of This Course lecture"
       }
@@ -468,8 +468,8 @@ const sectionsData = [
         options: [
           "A fully featured private sandbox where you can ingest as much data as you want and query it",
           "A read-only demo environment with no ability to load data",
-          "A shared environment where trial users share the same tables",
-          "A local desktop application with no cloud component"
+          "A local desktop application with no cloud component",
+          "A shared environment where trial users share the same tables"
         ],
         correct: [0],
         explanation: "The Snowflake trial account is described as your own fully featured private sandbox in which you can ingest as much data as you want and query it.",
@@ -479,12 +479,12 @@ const sectionsData = [
         type: "mcq",
         text: "At signup.snowflake.com, what are the two trial options presented?",
         options: [
-          "AI Data Cloud and Snowflake CoCo",
+          "Individual and Organization",
           "Standard and Enterprise",
-          "Free Forever and Pro Trial",
-          "Individual and Organization"
+          "AI Data Cloud and Snowflake CoCo",
+          "Free Forever and Pro Trial"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "The two sign-up options presented are AI Data Cloud and Snowflake CoCo.",
         source: "Provisioning a Snowflake Trial Account lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/admin-trial-account"
@@ -494,8 +494,8 @@ const sectionsData = [
         text: "How does the AI Data Cloud trial option compare to the Snowflake CoCo option?",
         options: [
           "AI Data Cloud has access to almost every Snowflake feature except Snowflake CoCo, which the CoCo option adds on top",
-          "AI Data Cloud is a smaller, feature-limited version of the CoCo option",
           "The two options are functionally identical, differing only in name",
+          "AI Data Cloud is a smaller, feature-limited version of the CoCo option",
           "AI Data Cloud is a paid-only tier with no free trial available"
         ],
         correct: [0],
@@ -507,9 +507,9 @@ const sectionsData = [
         text: "What is Snowflake CoCo?",
         options: [
           "Snowflake's implementation of an AI agent that takes autonomous actions, like running SQL, executing local commands, or editing files, observing results and deciding its next step in a repeating loop until the task is done",
-          "A new virtual warehouse size larger than X6Large",
           "A dashboard for monitoring account-wide billing only",
-          "A replacement for the Snowsight UI with no agentic capabilities"
+          "A replacement for the Snowsight UI with no agentic capabilities",
+          "A new virtual warehouse size larger than X6Large"
         ],
         correct: [0],
         explanation: "CoCo is Snowflake's implementation of an AI agent, a large language model that doesn't just answer in one response, but takes actions like running SQL, executing local commands, or editing files. It observes the results and decides its next step, repeating that loop autonomously until the task is done.",
@@ -521,11 +521,11 @@ const sectionsData = [
         text: "What are the trial and billing terms for the two sign-up options? (Select all that apply)",
         options: [
           "Both options are 30-day free trials with $400 of Snowflake credits",
-          "In the CoCo option, $40 of that $400 budget is reserved specifically for CoCo inference",
           "The CoCo option requires card details upfront, since a $20 monthly subscription fee applies for CoCo inference after the trial ends",
-          "The AI Data Cloud option also requires card details upfront"
+          "The AI Data Cloud option also requires card details upfront",
+          "In the CoCo option, $40 of that $400 budget is reserved specifically for CoCo inference"
         ],
-        correct: [0, 1, 2],
+        correct: [0, 1, 3],
         explanation: "Both options are 30-day free trials with $400 of Snowflake credits, but the CoCo option reserves $40 of that budget for CoCo inference, leaving less budget for things like storage and compute. The CoCo option also requires card details upfront, since a $20 monthly subscription fee applies for CoCo inference once the trial ends. The lecture doesn't say the AI Data Cloud option requires card details.",
         source: "Provisioning a Snowflake Trial Account lecture"
       },
@@ -535,8 +535,8 @@ const sectionsData = [
         options: [
           "The course's purpose is to understand Snowflake's core and fundamental parts and construct SQL independently, and relying on an agent to do that for you while learning can be counterproductive",
           "CoCo is not yet available on any trial account",
-          "CoCo cannot generate SQL of any kind",
-          "CoCo is only available on Business Critical edition and above"
+          "CoCo is only available on Business Critical edition and above",
+          "CoCo cannot generate SQL of any kind"
         ],
         correct: [0],
         explanation: "The course's purpose is to understand the core and fundamental parts of Snowflake, including how to construct SQL independently. Relying on an agent to do things for you while trying to learn can be counterproductive, so CoCo isn't used for things like SQL generation in this course, by design.",
@@ -546,12 +546,12 @@ const sectionsData = [
         type: "mcq",
         text: "How could you try Snowflake CoCo later, after finishing the course on an AI Data Cloud trial?",
         options: [
-          "Wait for the trial to expire, then sign up again with the same email using the CoCo version, remembering to cancel auto-enrollment into the CoCo subscription if you don't want ongoing charges",
-          "CoCo cannot be added to an existing trial or account under any circumstances",
           "Immediately switch your existing trial to CoCo mid-trial with one click",
-          "Contact Snowflake support to manually enable it on the same trial for free indefinitely"
+          "Contact Snowflake support to manually enable it on the same trial for free indefinitely",
+          "Wait for the trial to expire, then sign up again with the same email using the CoCo version, remembering to cancel auto-enrollment into the CoCo subscription if you don't want ongoing charges",
+          "CoCo cannot be added to an existing trial or account under any circumstances"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "You can wait for your trial account to expire and sign up again using the same email, but with the CoCo version. You'll need to cancel the auto-enrollment into the CoCo subscription if you don't want to keep paying beyond the trial.",
         source: "Provisioning a Snowflake Trial Account lecture"
       },
@@ -559,12 +559,12 @@ const sectionsData = [
         type: "mcq",
         text: "Which edition and cloud provider are selected for the trial account used in the course?",
         options: [
-          "Enterprise edition, on Amazon Web Services",
           "Standard edition, on Google Cloud Platform",
-          "Business Critical edition, on Microsoft Azure",
-          "Enterprise edition, on Microsoft Azure"
+          "Enterprise edition, on Amazon Web Services",
+          "Enterprise edition, on Microsoft Azure",
+          "Business Critical edition, on Microsoft Azure"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Enterprise edition is selected so the trial account has all the features needed for the course, and Amazon Web Services is selected as the cloud provider.",
         source: "Provisioning a Snowflake Trial Account lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-editions"
@@ -573,12 +573,12 @@ const sectionsData = [
         type: "mcq",
         text: "How is the cloud provider's region chosen during trial account setup?",
         options: [
-          "It defaults to the region nearest to the user, who can select their closest region",
-          "It is always fixed to US East",
+          "It must be manually entered as a set of coordinates",
           "It is chosen at random by Snowflake",
-          "It must be manually entered as a set of coordinates"
+          "It defaults to the region nearest to the user, who can select their closest region",
+          "It is always fixed to US East"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "The region selection defaults to the nearest region to the user, who should select the region closest to them.",
         source: "Provisioning a Snowflake Trial Account lecture"
       },
@@ -587,9 +587,9 @@ const sectionsData = [
         text: "After signing up, how is the new Snowflake trial account activated?",
         options: [
           "By clicking an activation button in an email sent by Snowflake, which redirects to the account's welcome page",
+          "By verifying a phone number via SMS",
           "By waiting 24 hours for automatic activation",
-          "By calling Snowflake support",
-          "By verifying a phone number via SMS"
+          "By calling Snowflake support"
         ],
         correct: [0],
         explanation: "After about a minute, Snowflake sends an account activation link to the registered email. Clicking the activation button in that email redirects to the welcome page for the new account.",
@@ -599,12 +599,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is the first thing set up on the account's welcome page, after signing up?",
         options: [
-          "An initial user, such as one named 'admin', along with a password",
+          "A default virtual warehouse size",
           "A billing contact and payment method",
           "A custom domain name for the account",
-          "A default virtual warehouse size"
+          "An initial user, such as one named 'admin', along with a password"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "On the welcome page, you create your initial user, for example naming it 'admin', and select a memorable password, then click Get started.",
         source: "Provisioning a Snowflake Trial Account lecture"
       },
@@ -635,12 +635,12 @@ const sectionsData = [
         text: "What can be found in the menu at the bottom left of the Snowsight screen, under the username? (Select all that apply)",
         options: [
           "The currently logged-in user and the currently active role",
-          "The account identifier, which uniquely identifies the account",
-          "Settings for the current user, and, with sufficient permissions, account-level and organization-level settings",
           "Connection details for configuring a secure connection outside of Snowflake",
-          "A live feed of every other user's currently running queries"
+          "The account identifier, which uniquely identifies the account",
+          "A live feed of every other user's currently running queries",
+          "Settings for the current user, and, with sufficient permissions, account-level and organization-level settings"
         ],
-        correct: [0, 1, 2, 3],
+        correct: [0, 1, 2, 4],
         explanation: "This menu shows the current user and active role, the account identifier, a Settings area for user, account, and organization-level settings, and a Connection details page with what's needed to connect outside of Snowflake, such as the account identifier or account URL. It does not show other users' running queries.",
         source: "Snowflake UI Tour lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight-quick-tour"
@@ -649,12 +649,12 @@ const sectionsData = [
         type: "mcq",
         text: "Why does the currently active role matter in Snowsight?",
         options: [
-          "It determines the level of permissions you have, affecting what features you can use and what data you can access",
+          "It only controls billing, not data access",
           "It only changes the visual theme of the interface",
-          "It has no effect until you connect via SnowSQL",
-          "It only controls billing, not data access"
+          "It determines the level of permissions you have, affecting what features you can use and what data you can access",
+          "It has no effect until you connect via SnowSQL"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Roles determine what level of permissions you have. Changing the active role affects what Snowsight features you can use and what data you have access to.",
         source: "Snowflake UI Tour lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/security-access-control-overview"
@@ -664,8 +664,8 @@ const sectionsData = [
         text: "What can be searched for using the search bar at the top of the Snowsight homepage? (Select all that apply)",
         options: [
           "Data assets in your account, like databases and tables",
-          "Datasets available via the Snowflake Marketplace",
           "Snowflake documentation",
+          "Datasets available via the Snowflake Marketplace",
           "The source code of Snowflake's own execution engine"
         ],
         correct: [0, 1, 2],
@@ -676,12 +676,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is a Workspace, as introduced on the Snowsight homepage?",
         options: [
-          "An area where you can organize, edit, and run multiple files across projects, with a default one called 'My Workspace'",
-          "A single read-only SQL file with no ability to create new files",
           "A billing dashboard for tracking compute credits",
-          "A synonym for a virtual warehouse"
+          "A single read-only SQL file with no ability to create new files",
+          "A synonym for a virtual warehouse",
+          "An area where you can organize, edit, and run multiple files across projects, with a default one called 'My Workspace'"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "A Workspace is an area where you can work on multiple files across projects. New files, such as a blank SQL file, reside in a default workspace called 'My Workspace.' In summary, workspaces are where you organize, edit, and run your files.",
         source: "Snowflake UI Tour lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces"
@@ -690,12 +690,12 @@ const sectionsData = [
         type: "msq",
         text: "Under the Ingestion heading in the navigation menu, what do 'Add data' and 'Copy history' cover? (Select all that apply)",
         options: [
-          "Add data is for manual, UI-based data loading",
           "Copy history records when the COPY INTO command was executed to load data into tables",
-          "Add data is for scheduling recurring transformation jobs",
-          "Copy history is where virtual warehouses are resized"
+          "Copy history is where virtual warehouses are resized",
+          "Add data is for manual, UI-based data loading",
+          "Add data is for scheduling recurring transformation jobs"
         ],
-        correct: [0, 1],
+        correct: [0, 2],
         explanation: "Ingestion covers the first step in the data engineering lifecycle: getting data into Snowflake. Add data is for manual UI-based data loading, and Copy history records when the COPY INTO command was executed to load data into tables.",
         source: "Snowflake UI Tour lecture",
         docLink: "https://docs.snowflake.com/en/sql-reference/sql/copy-into-table"
@@ -704,12 +704,12 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following fall under the Transformation heading in the navigation menu? (Select all that apply)",
         options: [
-          "dbt, with Snowsight providing a native home to build, test, and version control dbt projects against a git repo",
           "Dynamic tables, which keep transformed data automatically refreshed without manual logic",
-          "Tasks, which handle scheduling to run workflows on a timer or trigger",
-          "Network policies, which restrict which IP ranges can connect to the account"
+          "Network policies, which restrict which IP ranges can connect to the account",
+          "dbt, with Snowsight providing a native home to build, test, and version control dbt projects against a git repo",
+          "Tasks, which handle scheduling to run workflows on a timer or trigger"
         ],
-        correct: [0, 1, 2],
+        correct: [0, 2, 3],
         explanation: "Transformation covers the next step in the data engineering lifecycle: processing raw data. It includes dbt (with native build, test, and version control support against a git repo), dynamic tables (auto-refreshed transformed data), and tasks (scheduling workflows on a timer or trigger). Network policies belong to Governance & Security, not Transformation.",
         source: "Snowflake UI Tour lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/data-engineering/dbt-projects-on-snowflake"
@@ -718,12 +718,12 @@ const sectionsData = [
         type: "mcq",
         text: "How does the AI and ML section of the navigation menu split?",
         options: [
-          "It splits into Cortex AI, a collection of AI features using large language models, and Machine Learning, for building more traditional models like regression and clustering",
-          "It splits into Free Tier and Paid Tier AI features",
           "It splits into Cortex AI for images only and Machine Learning for text only",
+          "It splits into Free Tier and Paid Tier AI features",
+          "It splits into Cortex AI, a collection of AI features using large language models, and Machine Learning, for building more traditional models like regression and clustering",
           "It has no further split; AI and ML is a single flat feature list"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "AI and ML splits into two halves: Cortex AI, a collection of AI features using large language models, and Machine Learning, for building more traditional models like regression, classification, and clustering.",
         source: "Snowflake UI Tour lecture",
         docLink: "https://docs.snowflake.com/en/guides-overview-ai-features"
@@ -732,13 +732,13 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following are described as part of the Monitoring section, this account's observability layer? (Select all that apply)",
         options: [
-          "Query history, for monitoring individual or grouped queries executed in the account",
-          "Traces and logs, for deeper observability such as setting event levels and reviewing telemetry data",
-          "Performance explorer, for analyzing and optimizing query performance more broadly, spotting patterns rather than one query at a time",
           "Alerts, for automatic notification when data meets specific conditions or changes over time",
-          "Compute pools, for running Snowpark Container Services workloads"
+          "Query history, for monitoring individual or grouped queries executed in the account",
+          "Compute pools, for running Snowpark Container Services workloads",
+          "Traces and logs, for deeper observability such as setting event levels and reviewing telemetry data",
+          "Performance explorer, for analyzing and optimizing query performance more broadly, spotting patterns rather than one query at a time"
         ],
-        correct: [0, 1, 2, 3],
+        correct: [0, 1, 3, 4],
         explanation: "Monitoring includes query history, traces and logs, performance explorer, and alerts, all covered in this lecture as observability tools. Compute pools belong to the Manage section, not Monitoring.",
         source: "Snowflake UI Tour lecture"
       },
@@ -746,12 +746,12 @@ const sectionsData = [
         type: "mcq",
         text: "What does the Snowflake Marketplace let you do?",
         options: [
+          "Only configure network policies",
           "Download publicly available datasets to quickly import into your account, and access native apps others have made",
           "Only purchase additional compute credits",
-          "Only manage user roles and permissions",
-          "Only configure network policies"
+          "Only manage user roles and permissions"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "The Marketplace is where you go to download publicly available datasets, allowing you to quickly import them into your Snowflake account, and to get access to native apps others have made.",
         source: "Snowflake UI Tour lecture"
       },
@@ -759,12 +759,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is the Horizon Catalog?",
         options: [
-          "The place to browse your account's data assets, such as the databases shipped with the trial account",
-          "A billing summary page only",
           "A tool exclusively for creating virtual warehouses",
-          "A synonym for the Snowflake Marketplace"
+          "A synonym for the Snowflake Marketplace",
+          "The place to browse your account's data assets, such as the databases shipped with the trial account",
+          "A billing summary page only"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "The Horizon Catalog is the place to browse your account's data assets. Under Catalog, you can see the databases that ship with the trial account by default, including the sample data database made up of schemas and tables.",
         source: "Snowflake UI Tour lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/snowflake-horizon"
@@ -773,12 +773,12 @@ const sectionsData = [
         type: "mcq",
         text: "What two sides does Data Sharing cover?",
         options: [
+          "Only sharing that goes through the public Marketplace",
           "The consumer side, accessing what's been shared with you, and the provider side, publishing and managing listings",
-          "Only the provider side; consumers cannot access shared data through this section",
           "Only internal sharing within the same account",
-          "Only sharing that goes through the public Marketplace"
+          "Only the provider side; consumers cannot access shared data through this section"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Data sharing covers both the consumer side, accessing what's been shared with you, and the provider side, publishing and managing listings, whether internal, private to another account, or sold on the public marketplace.",
         source: "Snowflake UI Tour lecture"
       },
@@ -786,13 +786,13 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following fall under Governance and Security in the navigation menu? (Select all that apply)",
         options: [
-          "Users and roles, for managing user and role objects and access control grants",
           "Trust Center, for a centralized dashboard of account security, compliance, and operational health",
-          "Network policies, for restricting which IP ranges can connect to the account",
+          "Users and roles, for managing user and role objects and access control grants",
           "Tags, for classifying and tracking objects for sensitivity or ownership",
-          "Compute, for managing virtual warehouses"
+          "Compute, for managing virtual warehouses",
+          "Network policies, for restricting which IP ranges can connect to the account"
         ],
-        correct: [0, 1, 2, 3],
+        correct: [0, 1, 2, 4],
         explanation: "Governance and Security includes users and roles, Trust Center, network policies, and tags, all part of managing account access, security posture, and compliance. Compute (virtual warehouses) belongs to the Manage section, not Governance and Security.",
         source: "Snowflake UI Tour lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/trust-center/overview"
@@ -801,12 +801,12 @@ const sectionsData = [
         type: "mcq",
         text: "What does the Trust Center provide?",
         options: [
-          "A centralized dashboard of your account's security, compliance, and operational health",
+          "A log of every SQL query ever run on the account, with no aggregation",
           "A place to purchase additional Snowflake editions",
           "A tool exclusively for creating dynamic tables",
-          "A log of every SQL query ever run on the account, with no aggregation"
+          "A centralized dashboard of your account's security, compliance, and operational health"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "The Trust Center gives you a centralized dashboard of your account's security, compliance, and operational health.",
         source: "Snowflake UI Tour lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/trust-center/overview"
@@ -816,9 +816,9 @@ const sectionsData = [
         text: "What do network policies do?",
         options: [
           "Restrict which IP ranges can connect to the account",
-          "Restrict which SQL statements a role can execute",
           "Restrict how many virtual warehouses can be created",
-          "Restrict which cloud provider an account can be deployed to"
+          "Restrict which cloud provider an account can be deployed to",
+          "Restrict which SQL statements a role can execute"
         ],
         correct: [0],
         explanation: "Network policies restrict which IP ranges can connect to your account.",
@@ -828,13 +828,13 @@ const sectionsData = [
         type: "msq",
         text: "Under the Manage section of the navigation menu, which of the following are covered? (Select all that apply)",
         options: [
+          "Admin, covering cost and billing, account settings, integrations, and Partner Connect",
           "Compute, for managing virtual warehouses",
           "Compute pools, for creating and managing container-based compute resources used by Snowpark Container Services",
-          "The ability to create a Snowflake-managed instance of the Postgres relational database",
-          "Admin, covering cost and billing, account settings, integrations, and Partner Connect",
-          "Data Sharing, for publishing listings to the Marketplace"
+          "Data Sharing, for publishing listings to the Marketplace",
+          "The ability to create a Snowflake-managed instance of the Postgres relational database"
         ],
-        correct: [0, 1, 2, 3],
+        correct: [0, 1, 2, 4],
         explanation: "The Manage section covers Compute (virtual warehouses), Compute pools (container-based compute for Snowpark Container Services, used for things like notebooks on container runtime, custom apps, or ML workloads), a Snowflake-managed Postgres instance, and Admin (billing, account settings, integrations, and Partner Connect). Data Sharing is covered earlier in the navigation menu, separately from Manage.",
         source: "Snowflake UI Tour lecture",
         docLink: "https://docs.snowflake.com/en/developer-guide/native-apps/container-about"
@@ -843,12 +843,12 @@ const sectionsData = [
         type: "mcq",
         text: "What are compute pools used for?",
         options: [
-          "Creating and managing container-based compute resources used by Snowpark Container Services, such as for notebooks on container runtime, custom apps, or ML workloads",
           "Pooling together multiple virtual warehouses into a single billing line item",
           "Storing table data outside of the standard storage layer",
+          "Creating and managing container-based compute resources used by Snowpark Container Services, such as for notebooks on container runtime, custom apps, or ML workloads",
           "Managing user passwords and multifactor authentication"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Compute pools let you create and manage container-based compute resources used by Snowpark Container Services, such as for notebooks on container runtime, custom apps, or ML workloads.",
         source: "Snowflake UI Tour lecture",
         docLink: "https://docs.snowflake.com/en/developer-guide/native-apps/container-about"
@@ -858,9 +858,9 @@ const sectionsData = [
         text: "What does the Admin section broadly let you do?",
         options: [
           "Manage cost and billing, configure account settings, set up integrations with external systems, and connect with partner tools through Partner Connect",
-          "Only reset user passwords",
+          "Only browse the Snowflake Marketplace",
           "Only create new virtual warehouses",
-          "Only browse the Snowflake Marketplace"
+          "Only reset user passwords"
         ],
         correct: [0],
         explanation: "Broadly, Admin lets you manage cost and billing, configure account settings, set up integrations with external systems and services, and connect with partner tools through Partner Connect.",
@@ -892,12 +892,12 @@ const sectionsData = [
         type: "mcq",
         text: "What proportion of the exam questions come from the topics covered in this section?",
         options: [
-          "10–15%",
-          "15–20%",
           "25–30%",
-          "35–40%"
+          "15–20%",
+          "35–40%",
+          "10–15%"
         ],
-        correct: [2],
+        correct: [0],
         explanation: "This section's content can feature in over a quarter of all exam questions, ranging from 25 to 30%.",
         source: "Section 4 intro transcript"
       },
@@ -905,12 +905,12 @@ const sectionsData = [
         type: "mcq",
         text: "Why is this the longest section in the course?",
         options: [
-          "Because it has the most video lectures of any Udemy section",
-          "Because it covers a large share of exam questions and lays the foundation for all other topics",
           "Because it includes hands-on labs",
-          "Because Snowflake released new features recently"
+          "Because Snowflake released new features recently",
+          "Because it has the most video lectures of any Udemy section",
+          "Because it covers a large share of exam questions and lays the foundation for all other topics"
         ],
-        correct: [1],
+        correct: [3],
         explanation: "This is the longest section in the course because it carries the highest exam weightage (25 to 30%) and lays the foundation for all other topics.",
         source: "Section 4 intro transcript"
       },
@@ -918,58 +918,58 @@ const sectionsData = [
         type: "mcq",
         text: "As contrasted with legacy data architectures, what type of architecture does the section describe Snowflake as using?",
         options: [
-          "Single-cluster dedicated architecture",
-          "Shared-nothing architecture only",
+          "Peer-to-peer distributed architecture",
           "Multi-cluster shared data architecture",
-          "Peer-to-peer distributed architecture"
+          "Shared-nothing architecture only",
+          "Single-cluster dedicated architecture"
         ],
-        correct: [2],
+        correct: [1],
         explanation: "This section covers a look at legacy data architectures contrasted with Snowflake's newer multi-cluster shared data architecture.",
         source: "Section 4 intro transcript",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
       },
       {
         type: "mcq",
         text: "Which three layers of Snowflake's architecture will be given an overview in this section?",
         options: [
-          "Storage layer, compute layer, and services layer",
-          "Storage layer, network layer, and security layer",
           "Ingestion layer, transformation layer, and presentation layer",
-          "Data layer, application layer, and client layer"
+          "Data layer, application layer, and client layer",
+          "Storage layer, network layer, and security layer",
+          "Storage layer, compute layer, and services layer"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "This section gives an overview of the storage layer, compute layer, and services layer.",
         source: "Section 4 intro transcript",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
       },
       {
         type: "mcq",
         text: "Besides Snowpark, which other connectivity/development topic is specifically mentioned for this section?",
         options: [
-          "SnowSQL command-line client",
           "Snowflake Scripting",
           "JDBC/ODBC drivers",
+          "SnowSQL command-line client",
           "The Python Connector"
         ],
-        correct: [1],
+        correct: [0],
         explanation: "This section covers the ways to connect to Snowflake, including Snowpark and Snowflake Scripting. Only these two are named explicitly.",
         source: "Section 4 intro transcript",
-        docLink: "https://docs.snowflake.com/en/developer-guide/snowpark/index",
+        docLink: "https://docs.snowflake.com/en/developer-guide/snowpark/index"
       },
       {
         type: "msq",
         text: "Which of the following topics are covered in this section? (Select all that apply)",
         options: [
-          "A high-level overview of what Snowflake is",
           "A comparison of legacy data architectures vs. Snowflake's multi-cluster shared data architecture",
-          "An overview of the storage, compute, and services layers",
-          "Snowflake editions and their features",
-          "A broad look at Snowflake objects and their hierarchy of containers",
           "A comprehensive breakdown of billing",
           "The ways to connect to Snowflake, including Snowpark and Snowflake Scripting",
-          "A walkthrough of the Snowflake Data Marketplace listings"
+          "A broad look at Snowflake objects and their hierarchy of containers",
+          "An overview of the storage, compute, and services layers",
+          "A walkthrough of the Snowflake Data Marketplace listings",
+          "A high-level overview of what Snowflake is",
+          "Snowflake editions and their features"
         ],
-        correct: [0, 1, 2, 3, 4, 5, 6],
+        correct: [0, 1, 2, 3, 4, 6, 7],
         explanation: "These seven items make up the section's roadmap. The Data Marketplace is not part of this roadmap.",
         source: "Section 4 intro transcript"
       }
@@ -985,12 +985,12 @@ const sectionsData = [
         type: "mcq",
         text: "Snowflake's definition can be broken down into three pillars. What are they?",
         options: [
+          "Secure, compliant, enterprise-ready",
           "Cloud-native, data platform, offered as a service",
           "Multi-cloud, multi-tenant, multi-cluster",
-          "Scalable, elastic, cost-effective",
-          "Secure, compliant, enterprise-ready"
+          "Scalable, elastic, cost-effective"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Snowflake's definition breaks down into three pillars: cloud-native, data platform, and offered as a service.",
         source: "What is Snowflake? lecture"
       },
@@ -998,12 +998,12 @@ const sectionsData = [
         type: "mcq",
         text: "Snowflake's marketing and documentation originally described it as a 'cloud data warehouse.' What term(s) does Snowflake now prefer?",
         options: [
-          "The Snowflake platform, or AI Data Cloud",
+          "Enterprise data mesh",
           "Data lakehouse only",
-          "Unified analytics engine",
-          "Enterprise data mesh"
+          "The Snowflake platform, or AI Data Cloud",
+          "Unified analytics engine"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Snowflake has moved away from the 'cloud data warehouse' description, now preferring 'the Snowflake platform' or 'AI Data Cloud,' to show it goes beyond a traditional data warehouse.",
         source: "What is Snowflake? lecture"
       },
@@ -1011,71 +1011,71 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following reflect Snowflake's roots as a data warehouse? (Select all that apply)",
         options: [
-          "It uses the table data structure to store data",
           "It uses databases and schemas to organize data",
+          "Users must define static partitioning keys before loading data",
           "ANSI Standard SQL is one of its main languages",
-          "Users must define static partitioning keys before loading data"
+          "It uses the table data structure to store data"
         ],
-        correct: [0, 1, 2],
+        correct: [0, 2, 3],
         explanation: "Snowflake uses the table data structure to store data, and databases and schemas to organize it, with ANSI Standard SQL as a main language. Partitioning is handled automatically, so static partitioning keys are not required.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
       },
       {
         type: "mcq",
         text: "Which statement is used to bulk load data from files into tables?",
         options: [
+          "IMPORT FROM",
           "COPY INTO",
-          "LOAD DATA",
           "BULK INSERT",
-          "IMPORT FROM"
+          "LOAD DATA"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "The COPY INTO statement bulk loads data from files into tables.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/sql-reference/sql/copy-into-table",
+        docLink: "https://docs.snowflake.com/en/sql-reference/sql/copy-into-table"
       },
       {
         type: "mcq",
         text: "What is Snowpipe?",
         options: [
+          "A caching layer for repeated query results",
           "A serverless service that streams new files from cloud storage into Snowflake tables",
           "A batch scheduler that runs nightly data loads",
-          "A caching layer for repeated query results",
           "A tool for exporting Snowflake data to cloud storage"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Snowpipe is a serverless service that streams new files from cloud storage into Snowflake tables.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/data-load-snowpipe-intro",
+        docLink: "https://docs.snowflake.com/en/user-guide/data-load-snowpipe-intro"
       },
       {
         type: "msq",
         text: "Which objects does Snowflake use to capture table changes, and to schedule or trigger SQL logic to process those changes?",
         options: [
-          "Stream objects capture table changes",
-          "Task objects schedule or trigger SQL logic",
+          "Sequence objects schedule SQL logic",
           "Pipe objects capture table changes",
-          "Sequence objects schedule SQL logic"
+          "Task objects schedule or trigger SQL logic",
+          "Stream objects capture table changes"
         ],
-        correct: [0, 1],
+        correct: [2, 3],
         explanation: "Stream objects capture table changes, and task objects schedule or trigger SQL logic to process those changes.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/data-pipelines-intro",
+        docLink: "https://docs.snowflake.com/en/user-guide/data-pipelines-intro"
       },
       {
         type: "mcq",
         text: "What is Openflow?",
         options: [
-          "An integration service for ingesting and transforming data, with connectors based on Apache NiFi",
-          "A native BI dashboarding tool",
           "A managed workflow orchestrator built on Apache Airflow",
+          "A native BI dashboarding tool",
+          "An integration service for ingesting and transforming data, with connectors based on Apache NiFi",
           "A change-data-capture connector limited to MySQL"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Openflow is an integration service for ingesting and transforming data, with connectors based on Apache NiFi.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/data-integration/openflow/about",
+        docLink: "https://docs.snowflake.com/en/user-guide/data-integration/openflow/about"
       },
       {
         type: "mcq",
@@ -1083,38 +1083,38 @@ const sectionsData = [
         options: [
           "Running data transformation steps within Snowflake using dbt Core",
           "Managing Snowflake account billing",
-          "Orchestrating machine learning training pipelines",
-          "Replacing Snowpipe for data ingestion"
+          "Replacing Snowpipe for data ingestion",
+          "Orchestrating machine learning training pipelines"
         ],
         correct: [0],
         explanation: "Managed dbt runs data transformation steps within Snowflake using dbt Core.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/data-engineering/dbt-projects-on-snowflake",
+        docLink: "https://docs.snowflake.com/en/user-guide/data-engineering/dbt-projects-on-snowflake"
       },
       {
         type: "msq",
         text: "Which security features does Snowflake come with out of the box? (Select all that apply)",
         options: [
-          "Encrypting all data at rest and in transit",
+          "A built-in third-party firewall appliance",
           "Role-based access control",
-          "Multifactor authentication",
-          "A built-in third-party firewall appliance"
+          "Encrypting all data at rest and in transit",
+          "Multifactor authentication"
         ],
-        correct: [0, 1, 2],
+        correct: [1, 2, 3],
         explanation: "Snowflake comes with encryption of all data at rest and in transit, role-based access control, and multifactor authentication built in. A third-party firewall appliance is not part of this list.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/security-access-control-overview",
+        docLink: "https://docs.snowflake.com/en/user-guide/security-access-control-overview"
       },
       {
         type: "mcq",
         text: "How does Snowflake handle concurrency?",
         options: [
-          "It supports high levels of concurrency without read/write locks, letting multiple transactions run simultaneously without interfering with each other",
           "It requires row-level locking for every write operation",
           "It only allows one write transaction to run at a time",
+          "It supports high levels of concurrency without read/write locks, letting multiple transactions run simultaneously without interfering with each other",
           "It requires developers to manage locks manually"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Snowflake supports high levels of concurrency without read/write locks, allowing multiple transactions to run simultaneously without interfering with each other.",
         source: "What is Snowflake? lecture"
       },
@@ -1123,42 +1123,42 @@ const sectionsData = [
         text: "Which relational database features were historically missing from Snowflake because it initially focused on analytical workloads?",
         options: [
           "Enforced referential integrity and low latency single-row access",
+          "Table and schema objects",
           "ACID compliance and SQL support",
-          "Role-based access control and encryption",
-          "Table and schema objects"
+          "Role-based access control and encryption"
         ],
         correct: [0],
         explanation: "Enforced referential integrity and low latency single-row access were historically missing relational database features in Snowflake.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/tables-hybrid",
+        docLink: "https://docs.snowflake.com/en/user-guide/tables-hybrid"
       },
       {
         type: "mcq",
         text: "What is Unistore, and what table type does it introduce?",
         options: [
+          "A caching mechanism that introduces materialized tables",
           "Snowflake's hybrid transactional and analytical processing initiative, which introduces hybrid tables",
-          "A data governance framework that introduces masking policies",
           "A billing model that introduces per-second compute pricing",
-          "A caching mechanism that introduces materialized tables"
+          "A data governance framework that introduces masking policies"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Unistore is Snowflake's hybrid transactional and analytical processing initiative, which introduces hybrid tables, a table type combining relational and analytical capabilities.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/tables-hybrid",
+        docLink: "https://docs.snowflake.com/en/user-guide/tables-hybrid"
       },
       {
         type: "msq",
         text: "Which of the following data lake style capabilities does Snowflake have? (Select all that apply)",
         options: [
-          "Scaling storage and compute to handle big data in the petabytes",
           "Storing raw files without needing to specify the schema upfront",
+          "Requiring a fixed schema to be defined before any data can be loaded",
           "Natively processing semi-structured data formats such as JSON or Avro",
-          "Requiring a fixed schema to be defined before any data can be loaded"
+          "Scaling storage and compute to handle big data in the petabytes"
         ],
-        correct: [0, 1, 2],
+        correct: [0, 2, 3],
         explanation: "Snowflake can scale out storage and compute to handle big data in the petabytes, lets you store raw files without specifying a schema upfront, and can natively process semi-structured data formats such as JSON or Avro.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-supported-features",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-supported-features"
       },
       {
         type: "mcq",
@@ -1172,121 +1172,121 @@ const sectionsData = [
         correct: [0],
         explanation: "The 'open' in 'open data lakehouse' refers to Snowflake's implementation of the Apache Iceberg open table format, which lets you query data residing outside of Snowflake.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/tables-iceberg",
+        docLink: "https://docs.snowflake.com/en/user-guide/tables-iceberg"
       },
       {
         type: "msq",
         text: "Which of the following are part of the Cortex umbrella of LLM features? (Select all that apply)",
         options: [
-          "LLM functions",
           "Snowflake Copilot",
-          "Document AI",
+          "Snowflake Marketplace",
+          "LLM functions",
           "Cortex Fine-tuning",
+          "Document AI",
           "Cortex Search",
-          "Cortex Analyst",
-          "Snowflake Marketplace"
+          "Cortex Analyst"
         ],
-        correct: [0, 1, 2, 3, 4, 5],
+        correct: [0, 2, 3, 4, 5, 6],
         explanation: "Cortex is the umbrella term for Snowflake's LLM-based features, including LLM functions, Snowflake Copilot, Document AI, Cortex Fine-tuning, Cortex Search, and Cortex Analyst. Snowflake Marketplace is not part of Cortex.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/guides-overview-ai-features",
+        docLink: "https://docs.snowflake.com/en/guides-overview-ai-features"
       },
       {
         type: "mcq",
         text: "What is Snowflake Intelligence?",
         options: [
-          "A feature that lets you build agents which make use of Cortex features like Cortex Search and Cortex Analyst",
           "A dashboard for monitoring compute credit usage",
+          "A feature that lets you build agents which make use of Cortex features like Cortex Search and Cortex Analyst",
           "A fraud-detection engine built into Snowflake",
           "A replacement for Snowpark ML"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Snowflake Intelligence lets you build agents that make use of Cortex features like Cortex Search and Cortex Analyst.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/guides-overview-ai-features",
+        docLink: "https://docs.snowflake.com/en/guides-overview-ai-features"
       },
       {
         type: "mcq",
         text: "Which languages does Snowpark let you use to process Snowflake data?",
         options: [
           "Python, Scala, and Java",
-          "Python, Java, and C++",
+          "Python, Go, and Rust",
           "SQL, R, and Julia",
-          "Python, Go, and Rust"
+          "Python, Java, and C++"
         ],
         correct: [0],
         explanation: "Snowpark is a library that lets you process Snowflake data using Python, Scala, and Java.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/developer-guide/snowpark/index",
+        docLink: "https://docs.snowflake.com/en/developer-guide/snowpark/index"
       },
       {
         type: "mcq",
         text: "Which tool does Snowflake natively support for building interactive machine learning and data science web apps inside Snowflake?",
         options: [
           "Streamlit",
+          "Looker",
           "Tableau",
-          "Power BI",
-          "Looker"
+          "Power BI"
         ],
         correct: [0],
         explanation: "Snowflake has native support for Streamlit, letting you build interactive machine learning and data science web apps directly inside Snowflake.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/developer-guide/streamlit/about-streamlit",
+        docLink: "https://docs.snowflake.com/en/developer-guide/streamlit/about-streamlit"
       },
       {
         type: "msq",
         text: "For data application development, which languages and database connectors does Snowflake maintain?",
         options: [
-          "High-level languages like Python, .NET, and Go",
           "Database connectors like JDBC and ODBC",
-          "Ruby and PHP connectors",
-          "A dedicated GraphQL connector"
+          "High-level languages like Python, .NET, and Go",
+          "A dedicated GraphQL connector",
+          "Ruby and PHP connectors"
         ],
         correct: [0, 1],
         explanation: "Snowflake maintains connectors and drivers for high-level languages like Python, .NET, and Go, as well as database connectors like JDBC and ODBC.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/developer",
+        docLink: "https://docs.snowflake.com/en/developer"
       },
       {
         type: "msq",
         text: "Which languages can be used to write user-defined functions and stored procedures in Snowflake?",
         options: [
           "Java",
+          "C#",
+          "SQL",
           "JavaScript",
           "Scala",
-          "Python",
-          "SQL",
-          "C#"
+          "Python"
         ],
-        correct: [0, 1, 2, 3, 4],
+        correct: [0, 2, 3, 4, 5],
         explanation: "UDFs and stored procedures can be written using Java, JavaScript, Scala, Python, or SQL. C# is not one of the supported languages here.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/sql-reference/udf-overview.html",
+        docLink: "https://docs.snowflake.com/en/sql-reference/udf-overview.html"
       },
       {
         type: "mcq",
         text: "What does it mean to describe Snowflake as 'cloud-native' rather than 'cloud-washed'?",
         options: [
+          "Snowflake requires no cloud infrastructure at all",
           "Snowflake's software was purpose-built from scratch to run on the cloud, rather than being a retrofitted port of an old technology",
           "Snowflake only runs on a single cloud provider",
-          "Snowflake started as an on-premises product and was later moved to the cloud",
-          "Snowflake requires no cloud infrastructure at all"
+          "Snowflake started as an on-premises product and was later moved to the cloud"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Snowflake's software was purpose-built for the cloud rather than being a retrofitted version of an existing technology like Hadoop or MySQL. This is what distinguishes it from a 'cloud-washed' solution, which is simply an old technology ported to the cloud.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-cloud-platforms",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-cloud-platforms"
       },
       {
         type: "mcq",
         text: "Which cloud provider did Snowflake originally run on, and in what order were the others added?",
         options: [
-          "AWS first, then Azure in 2018, then Google Cloud Platform in 2020",
           "Azure first, then AWS in 2018, then Google Cloud Platform in 2020",
+          "AWS first, then Azure in 2018, then Google Cloud Platform in 2020",
           "Google Cloud Platform first, then AWS in 2019, then Azure in 2021",
           "AWS and Azure at the same time, then Google Cloud Platform later"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Snowflake was originally designed to run on AWS, expanded to Azure in 2018, and then to Google Cloud Platform in 2020.",
         source: "What is Snowflake? lecture"
       },
@@ -1295,12 +1295,12 @@ const sectionsData = [
         text: "Which cloud benefits does Snowflake inherit from being cloud-native? (Select all that apply)",
         options: [
           "High availability",
-          "Scalability",
           "Elasticity",
-          "Durability guarantees",
-          "Unlimited free storage"
+          "Scalability",
+          "Unlimited free storage",
+          "Durability guarantees"
         ],
-        correct: [0, 1, 2, 3],
+        correct: [0, 1, 2, 4],
         explanation: "Being cloud-native means Snowflake inherits high availability, scalability, elasticity, and durability guarantees. Unlimited free storage is not one of these benefits.",
         source: "What is Snowflake? lecture"
       },
@@ -1308,12 +1308,12 @@ const sectionsData = [
         type: "mcq",
         text: "How does Snowflake's delivery model contrast with something like an EC2 instance in AWS?",
         options: [
-          "Snowflake is a pure SaaS product, so there is no management of account infrastructure at all, unlike a VM that a user accesses and manages",
+          "Snowflake is delivered as an on-premises appliance",
           "Snowflake works exactly like an EC2 instance",
           "Snowflake requires manual OS-level patching, similar to a VM",
-          "Snowflake is delivered as an on-premises appliance"
+          "Snowflake is a pure SaaS product, so there is no management of account infrastructure at all, unlike a VM that a user accesses and manages"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Unlike a virtual machine such as an EC2 instance, which a user accesses and manages, Snowflake is a pure SaaS product with no management of account infrastructure required from the user.",
         source: "What is Snowflake? lecture"
       },
@@ -1322,9 +1322,9 @@ const sectionsData = [
         text: "How are software upgrades and patches handled in Snowflake?",
         options: [
           "Through weekly online updates and patches that are completely transparent to the user and cause no visible downtime",
-          "Users must manually schedule downtime for patching",
+          "Users must upgrade their own client software before each new release",
           "Patches are optional and applied yearly",
-          "Users must upgrade their own client software before each new release"
+          "Users must manually schedule downtime for patching"
         ],
         correct: [0],
         explanation: "Snowflake applies weekly online updates and patches that are completely transparent to the user and cause no visible downtime.",
@@ -1334,12 +1334,12 @@ const sectionsData = [
         type: "mcq",
         text: "Which pricing model does Snowflake offer?",
         options: [
-          "A flexible pay-as-you-use subscription model",
+          "Free for unlimited usage",
           "A flat annual license fee",
-          "A one-time perpetual license",
-          "Free for unlimited usage"
+          "A flexible pay-as-you-use subscription model",
+          "A one-time perpetual license"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "As with many SaaS products, Snowflake offers a flexible pay-as-you-use subscription model.",
         source: "What is Snowflake? lecture"
       },
@@ -1347,12 +1347,12 @@ const sectionsData = [
         type: "mcq",
         text: "How does a user typically access their Snowflake account?",
         options: [
-          "Through the UI, authenticating with a username and passkey, optionally extended with connectors and drivers for programmatic access",
           "Only via SSH into a virtual machine",
-          "Only through a mobile app",
-          "Only via an API key, with no UI option"
+          "Through the UI, authenticating with a username and passkey, optionally extended with connectors and drivers for programmatic access",
+          "Only via an API key, with no UI option",
+          "Only through a mobile app"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Users interact with a Snowflake account through the UI, authenticating with a username and passkey, and this access can optionally be extended with connectors and drivers for programmatic access.",
         source: "What is Snowflake? lecture"
       },
@@ -1368,7 +1368,7 @@ const sectionsData = [
         correct: [0],
         explanation: "Data optimizations like partitioning are handled automatically as part of the loading process, so there's no need to specify static partitioning keys or indexes.",
         source: "What is Snowflake? lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/tables-clustering-micropartitions",
+        docLink: "https://docs.snowflake.com/en/user-guide/tables-clustering-micropartitions"
       }
     ]
   },
@@ -1382,12 +1382,12 @@ const sectionsData = [
         type: "mcq",
         text: "Traditional data storage and analysis systems, including on-prem data warehouses and data lakes, arrange their underlying hardware and networking into one of which two distributed architectures?",
         options: [
+          "Row-based and column-based",
           "Shared-disk and shared nothing",
-          "Master-slave and peer-to-peer",
           "Single-node and multi-node",
-          "Row-based and column-based"
+          "Master-slave and peer-to-peer"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Traditional systems arrange their underlying hardware and networking into one of two distributed architectures: shared-disk or shared nothing.",
         source: "Multi-cluster Shared Data Architecture lecture"
       },
@@ -1396,11 +1396,11 @@ const sectionsData = [
         text: "Which of the following describe the shared-disk architecture? (Select all that apply)",
         options: [
           "It scales out nodes in a compute cluster while keeping storage in a single location",
+          "It was the first move away from single-node architectures",
           "All data is accessible from all cluster nodes, and any machine can read or write any portion of the data",
-          "Storage and compute are located on separate machines that each hold a local subset of data",
-          "It was the first move away from single-node architectures"
+          "Storage and compute are located on separate machines that each hold a local subset of data"
         ],
-        correct: [0, 1, 3],
+        correct: [0, 1, 2],
         explanation: "Shared-disk scales out compute nodes while keeping storage centralized, meaning all data is accessible from all cluster nodes, and it was the first move away from single-node architectures. The third option describes shared nothing, not shared-disk.",
         source: "Multi-cluster Shared Data Architecture lecture"
       },
@@ -1408,12 +1408,12 @@ const sectionsData = [
         type: "mcq",
         text: "Which distributed architecture is described as increasingly the norm for high performance storage and querying, and is found in systems like Hadoop and Spark?",
         options: [
-          "Shared nothing",
-          "Shared-disk",
           "Multi-cluster shared data",
-          "Single-node"
+          "Shared-disk",
+          "Single-node",
+          "Shared nothing"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Shared nothing has increasingly become the norm for high performance storage and querying in database systems, and it's found in systems like Hadoop and Spark.",
         source: "Multi-cluster Shared Data Architecture lecture"
       },
@@ -1421,12 +1421,12 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following describe the shared nothing architecture? (Select all that apply)",
         options: [
+          "All data is accessible from all cluster nodes through a single centralized storage device",
           "Nodes do not share any hardware",
           "Storage and compute are located on separate machines that are networked together",
-          "Each node contains a subset of data locally, instead of nodes sharing one central data repository",
-          "All data is accessible from all cluster nodes through a single centralized storage device"
+          "Each node contains a subset of data locally, instead of nodes sharing one central data repository"
         ],
-        correct: [0, 2],
+        correct: [1, 3],
         explanation: "In shared nothing, nodes do not share any hardware, and each node contains a subset of data locally instead of sharing one central data repository. Storage and compute are co-located on each node (not on separate machines), and a single centralized storage device describes shared-disk, not shared nothing.",
         source: "Multi-cluster Shared Data Architecture lecture"
       },
@@ -1434,9 +1434,9 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following are disadvantages of the shared-disk architecture? (Select all that apply)",
         options: [
-          "A single point of failure for storage",
-          "Bandwidth or network latency limitations from multiple nodes communicating with one centralized storage device",
           "Limited scalability, since a relatively small number of queries can overwhelm the centralized storage device, causing resource contention",
+          "Bandwidth or network latency limitations from multiple nodes communicating with one centralized storage device",
+          "A single point of failure for storage",
           "A tendency toward over-provisioning of hardware"
         ],
         correct: [0, 1, 2],
@@ -1447,12 +1447,12 @@ const sectionsData = [
         type: "mcq",
         text: "What advantage does the shared-disk architecture have?",
         options: [
-          "It is relatively simple to manage and acts as a single source of truth",
-          "It is generally cheaper because it uses off-the-shelf commodity hardware",
           "It avoids all resource contention",
-          "It has no limit on scalability"
+          "It is relatively simple to manage and acts as a single source of truth",
+          "It has no limit on scalability",
+          "It is generally cheaper because it uses off-the-shelf commodity hardware"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "The shared-disk architecture is relatively simple to manage and acts as a single source of truth.",
         source: "Multi-cluster Shared Data Architecture lecture"
       },
@@ -1460,12 +1460,12 @@ const sectionsData = [
         type: "msq",
         text: "Which benefits come from co-locating compute and storage on each node in the shared nothing architecture? (Select all that apply)",
         options: [
-          "It avoids the bandwidth and network latency limitations of communicating with a centralized storage device",
           "It is generally cheaper, since each node can be made from off-the-shelf commodity hardware",
-          "It is simpler to scale by adding a network node to the cluster",
-          "It eliminates the need to ever redistribute data among nodes"
+          "It eliminates the need to ever redistribute data among nodes",
+          "It avoids the bandwidth and network latency limitations of communicating with a centralized storage device",
+          "It is simpler to scale by adding a network node to the cluster"
         ],
-        correct: [0, 1, 2],
+        correct: [0, 2, 3],
         explanation: "Co-locating compute and storage avoids the bandwidth and network latency limitations of communicating with a centralized storage device. Shared nothing is also generally cheaper, since each node can be made from off-the-shelf commodity hardware, and it's simpler to scale by adding a network node to the cluster. Redistributing data among nodes was actually difficult, so that option is incorrect.",
         source: "Multi-cluster Shared Data Architecture lecture"
       },
@@ -1473,13 +1473,13 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following were weaknesses of the shared nothing architecture? (Select all that apply)",
         options: [
-          "Shuffling data between nodes was expensive as the cluster scaled, and poorly distributed data caused poor performance",
-          "It was difficult to redistribute data among the nodes once it was ingested",
-          "Storage and compute were tightly coupled, so more compute meant paying for more storage",
+          "A single point of failure for storage",
           "A tendency toward over-provisioning of hardware, since compute resources could not easily be decreased when not needed",
-          "A single point of failure for storage"
+          "Storage and compute were tightly coupled, so more compute meant paying for more storage",
+          "Shuffling data between nodes was expensive as the cluster scaled, and poorly distributed data caused poor performance",
+          "It was difficult to redistribute data among the nodes once it was ingested"
         ],
-        correct: [0, 1, 2, 3],
+        correct: [1, 2, 3, 4],
         explanation: "Shared nothing's weaknesses include expensive data shuffling as the cluster scales, poor performance from poorly distributed data, difficulty redistributing data after ingestion, tightly coupled storage and compute, and a tendency toward over-provisioning since compute couldn't easily be scaled down. A single point of failure for storage is a shared-disk weakness, not shared nothing.",
         source: "Multi-cluster Shared Data Architecture lecture"
       },
@@ -1487,128 +1487,128 @@ const sectionsData = [
         type: "mcq",
         text: "What does Snowflake call the new architecture it built specifically for the cloud?",
         options: [
+          "The elastic compute architecture",
           "The multi-cluster shared data architecture",
-          "The shared nothing cloud architecture",
           "The distributed shared-disk architecture",
-          "The elastic compute architecture"
+          "The shared nothing cloud architecture"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Snowflake built a new architecture specifically for the cloud, called the multi-cluster shared data architecture.",
         source: "Multi-cluster Shared Data Architecture lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
       },
       {
         type: "mcq",
         text: "How many physically separated but logically integrated layers make up Snowflake's multi-cluster shared data architecture?",
         options: [
-          "Three main layers, plus a fourth cloud agnostic layer that will not feature on the exam",
           "Two layers: storage and compute",
+          "Five layers, including a dedicated networking layer",
           "Four layers, all of which are tested on the exam",
-          "Five layers, including a dedicated networking layer"
+          "Three main layers, plus a fourth cloud agnostic layer that will not feature on the exam"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "The architecture consists of three physically separated but logically integrated layers, plus a fourth cloud agnostic layer that won't feature on the exam.",
         source: "Multi-cluster Shared Data Architecture lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
       },
       {
         type: "mcq",
         text: "Which layer of Snowflake's architecture stores all table data organized into databases, and is described as conceptually similar to the shared-disk architecture?",
         options: [
-          "The centralized cloud storage layer",
           "The query processing layer",
-          "The cloud services layer",
-          "The cloud agnostic layer"
+          "The cloud agnostic layer",
+          "The centralized cloud storage layer",
+          "The cloud services layer"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "The centralized cloud storage layer stores all table data organized into databases, and is conceptually similar to the shared-disk architecture.",
         source: "Multi-cluster Shared Data Architecture lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
       },
       {
         type: "msq",
         text: "Which of the following describe the query processing layer and virtual warehouses? (Select all that apply)",
         options: [
-          "It is made up of separate compute clusters that Snowflake calls virtual warehouses",
-          "Users issue SQL commands to create virtual warehouses, which Snowflake then provisions and manages",
           "All virtual warehouses have consistent access to the centralized storage and can cache table data locally during query processing",
+          "It stores all table data organized into databases",
           "Each virtual warehouse works in a similar fashion to the shared-disk architecture",
-          "It stores all table data organized into databases"
+          "Users issue SQL commands to create virtual warehouses, which Snowflake then provisions and manages",
+          "It is made up of separate compute clusters that Snowflake calls virtual warehouses"
         ],
-        correct: [0, 1, 2],
+        correct: [0, 3, 4],
         explanation: "The query processing layer is made up of separate compute clusters called virtual warehouses. Users issue SQL commands to create them, and Snowflake provisions and manages them. All virtual warehouses have consistent access to centralized storage and can cache table data locally. Each cluster works in a similar fashion to the shared nothing architecture, not shared-disk, and storing table data in databases describes the storage layer, not this one.",
         source: "Multi-cluster Shared Data Architecture lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
       },
       {
         type: "msq",
         text: "Which responsibilities belong to the cloud services layer? (Select all that apply)",
         options: [
           "Handling authentication to Snowflake",
-          "Managing the cloud infrastructure",
           "Parsing and optimizing queries",
-          "Storing all table data organized into databases"
+          "Storing all table data organized into databases",
+          "Managing the cloud infrastructure"
         ],
-        correct: [0, 1, 2],
+        correct: [0, 1, 3],
         explanation: "The cloud services layer coordinates the whole system: handling authentication, managing cloud infrastructure, and parsing and optimizing queries, among other things. Storing table data describes the storage layer, not this one.",
         source: "Multi-cluster Shared Data Architecture lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
       },
       {
         type: "mcq",
         text: "What does it mean to describe Snowflake's architecture as 'service oriented'?",
         options: [
-          "Each layer under the hood is a separate physical service, or collection of services, that communicates over a network via RESTful interfaces",
           "Snowflake offers customer support services around the clock",
           "Each layer runs on the same physical machine to reduce network calls",
-          "Snowflake charges separately for each individual feature as a service"
+          "Snowflake charges separately for each individual feature as a service",
+          "Each layer under the hood is a separate physical service, or collection of services, that communicates over a network via RESTful interfaces"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Service oriented means each layer is a separate physical service, or collection of services, communicating over a network via RESTful interfaces. For example, the machines that compute query results are entirely separate from where long-term table data is kept.",
         source: "Multi-cluster Shared Data Architecture lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
       },
       {
         type: "msq",
         text: "Because storage, compute, and management services are decoupled in Snowflake's architecture, which capabilities does this allow? (Select all that apply)",
         options: [
-          "Storage, compute, and management services can be scaled independently of one another",
-          "There is no hard limit on how much each layer can scale, since data can be added to storage and compute can be scaled out near infinitely",
           "Multiple isolated compute clusters, or virtual warehouses, can be created for workload isolation",
-          "All compute nodes must always share the same physical storage device"
+          "All compute nodes must always share the same physical storage device",
+          "Storage, compute, and management services can be scaled independently of one another",
+          "There is no hard limit on how much each layer can scale, since data can be added to storage and compute can be scaled out near infinitely"
         ],
-        correct: [0, 1, 2],
+        correct: [0, 2, 3],
         explanation: "Decoupling means storage, compute, and management services can be scaled independently of one another, with no hard limit on how much each layer can scale. The multi-cluster aspect also allows creating as many isolated compute clusters (virtual warehouses) as desired, enabling workload isolation. Sharing a single physical storage device describes the older shared-disk model, not Snowflake's decoupled architecture.",
         source: "Multi-cluster Shared Data Architecture lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
       },
       {
         type: "mcq",
         text: "What is an example of workload isolation enabled by the multi-cluster aspect of Snowflake's architecture?",
         options: [
-          "Allowing analytics and pipeline jobs to not contend for resources by running on separate, isolated virtual warehouses",
           "Allowing all queries to run on a single shared virtual warehouse for consistency",
-          "Allowing storage costs to be isolated from compute costs on the invoice",
-          "Allowing different cloud providers to be used for the same virtual warehouse"
+          "Allowing analytics and pipeline jobs to not contend for resources by running on separate, isolated virtual warehouses",
+          "Allowing different cloud providers to be used for the same virtual warehouse",
+          "Allowing storage costs to be isolated from compute costs on the invoice"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Creating isolated compute clusters as separate virtual warehouses allows for workload isolation, for example, letting analytics and pipeline jobs avoid contending for resources.",
         source: "Multi-cluster Shared Data Architecture lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
       },
       {
         type: "mcq",
         text: "What is the purpose of the fourth layer, the cloud agnostic layer?",
         options: [
-          "It ensures that the three main layers perform identically on any of the cloud providers an account is deployed into",
+          "It provisions and manages virtual warehouses",
           "It stores all table data organized into databases",
-          "It handles authentication and query optimization",
-          "It provisions and manages virtual warehouses"
+          "It ensures that the three main layers perform identically on any of the cloud providers an account is deployed into",
+          "It handles authentication and query optimization"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "The cloud agnostic layer ensures the three main layers perform identically on any cloud provider an account is deployed into.",
         source: "Multi-cluster Shared Data Architecture lecture",
-        docLink: "https://docs.snowflake.com/en/user-guide/intro-cloud-platforms",
+        docLink: "https://docs.snowflake.com/en/user-guide/intro-cloud-platforms"
       },
       {
         type: "mcq",
@@ -1616,8 +1616,8 @@ const sectionsData = [
         options: [
           "No, the transcript explicitly says this layer will not feature on the exam, though it's good to know",
           "Yes, it is one of the most heavily tested layers",
-          "Only the naming of the layer is tested, not its function",
-          "The transcript does not mention the exam in relation to this layer"
+          "The transcript does not mention the exam in relation to this layer",
+          "Only the naming of the layer is tested, not its function"
         ],
         correct: [0],
         explanation: "The cloud agnostic layer won't feature on the exam, it's just good background knowledge.",
@@ -1635,12 +1635,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is the storage layer, at its core?",
         options: [
-          "The blob storage service of the cloud provider the Snowflake account is deployed into",
           "A dedicated physical data center owned and operated by Snowflake",
+          "A local disk cache on each virtual warehouse",
           "A separate database product bundled with Snowflake",
-          "A local disk cache on each virtual warehouse"
+          "The blob storage service of the cloud provider the Snowflake account is deployed into"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "The storage layer is the blob storage service of the cloud provider a Snowflake account is deployed into. For an account on AWS, this means the storage layer uses AWS's S3 service.",
         source: "Storage Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
@@ -1649,12 +1649,12 @@ const sectionsData = [
         type: "msq",
         text: "Which native cloud-provider capabilities does the storage layer inherit? (Select all that apply)",
         options: [
+          "Unlimited free storage",
           "Near-infinite scalability",
-          "Availability",
           "Durability guarantees",
-          "Unlimited free storage"
+          "Availability"
         ],
-        correct: [0, 1, 2],
+        correct: [1, 2, 3],
         explanation: "As users, Snowflake inherits the native ability of services like S3 to scale storage almost infinitely, along with the native availability and durability guarantees of the cloud provider's blob storage. Unlimited free storage is not mentioned.",
         source: "Storage Layer Overview lecture"
       },
@@ -1662,12 +1662,12 @@ const sectionsData = [
         type: "mcq",
         text: "How does S3 achieve high availability and durability for stored data?",
         options: [
-          "By replicating data across three different physically separated availability zones within an AWS region",
-          "By storing a single copy of data in one data center",
           "By backing up data once per week to tape storage",
+          "By storing a single copy of data in one data center",
+          "By replicating data across three different physically separated availability zones within an AWS region",
           "By relying entirely on the customer to manage redundancy"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "S3 is designed to be highly available and durable by replicating data across three different physically separated availability zones within an AWS region.",
         source: "Storage Layer Overview lecture"
       },
@@ -1675,12 +1675,12 @@ const sectionsData = [
         type: "mcq",
         text: "From a user's perspective, how is data loaded or inserted into Snowflake organized, and where is it stored?",
         options: [
-          "Organized into databases, schemas, and tables, with all table data stored in the centralized storage layer acting as a single source of truth",
-          "Organized into folders and files only, with no database structure",
           "Stored separately per virtual warehouse, with no central location",
+          "Organized into folders and files only, with no database structure",
+          "Organized into databases, schemas, and tables, with all table data stored in the centralized storage layer acting as a single source of truth",
           "Stored only in the cloud services layer"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Data loaded or inserted into Snowflake is organized into databases, schemas, and tables, and all that table data is stored in the centralized storage layer, acting as a single source of truth.",
         source: "Storage Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
@@ -1689,12 +1689,12 @@ const sectionsData = [
         type: "msq",
         text: "Which file formats does Snowflake natively support ingesting? (Select all that apply)",
         options: [
-          "Delimited files like CSV or TSV",
           "Semi-structured files like JSON, Avro, and Parquet",
+          "Encrypted ZIP archives only",
           "Proprietary binary formats from competing data warehouses",
-          "Encrypted ZIP archives only"
+          "Delimited files like CSV or TSV"
         ],
-        correct: [0, 1],
+        correct: [0, 3],
         explanation: "Snowflake has native support for ingesting structured and semi-structured file formats, such as delimited files like CSV or TSV, as well as semi-structured files like JSON, Avro, and Parquet.",
         source: "Storage Layer Overview lecture"
       },
@@ -1702,12 +1702,12 @@ const sectionsData = [
         type: "mcq",
         text: "What happens to a data file or SQL-inserted records when they are loaded into a Snowflake table?",
         options: [
-          "The data is reorganized into Snowflake's proprietary columnar file format, transparently to the user",
-          "The data is stored exactly as-is in its original row-oriented format",
+          "The data remains in the source file location and is only referenced, never copied",
           "The data is converted to XML before storage",
-          "The data remains in the source file location and is only referenced, never copied"
+          "The data is stored exactly as-is in its original row-oriented format",
+          "The data is reorganized into Snowflake's proprietary columnar file format, transparently to the user"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "When a data file is loaded, or records are inserted via SQL, the data is reorganized into Snowflake's proprietary columnar file format, completely transparently to the user, and stored in the scalable blob storage.",
         source: "Storage Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/tables-clustering-micropartitions"
@@ -1716,12 +1716,12 @@ const sectionsData = [
         type: "mcq",
         text: "Why is a columnar file format well suited to the OLAP-style queries run on Snowflake?",
         options: [
-          "It allows queries to skip past columns that aren't needed, reducing the amount of data that must be fetched (read optimization)",
           "It makes writing individual rows faster than any other format",
-          "It removes the need for compression entirely",
-          "It requires the schema to be defined at query time rather than load time"
+          "It allows queries to skip past columns that aren't needed, reducing the amount of data that must be fetched (read optimization)",
+          "It requires the schema to be defined at query time rather than load time",
+          "It removes the need for compression entirely"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Columnar formats store values from the same column physically next to each other, unlike a row-oriented file like CSV. This lets a query skip past columns not needed for that query, which is called read optimization, reducing the amount of data that needs to be fetched.",
         source: "Storage Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/tables-clustering-micropartitions"
@@ -1730,12 +1730,12 @@ const sectionsData = [
         type: "mcq",
         text: "Why does a columnar file format generally compress better than a row-oriented format?",
         options: [
-          "Because columns usually contain the same type of data, letting a compression algorithm work more efficiently",
-          "Because columnar formats don't actually get compressed",
           "Because compression only happens in row-oriented formats",
-          "Because columnar data is always stored uncompressed for faster access"
+          "Because columnar data is always stored uncompressed for faster access",
+          "Because columnar formats don't actually get compressed",
+          "Because columns usually contain the same type of data, letting a compression algorithm work more efficiently"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Compression is particularly good in a columnar file format, since columns usually contain the same type of data, allowing a compression algorithm to be more efficient.",
         source: "Storage Layer Overview lecture"
       },
@@ -1744,9 +1744,9 @@ const sectionsData = [
         text: "How are data files encrypted by default when stored in Snowflake?",
         options: [
           "Automatically, using AES-256 strong encryption",
-          "Only if the customer explicitly enables encryption",
           "Using a weaker encryption standard for performance reasons",
-          "Encryption is only applied to metadata, not the actual data files"
+          "Encryption is only applied to metadata, not the actual data files",
+          "Only if the customer explicitly enables encryption"
         ],
         correct: [0],
         explanation: "All data files are automatically encrypted by default using AES-256 strong encryption.",
@@ -1757,12 +1757,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is the purpose of dividing loaded data into micro-partitions?",
         options: [
-          "So Snowflake can optimize queries by ignoring partitions that aren't needed to compute the result",
-          "So each customer's data is physically isolated on separate hardware",
+          "So billing can be calculated per partition instead of per terabyte",
           "So data can be manually indexed by the user",
-          "So billing can be calculated per partition instead of per terabyte"
+          "So Snowflake can optimize queries by ignoring partitions that aren't needed to compute the result",
+          "So each customer's data is physically isolated on separate hardware"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Data loaded into Snowflake is divided into micro-partitions so Snowflake can optimize queries by ignoring partitions that aren't needed to compute the result of a query.",
         source: "Storage Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/tables-clustering-micropartitions"
@@ -1772,8 +1772,8 @@ const sectionsData = [
         text: "How is a Snowflake account billed for table data stored in the storage layer?",
         options: [
           "A flat rate per terabyte, calculated at the end of each month",
-          "A one-time fee at the time of data loading",
           "A per-query fee based on how much stored data each query scans",
+          "A one-time fee at the time of data loading",
           "Storage is included at no cost regardless of volume"
         ],
         correct: [0],
@@ -1785,12 +1785,12 @@ const sectionsData = [
         type: "mcq",
         text: "Who manages processes like encryption, compression, columnar storage, and micro-partitioning in Snowflake?",
         options: [
-          "These are entirely automated and managed by Snowflake",
           "The user must configure each of these manually before loading data",
           "A third-party partner manages these on Snowflake's behalf",
-          "Only Business Critical edition customers can access these features"
+          "Only Business Critical edition customers can access these features",
+          "These are entirely automated and managed by Snowflake"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "All of these processes, encryption, compression, columnar data storage, and micro-partitioning, are entirely automated and managed by Snowflake.",
         source: "Storage Layer Overview lecture"
       },
@@ -1798,12 +1798,12 @@ const sectionsData = [
         type: "mcq",
         text: "Can table data be accessed directly in the underlying blob storage?",
         options: [
-          "No, table data is only accessible via SQL",
+          "Only Business Critical edition allows direct blob storage access",
           "Yes, users can browse the raw files directly in S3, GCS, or Azure Storage",
-          "Yes, but only with a special export license",
-          "Only Business Critical edition allows direct blob storage access"
+          "No, table data is only accessible via SQL",
+          "Yes, but only with a special export license"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Table data is only accessible via SQL, not directly in the blob storage.",
         source: "Storage Layer Overview lecture"
       }
@@ -1819,12 +1819,12 @@ const sectionsData = [
         type: "mcq",
         text: "The query processing layer is also referred to by which other name?",
         options: [
-          "The compute layer",
-          "The application layer",
+          "The ingestion layer",
           "The presentation layer",
-          "The ingestion layer"
+          "The application layer",
+          "The compute layer"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "The query processing layer is also referred to as the compute layer, and performs the processing tasks on data gathered from the storage layer to answer user queries.",
         source: "Query Processing Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
@@ -1847,12 +1847,12 @@ const sectionsData = [
         type: "mcq",
         text: "For a trial account deployed into AWS, what would a virtual warehouse be composed of behind the scenes?",
         options: [
-          "EC2 instances arranged together as a distributed compute cluster",
           "AWS Lambda functions",
           "A single dedicated EC2 instance",
-          "An Amazon RDS database instance"
+          "An Amazon RDS database instance",
+          "EC2 instances arranged together as a distributed compute cluster"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "For an account deployed into AWS, a virtual warehouse would be composed of EC2 instances arranged together as a distributed compute cluster, running the software of the execution engine Snowflake designed for the cloud.",
         source: "Query Processing Layer Overview lecture"
       },
@@ -1860,12 +1860,12 @@ const sectionsData = [
         type: "mcq",
         text: "What does a virtual warehouse actually execute when a query is issued?",
         options: [
+          "Only DDL statements, never DML or SELECT statements",
           "The query plan generated by the services layer, carried out by Snowflake's cloud-native execution engine",
           "Raw SQL text without any prior parsing or planning",
-          "A cached copy of a previous, unrelated query",
-          "Only DDL statements, never DML or SELECT statements"
+          "A cached copy of a previous, unrelated query"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "The compute cluster runs the software of the execution engine Snowflake designed for the cloud, which carries out the actual computation task of the query plan generated by the services layer.",
         source: "Query Processing Layer Overview lecture"
       },
@@ -1874,9 +1874,9 @@ const sectionsData = [
         text: "As users of a SaaS platform, what level of access do we have to the underlying compute nodes of a virtual warehouse?",
         options: [
           "No direct access; we only interact with the abstracted warehouse object",
-          "Full root/administrator access to each compute node",
+          "Direct access, but only during business hours",
           "Read-only SSH access to the nodes",
-          "Direct access, but only during business hours"
+          "Full root/administrator access to each compute node"
         ],
         correct: [0],
         explanation: "Because Snowflake is a SaaS solution, users have no direct access to the underlying compute nodes; we only interact with the abstracted warehouse object.",
@@ -1887,9 +1887,9 @@ const sectionsData = [
         text: "How do the compute clusters that make up virtual warehouses cooperate under the hood?",
         options: [
           "In a very similar way to shared-nothing architectures",
-          "In a very similar way to shared-disk architectures",
+          "They cooperate using a single shared physical disk across all clusters",
           "Each node acts fully independently with no coordination",
-          "They cooperate using a single shared physical disk across all clusters"
+          "In a very similar way to shared-disk architectures"
         ],
         correct: [0],
         explanation: "Under the hood, these compute clusters cooperate in a very similar way to shared-nothing architectures.",
@@ -1899,12 +1899,12 @@ const sectionsData = [
         type: "mcq",
         text: "What happens when a virtual warehouse is issued a query for the first time, in terms of data retrieval and caching?",
         options: [
-          "It makes a remote call to the storage layer, and the retrieved raw table data is stored on a local high-speed cache for use in subsequent queries",
           "It permanently copies all table data into the warehouse's storage",
-          "It always re-reads all needed data from storage on every query, with no caching",
-          "It queries the cloud services layer directly for the raw table data"
+          "It queries the cloud services layer directly for the raw table data",
+          "It makes a remote call to the storage layer, and the retrieved raw table data is stored on a local high-speed cache for use in subsequent queries",
+          "It always re-reads all needed data from storage on every query, with no caching"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Virtual warehouses make a remote call to the storage layer when a query is issued, and the raw table data retrieved is stored in a local cache made up of high-speed storage, which is used to compute results of subsequent queries.",
         source: "Query Processing Layer Overview lecture"
       },
@@ -1912,12 +1912,12 @@ const sectionsData = [
         type: "msq",
         text: "Virtual warehouses are described as 'ephemeral and highly flexible.' Which of the following reflect that description? (Select all that apply)",
         options: [
-          "They can be created and dropped instantly by the user, just like a table or database",
           "Once created, they can be paused or resumed",
-          "They must run continuously for their entire lifetime and cannot be paused",
-          "Snowflake permanently reserves the underlying compute instances even when a warehouse is dropped"
+          "Snowflake permanently reserves the underlying compute instances even when a warehouse is dropped",
+          "They can be created and dropped instantly by the user, just like a table or database",
+          "They must run continuously for their entire lifetime and cannot be paused"
         ],
-        correct: [0, 1],
+        correct: [0, 2],
         explanation: "Ephemeral and flexible means virtual warehouse objects can be created and dropped instantly, just like a table or database, and once created, they can be paused or resumed.",
         source: "Query Processing Layer Overview lecture"
       },
@@ -1925,12 +1925,12 @@ const sectionsData = [
         type: "mcq",
         text: "Are you charged for compute while a virtual warehouse is in the paused state?",
         options: [
-          "No, you are not charged for compute while paused",
+          "Only Business Critical edition warehouses avoid charges while paused",
           "Yes, at the same rate as when running",
           "Yes, but at half the running rate",
-          "Only Business Critical edition warehouses avoid charges while paused"
+          "No, you are not charged for compute while paused"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "In the paused state, you're not charged for compute. This lets you match compute resources to when you actually need them, rather than provisioning for peak capacity.",
         source: "Query Processing Layer Overview lecture"
       },
@@ -1939,11 +1939,11 @@ const sectionsData = [
         text: "What advantages does the ability to create many virtual warehouses give you? (Select all that apply)",
         options: [
           "The ability to scale out compute to handle highly concurrent workloads",
+          "Automatic elimination of all query costs",
           "Isolation between warehouses, so there's no resource contention between them",
-          "A single shared configuration that applies identically to every warehouse",
-          "Automatic elimination of all query costs"
+          "A single shared configuration that applies identically to every warehouse"
         ],
-        correct: [0, 1],
+        correct: [0, 2],
         explanation: "Creating many virtual warehouses lets you scale out compute to handle highly concurrent workloads, and each warehouse is isolated from the others, so there's no resource contention, for example between a warehouse used for data loading and one used for data analysis.",
         source: "Query Processing Layer Overview lecture"
       },
@@ -1951,12 +1951,12 @@ const sectionsData = [
         type: "mcq",
         text: "What range of sizes can a virtual warehouse be configured with?",
         options: [
-          "From extra small up to six times extra large",
-          "From small to large only",
+          "From extra small up to double extra large only",
           "A single fixed size that cannot be changed",
-          "From extra small up to double extra large only"
+          "From small to large only",
+          "From extra small up to six times extra large"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Virtual warehouses come in many sizes indicating their relative compute power, ranging from extra small to six times extra large (X6Large).",
         source: "Query Processing Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/warehouses-overview"
@@ -1965,12 +1965,12 @@ const sectionsData = [
         type: "mcq",
         text: "What does a virtual warehouse's size determine?",
         options: [
-          "The number of cloud compute instances provisioned and the capability of their hardware",
-          "Only the storage capacity available to that warehouse",
           "The number of databases that warehouse can access",
-          "The billing edition of the Snowflake account"
+          "The billing edition of the Snowflake account",
+          "Only the storage capacity available to that warehouse",
+          "The number of cloud compute instances provisioned and the capability of their hardware"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Size relates to the number of cloud compute instances Snowflake provisions to make up a virtual warehouse, and the capability of the hardware of those compute instances.",
         source: "Query Processing Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/warehouses-overview"
@@ -1979,12 +1979,12 @@ const sectionsData = [
         type: "mcq",
         text: "Do all running virtual warehouses have access to the same data in the storage layer, regardless of size or how many warehouses exist?",
         options: [
-          "Yes, all running virtual warehouses have access to the same data in the storage layer",
-          "No, each warehouse only sees the data it has personally loaded",
           "Only warehouses of the same size can access the same data",
+          "No, each warehouse only sees the data it has personally loaded",
+          "Yes, all running virtual warehouses have access to the same data in the storage layer",
           "Only one warehouse at a time can access the storage layer"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "All running virtual warehouses have access to the same data in the storage layer, regardless of how much data is stored there or the total number of virtual warehouses.",
         source: "Query Processing Layer Overview lecture"
       },
@@ -1993,8 +1993,8 @@ const sectionsData = [
         text: "How does Snowflake ensure that updates and inserts are immediately available to all virtual warehouses, rather than behaving as an eventually consistent system?",
         options: [
           "By using strict ACID-compliant processing",
-          "By locking the entire account during any write operation",
           "By only allowing one virtual warehouse to exist per account",
+          "By locking the entire account during any write operation",
           "By replicating changes once per hour on a fixed schedule"
         ],
         correct: [0],
@@ -2005,12 +2005,12 @@ const sectionsData = [
         type: "mcq",
         text: "Which service is primarily responsible for synchronizing data access across virtual warehouses to maintain this consistency?",
         options: [
-          "The transaction manager, a service in the global services layer",
-          "Each individual virtual warehouse manages this independently",
+          "The Snowsight UI",
           "The billing service",
-          "The Snowsight UI"
+          "The transaction manager, a service in the global services layer",
+          "Each individual virtual warehouse manages this independently"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "This is primarily achieved by a service in the global services layer called the transaction manager, which synchronizes data access.",
         source: "Query Processing Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
@@ -2027,12 +2027,12 @@ const sectionsData = [
         type: "mcq",
         text: "By what other name is the services layer sometimes known?",
         options: [
-          "The global services layer",
-          "The application layer",
           "The presentation layer",
-          "The ingestion layer"
+          "The global services layer",
+          "The ingestion layer",
+          "The application layer"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "The services layer is sometimes referred to as the global services layer, since it coordinates activities across all Snowflake accounts, not just a single account.",
         source: "Services Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
@@ -2041,12 +2041,12 @@ const sectionsData = [
         type: "mcq",
         text: "How is the services layer described at a high level?",
         options: [
-          "A collection of highly available and scalable services that coordinates activities across all Snowflake accounts to process user requests",
-          "A single physical server dedicated to each customer account",
           "An optional add-on that customers must separately provision",
-          "A client-side application installed on the user's machine"
+          "A client-side application installed on the user's machine",
+          "A single physical server dedicated to each customer account",
+          "A collection of highly available and scalable services that coordinates activities across all Snowflake accounts to process user requests"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "The services layer is a collection of highly available and scalable services that coordinates activities across all Snowflake accounts in order to process user requests, such as authentication or query optimization.",
         source: "Services Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
@@ -2057,8 +2057,8 @@ const sectionsData = [
         options: [
           "It allows Snowflake to achieve certain economies of scale",
           "It makes implementation of features like secure data sharing much simpler",
-          "It gives each customer their own dedicated physical services layer",
-          "It removes the need for authentication entirely"
+          "It removes the need for authentication entirely",
+          "It gives each customer their own dedicated physical services layer"
         ],
         correct: [0, 1],
         explanation: "Having a global multi-tenancy model, instead of an account-specific version of every service, allows Snowflake to achieve certain economies of scale, and also makes implementation of features like secure data sharing much simpler to achieve.",
@@ -2068,12 +2068,12 @@ const sectionsData = [
         type: "mcq",
         text: "As users, what visibility or control do we have into how the services layer's underlying compute instances are created or work?",
         options: [
-          "None, we have no control or visibility into their creation or how they work",
+          "Control only over the cloud provider hosting them",
           "Full visibility, but no control",
           "Full control via the Admin section of Snowsight",
-          "Control only over the cloud provider hosting them"
+          "None, we have no control or visibility into their creation or how they work"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "The services run on cloud-based compute instances, much like virtual warehouses, but users have no control or visibility into their creation or how they work.",
         source: "Services Layer Overview lecture"
       },
@@ -2081,12 +2081,12 @@ const sectionsData = [
         type: "mcq",
         text: "What does the authentication and access control service in the services layer handle?",
         options: [
-          "Proving who you are and confirming valid login credentials, as well as what privileges you have once logged in",
+          "Only compiling SQL queries into execution plans",
           "Only encrypting data at rest",
           "Only managing billing for compute usage",
-          "Only compiling SQL queries into execution plans"
+          "Proving who you are and confirming valid login credentials, as well as what privileges you have once logged in"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Authentication and access control is about proving who you are and whether you have valid login credentials, and also determines what level of privileges you have to perform actions, like reading from specific tables, once logged in.",
         source: "Services Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/security-access-control-overview"
@@ -2095,12 +2095,12 @@ const sectionsData = [
         type: "mcq",
         text: "What does the infrastructure management service in the services layer handle?",
         options: [
-          "The creation and management of the underlying cloud resources, such as blob storage and compute instances, required for the storage and query processing layers",
-          "Only user password resets",
+          "Only third-party connector installations",
           "Only the Snowsight UI's visual theme",
-          "Only third-party connector installations"
+          "Only user password resets",
+          "The creation and management of the underlying cloud resources, such as blob storage and compute instances, required for the storage and query processing layers"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Infrastructure management handles the creation and management of the underlying cloud resources, such as the blob storage and compute instances required for the storage and query processing layers.",
         source: "Services Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-cloud-platforms"
@@ -2109,12 +2109,12 @@ const sectionsData = [
         type: "mcq",
         text: "What does the transaction management service ensure, given that Snowflake is an ACID-compliant data warehouse?",
         options: [
-          "That data is consistently accessible by all virtual warehouses",
-          "That every query runs on exactly one virtual warehouse forever",
+          "That users cannot run more than one query at a time",
           "That storage costs are billed per transaction",
-          "That users cannot run more than one query at a time"
+          "That every query runs on exactly one virtual warehouse forever",
+          "That data is consistently accessible by all virtual warehouses"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Snowflake is an ACID-compliant data warehouse, which uses transactions to ensure, among other things, that data is consistently accessible by all virtual warehouses. Transaction management is the service that manages this.",
         source: "Services Layer Overview lecture"
       },
@@ -2123,9 +2123,9 @@ const sectionsData = [
         text: "What does the metadata management service keep track of, and where is that information stored?",
         options: [
           "Information and statistics on objects and the data they manage, stored in a scalable transactional key-value store also called the metadata cache",
+          "Only the account's cloud provider region, stored in DNS records",
           "Only user login timestamps, stored in a plain text log file",
-          "Only billing invoices, stored in a relational table",
-          "Only the account's cloud provider region, stored in DNS records"
+          "Only billing invoices, stored in a relational table"
         ],
         correct: [0],
         explanation: "The metadata management service keeps information and statistics on objects and the data they manage. This metadata is stored in a scalable transactional key-value store, also referred to as the metadata cache.",
@@ -2136,12 +2136,12 @@ const sectionsData = [
         type: "mcq",
         text: "What does the query parsing and optimization service do?",
         options: [
-          "Takes the submitted SQL query and turns it into an actionable plan the virtual warehouse can execute",
-          "Only formats SQL text for readability, without changing execution behavior",
           "Only caches previously returned query results",
-          "Only validates user permissions before login"
+          "Only validates user permissions before login",
+          "Takes the submitted SQL query and turns it into an actionable plan the virtual warehouse can execute",
+          "Only formats SQL text for readability, without changing execution behavior"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Query parsing and optimization takes the SQL query submitted by the user and turns it into an actionable plan that the virtual warehouse can execute.",
         source: "Services Layer Overview lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
@@ -2152,8 +2152,8 @@ const sectionsData = [
         options: [
           "Things like data encryption and key rotation",
           "Only physical building security at Snowflake's offices",
-          "Only two-factor authentication for the Snowflake mobile app",
-          "Only firewall rules for customer on-premises networks"
+          "Only firewall rules for customer on-premises networks",
+          "Only two-factor authentication for the Snowflake mobile app"
         ],
         correct: [0],
         explanation: "Security is a broad category of services in the services layer that handles things like data encryption and key rotation.",
@@ -2173,9 +2173,9 @@ const sectionsData = [
         text: "What are the four Snowflake account editions?",
         options: [
           "Standard, Enterprise, Business Critical, and Virtual Private Snowflake",
-          "Basic, Pro, Premium, and Enterprise",
+          "Trial, Standard, Enterprise, and Government",
           "Free, Standard, Enterprise, and Ultimate",
-          "Trial, Standard, Enterprise, and Government"
+          "Basic, Pro, Premium, and Enterprise"
         ],
         correct: [0],
         explanation: "A Snowflake account can be created as one of four editions: Standard, Enterprise, Business Critical, and Virtual Private Snowflake.",
@@ -2186,12 +2186,12 @@ const sectionsData = [
         type: "mcq",
         text: "What does the Snowflake edition primarily affect?",
         options: [
-          "The amount charged for compute and data storage, since the dollar value per compute credit increases with higher editions",
-          "Only the number of users allowed on the account",
+          "Only the maximum number of databases allowed",
           "Only which programming languages can be used with Snowpark",
-          "Only the maximum number of databases allowed"
+          "The amount charged for compute and data storage, since the dollar value per compute credit increases with higher editions",
+          "Only the number of users allowed on the account"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "The Snowflake edition affects the amount charged for compute and data storage, with the dollar value per Snowflake compute credit increasing as you go up the editions.",
         source: "Snowflake Editions lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-editions"
@@ -2200,12 +2200,12 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following are included with the Standard edition? (Select all that apply)",
         options: [
-          "Basic ANSI Standard SQL features, including most DDL and DML statements",
-          "Advanced DML statements such as multi-table insert, merge, and window functions",
+          "Multi-cluster warehouses",
           "Snowflake's Continuous Data Protection suite, including time travel and network policies",
-          "Multi-cluster warehouses"
+          "Advanced DML statements such as multi-table insert, merge, and window functions",
+          "Basic ANSI Standard SQL features, including most DDL and DML statements"
         ],
-        correct: [0, 1, 2],
+        correct: [1, 2, 3],
         explanation: "Standard edition includes basic ANSI Standard SQL features (most DDL and DML statements), advanced DML statements like multi-table insert, merge, and window functions, and Snowflake's Continuous Data Protection suite, which includes time travel and network policies. Multi-cluster warehouses are an Enterprise edition feature.",
         source: "Snowflake Editions lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-editions"
@@ -2214,12 +2214,12 @@ const sectionsData = [
         type: "msq",
         text: "What does the Enterprise edition add on top of Standard edition? (Select all that apply)",
         options: [
-          "Multi-cluster warehouses",
-          "An increased period of time you can go back and recover data",
+          "A completely separate, walled-off environment from all other accounts",
           "Private connectivity to the account",
-          "A completely separate, walled-off environment from all other accounts"
+          "Multi-cluster warehouses",
+          "An increased period of time you can go back and recover data"
         ],
-        correct: [0, 1],
+        correct: [2, 3],
         explanation: "Enterprise edition includes all Standard edition features plus additional features for large-scale enterprises, including multi-cluster warehouses and an increased time travel period for data recovery. Private connectivity is a Business Critical feature, and a fully walled-off environment describes VPS.",
         source: "Snowflake Editions lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/warehouses-overview"
@@ -2228,12 +2228,12 @@ const sectionsData = [
         type: "msq",
         text: "Which capabilities does the Business Critical edition offer? (Select all that apply)",
         options: [
-          "Higher levels of data protection and enhanced security for organizations with sensitive data, such as healthcare or banking",
+          "A completely separate environment walled off from all other Snowflake accounts",
           "Private connectivity to the Snowflake account",
-          "The ability to use a customer-managed key to encrypt data residing in Snowflake",
-          "A completely separate environment walled off from all other Snowflake accounts"
+          "Higher levels of data protection and enhanced security for organizations with sensitive data, such as healthcare or banking",
+          "The ability to use a customer-managed key to encrypt data residing in Snowflake"
         ],
-        correct: [0, 1, 2],
+        correct: [1, 2, 3],
         explanation: "Business Critical edition offers higher levels of data protection and enhanced security for organizations with sensitive data (like healthcare or banking), and includes private connectivity and the ability to use a customer-managed key for encryption. It also includes all Enterprise and Standard features. A completely walled-off environment is specific to VPS.",
         source: "Snowflake Editions lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-editions"
@@ -2242,12 +2242,12 @@ const sectionsData = [
         type: "mcq",
         text: "What distinguishes Virtual Private Snowflake (VPS) from the other editions?",
         options: [
-          "It includes all Business Critical features and below, but runs in a completely separate environment walled off from all other Snowflake accounts, so shared services like the metadata store are not shared",
           "It is a free tier meant for evaluation only",
-          "It removes access to SQL entirely in favor of a GUI-only interface",
-          "It is only available on Google Cloud Platform"
+          "It includes all Business Critical features and below, but runs in a completely separate environment walled off from all other Snowflake accounts, so shared services like the metadata store are not shared",
+          "It is only available on Google Cloud Platform",
+          "It removes access to SQL entirely in favor of a GUI-only interface"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "VPS offers the highest level of security for organizations with strict data protection requirements, such as governmental bodies and financial institutions. It includes all Business Critical features and below, but in a completely separate environment walled off from all other Snowflake accounts, meaning services like the metadata store are not shared as they normally would be.",
         source: "Snowflake Editions lecture",
         docLink: "https://docs.snowflake.com/en/collaboration/virtual-private-snowflake/about-vps-collaboration"
@@ -2264,12 +2264,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is an object in Snowflake?",
         options: [
-          "Something you can interact with and issue commands against, such as CREATE TABLE or DROP STREAM",
-          "Only a synonym for a database",
+          "A term reserved exclusively for user accounts",
           "Only something that stores raw file data",
-          "A term reserved exclusively for user accounts"
+          "Only a synonym for a database",
+          "Something you can interact with and issue commands against, such as CREATE TABLE or DROP STREAM"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "An object in Snowflake is simply something you can interact with, something you can issue commands against, such as CREATE TABLE or DROP STREAM.",
         source: "Snowflake Object Model lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
@@ -2278,12 +2278,12 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following are examples of Snowflake objects? (Select all that apply)",
         options: [
+          "A cloud provider's data center",
           "Databases, schemas, and tables",
-          "Streams, stages, and pipes",
           "An account object",
-          "A cloud provider's data center"
+          "Streams, stages, and pipes"
         ],
-        correct: [0, 1, 2],
+        correct: [1, 2, 3],
         explanation: "The lecture points to classic objects like databases, schemas, and tables, Snowflake-specific objects like streams, stages, and pipes, and even an account object used to manage account properties. A cloud provider's data center is infrastructure, not a Snowflake object.",
         source: "Snowflake Object Model lecture"
       },
@@ -2291,12 +2291,12 @@ const sectionsData = [
         type: "mcq",
         text: "What does it mean that every object in Snowflake is securable?",
         options: [
-          "Privileges on objects, such as the ability to read a table, can be granted to roles, which are then granted to users, determining what a user can see and do",
-          "Every object requires a separate password to access",
           "Objects can only be accessed from a single IP address",
-          "Objects are automatically encrypted with a unique key per user"
+          "Objects are automatically encrypted with a unique key per user",
+          "Every object requires a separate password to access",
+          "Privileges on objects, such as the ability to read a table, can be granted to roles, which are then granted to users, determining what a user can see and do"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Every object in Snowflake is securable, meaning privileges on objects, such as the ability to read a table, can be granted to roles. Roles are then granted to users, which determines what a user can see and do in Snowflake.",
         source: "Snowflake Object Model lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/security-access-control-overview"
@@ -2305,12 +2305,12 @@ const sectionsData = [
         type: "mcq",
         text: "How is the relationship structure of Snowflake's object hierarchy described?",
         options: [
-          "Objects fit into a hierarchy with one-to-many relationships",
-          "All objects exist independently with no hierarchy at all",
           "Objects form a strict one-to-one relationship at every level",
-          "Only tables participate in any hierarchy; all other objects are standalone"
+          "Only tables participate in any hierarchy; all other objects are standalone",
+          "All objects exist independently with no hierarchy at all",
+          "Objects fit into a hierarchy with one-to-many relationships"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Snowflake objects fit into a hierarchy with one-to-many relationships, for example one account can have many databases, and one database can have many schemas.",
         source: "Snowflake Object Model lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-key-concepts"
@@ -2320,9 +2320,9 @@ const sectionsData = [
         text: "How is an organization described?",
         options: [
           "A special type of administrative Snowflake account where a business entity can manage one or more standard Snowflake accounts it owns",
+          "A role that grants access to a single table",
           "A synonym for a database within an account",
-          "A billing-only construct with no ability to manage accounts",
-          "A role that grants access to a single table"
+          "A billing-only construct with no ability to manage accounts"
         ],
         correct: [0],
         explanation: "An organization is described as more of a special type of administrative Snowflake account, where a business entity can manage one or more standard Snowflake accounts they own.",
@@ -2333,12 +2333,12 @@ const sectionsData = [
         type: "mcq",
         text: "How is a standard account described?",
         options: [
-          "A private collection of services Snowflake ringfences for personal use, accessible via a unique URL",
+          "A free trial-only construct that disappears after 30 days regardless of edition",
           "A shared, multi-tenant workspace with no isolation between customers",
           "A synonym for a virtual warehouse",
-          "A free trial-only construct that disappears after 30 days regardless of edition"
+          "A private collection of services Snowflake ringfences for personal use, accessible via a unique URL"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "A standard account is a private collection of services Snowflake ringfences for personal use, accessible via a unique URL made up of an organization identifier and an account identifier.",
         source: "Snowflake Object Model lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/admin-account-identifier"
@@ -2347,12 +2347,12 @@ const sectionsData = [
         type: "mcq",
         text: "Do all newly created Snowflake accounts exist within an organization, and is using organization-level features required?",
         options: [
-          "Yes, all newly created accounts exist within an organization, but using organization features is optional",
-          "No, accounts only join an organization if the customer explicitly requests it",
           "Yes, and organization features are mandatory for every account",
-          "Organizations only exist for Business Critical edition and above"
+          "Organizations only exist for Business Critical edition and above",
+          "Yes, all newly created accounts exist within an organization, but using organization features is optional",
+          "No, accounts only join an organization if the customer explicitly requests it"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "All newly created accounts exist within an organization, but using the organization features is optional, since you might only need to use one account.",
         source: "Snowflake Object Model lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/organizations"
@@ -2361,12 +2361,12 @@ const sectionsData = [
         type: "mcq",
         text: "What are account-level objects typically used for?",
         options: [
-          "Configuring different parts of the account, such as which users exist and how many virtual warehouses there are, rather than holding data",
-          "Storing the actual table data for the account",
           "Only tracking billing invoices",
-          "Only managing the account's cloud provider region"
+          "Storing the actual table data for the account",
+          "Only managing the account's cloud provider region",
+          "Configuring different parts of the account, such as which users exist and how many virtual warehouses there are, rather than holding data"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Account-level objects typically don't hold data, but are used to configure different parts of the account, such as which users exist and how many virtual warehouses are available.",
         source: "Snowflake Object Model lecture"
       },
@@ -2375,9 +2375,9 @@ const sectionsData = [
         text: "What is the first main way data is organized within a Snowflake account?",
         options: [
           "Databases, with one account able to have many databases",
-          "Roles, with one account able to have many roles",
+          "Stages, with one account able to have many stages",
           "Virtual warehouses, with one account able to have many warehouses",
-          "Stages, with one account able to have many stages"
+          "Roles, with one account able to have many roles"
         ],
         correct: [0],
         explanation: "Databases form the first main way data stored in Snowflake can be organized. One account can have many databases, split for example by business, technical, security, or regulatory reasons, or by environment such as development or production.",
@@ -2387,12 +2387,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is a schema, and what is its relationship to a database?",
         options: [
-          "A logical container or namespace within a database that organizes related tables, views, and other objects; one schema belongs to one database",
+          "A container that can span and be shared across multiple databases",
           "A physical storage location entirely separate from any database",
           "A synonym for an account object",
-          "A container that can span and be shared across multiple databases"
+          "A logical container or namespace within a database that organizes related tables, views, and other objects; one schema belongs to one database"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Schemas are logical containers or namespaces within a database that allow organizing related tables, views, and other database objects. One schema belongs to one database.",
         source: "Snowflake Object Model lecture"
       },
@@ -2401,8 +2401,8 @@ const sectionsData = [
         text: "Which database object is arguably the most important?",
         options: [
           "The table, since it's the logical representation of stored data that you primarily interact with",
-          "The stage, since it's used for all data loading",
           "The sequence, since it generates unique identifiers",
+          "The stage, since it's used for all data loading",
           "The pipe, since it automates ingestion"
         ],
         correct: [0],
@@ -2421,12 +2421,12 @@ const sectionsData = [
         type: "mcq",
         text: "With how many cloud providers is a single Snowflake account associated?",
         options: [
-          "A single cloud provider, AWS, GCP, or Azure",
           "All three cloud providers simultaneously",
           "Exactly two cloud providers for redundancy",
+          "A single cloud provider, AWS, GCP, or Azure",
           "No specific cloud provider; it's chosen dynamically per query"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Each account is associated with a single cloud provider, Amazon Web Services, Google Cloud Platform, or Microsoft Azure, meaning the underlying compute, storage, and services layer resources come from that provider.",
         source: "Organizations, Accounts, Databases & Schemas lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-cloud-platforms"
@@ -2435,13 +2435,13 @@ const sectionsData = [
         type: "msq",
         text: "What does the geographic region a Snowflake account is provisioned in affect? (Select all that apply)",
         options: [
+          "The Snowflake edition the account must use",
           "The price of compute and storage",
-          "Which regulatory certifications can be achieved",
           "Which Snowflake features are accessible, though these are similar between regions",
-          "Network latency experienced when connecting from a different region",
-          "The Snowflake edition the account must use"
+          "Which regulatory certifications can be achieved",
+          "Network latency experienced when connecting from a different region"
         ],
-        correct: [0, 1, 2, 3],
+        correct: [1, 2, 3, 4],
         explanation: "The region affects the price of compute and storage, which regulatory certifications can be achieved, which features are accessible (though similar across regions), and the network latency experienced if connecting from a different region. It does not dictate which edition must be used.",
         source: "Organizations, Accounts, Databases & Schemas lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/intro-cloud-platforms"
@@ -2450,12 +2450,12 @@ const sectionsData = [
         type: "mcq",
         text: "Can a Snowflake account's edition be changed after it's first created?",
         options: [
-          "Yes, each account is created as a single edition, but it can be changed later",
-          "No, the edition is permanent for the lifetime of the account",
           "Only by deleting and recreating the account entirely",
-          "Only during the first 24 hours after account creation"
+          "No, the edition is permanent for the lifetime of the account",
+          "Only during the first 24 hours after account creation",
+          "Yes, each account is created as a single edition, but it can be changed later"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Each account is created as a single Snowflake edition, but it can be changed later on.",
         source: "Organizations, Accounts, Databases & Schemas lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/organizations-manage-accounts-editions"
@@ -2464,12 +2464,12 @@ const sectionsData = [
         type: "mcq",
         text: "What happens automatically when you create a standard account via self-service, like a trial account?",
         options: [
-          "Snowflake automatically generates an organization, a metadata container to manage one or more accounts",
-          "Snowflake requires you to manually create an organization first",
           "No organization is created unless you explicitly request one from Snowflake support",
-          "An organization is only created once you add a second account"
+          "An organization is only created once you add a second account",
+          "Snowflake requires you to manually create an organization first",
+          "Snowflake automatically generates an organization, a metadata container to manage one or more accounts"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "When creating a standard account via self-service, Snowflake also automatically generates an organization, essentially a metadata container to manage one or more accounts.",
         source: "Organizations, Accounts, Databases & Schemas lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/organizations"
@@ -2478,12 +2478,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is the difference between a single-account organization and a multiple-account organization?",
         options: [
+          "There is no functional difference between the two",
           "A single-account organization has just one standard account, while a multiple-account organization has many, often for different departments, projects, or locations",
           "A single-account organization can only use the Standard edition",
-          "A multiple-account organization requires a separate Snowflake contract for each account",
-          "There is no functional difference between the two"
+          "A multiple-account organization requires a separate Snowflake contract for each account"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "A single-account organization has just one standard account, like a trial account or what a small to medium company might use. A multiple-account organization is when a bigger entity creates many standard accounts, perhaps for different departments, projects, or locations.",
         source: "Organizations, Accounts, Databases & Schemas lecture"
       },
@@ -2492,8 +2492,8 @@ const sectionsData = [
         text: "Which system-defined role, present on newly provisioned standard accounts, provides the permissions needed to create an organization account?",
         options: [
           "ORGADMIN",
-          "ACCOUNTADMIN",
           "SYSADMIN",
+          "ACCOUNTADMIN",
           "SECURITYADMIN"
         ],
         correct: [0],
@@ -2504,12 +2504,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is an organization account?",
         options: [
-          "A special type of account, with a different URL, used to manage the lifecycle of standard Snowflake accounts, including creating, renaming, deleting, and viewing them",
-          "A regular standard account with no special permissions",
+          "A read-only account used purely for auditing",
           "An account type only available on the VPS edition",
-          "A read-only account used purely for auditing"
+          "A special type of account, with a different URL, used to manage the lifecycle of standard Snowflake accounts, including creating, renaming, deleting, and viewing them",
+          "A regular standard account with no special permissions"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "An organization account is a special type of account with a different URL, used to manage standard Snowflake accounts, including creating more of them, renaming, deleting, and viewing them with the SHOW ACCOUNTS command.",
         source: "Organizations, Accounts, Databases & Schemas lecture",
         docLink: "https://docs.snowflake.com/en/sql-reference/sql/show-organization-accounts"
@@ -2518,12 +2518,12 @@ const sectionsData = [
         type: "msq",
         text: "Once inside an organization account, which of the following can be set up and administered? (Select all that apply)",
         options: [
-          "Snowflake features that use multiple accounts within an organization, such as database replication and failover",
           "Monitoring usage and billing across multiple accounts by querying organization usage views",
-          "Creating and managing the lifecycle of standard accounts in the organization",
-          "Directly editing the data inside another account's tables without any role or privilege check"
+          "Directly editing the data inside another account's tables without any role or privilege check",
+          "Snowflake features that use multiple accounts within an organization, such as database replication and failover",
+          "Creating and managing the lifecycle of standard accounts in the organization"
         ],
-        correct: [0, 1, 2],
+        correct: [0, 2, 3],
         explanation: "From the organization account, you can set up features that span multiple accounts, like database replication and failover, monitor usage and billing across accounts via organization usage views, and manage the full lifecycle of accounts in the organization. Normal privilege and role checks still apply; there's no bypass for editing another account's data directly.",
         source: "Organizations, Accounts, Databases & Schemas lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/replication-intro"
@@ -2532,12 +2532,12 @@ const sectionsData = [
         type: "mcq",
         text: "What are the two components that make up an account's URL?",
         options: [
-          "The organization name and the account name",
           "The cloud provider name and the region name",
           "The username and the password",
-          "The edition name and the role name"
+          "The edition name and the role name",
+          "The organization name and the account name"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "The account URL primarily consists of two components: first the organization name, identifying the Snowflake organization, and second the account name, identifying the specific account within that organization.",
         source: "Organizations, Accounts, Databases & Schemas lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/admin-account-identifier"
@@ -2546,12 +2546,12 @@ const sectionsData = [
         type: "mcq",
         text: "When creating an account via the self-service signup form, how are the organization and account names generated?",
         options: [
-          "Snowflake automatically generates a seven-character alphanumeric string for each name",
-          "The user must choose both names before the account can be created",
           "Names are generated from the user's email address",
+          "The user must choose both names before the account can be created",
+          "Snowflake automatically generates a seven-character alphanumeric string for each name",
           "Names default to 'org1' and 'account1' until manually changed"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "When creating an account via the self-service form, Snowflake automatically generates a seven-character alphanumeric string for each of the organization and account names. If provisioned through Snowflake support, you can request specific meaningful names instead.",
         source: "Organizations, Accounts, Databases & Schemas lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/admin-account-identifier"
@@ -2560,12 +2560,12 @@ const sectionsData = [
         type: "mcq",
         text: "For non-UI tools like SnowSQL, Python connectors, or third-party applications, what is the 'account identifier' referring to?",
         options: [
-          "The combination of the organization name and account name, separated by a dash",
           "Only the account name, with the organization name omitted entirely",
-          "A separate numeric ID unrelated to the organization or account name",
-          "The cloud provider's internal resource ID"
+          "The cloud provider's internal resource ID",
+          "The combination of the organization name and account name, separated by a dash",
+          "A separate numeric ID unrelated to the organization or account name"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "For non-UI tools, configuration guides ask for the account or account name, but actually mean the combination of the organization name and account name, separated by a dash. This combination is called the account identifier.",
         source: "Organizations, Accounts, Databases & Schemas lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/admin-account-identifier"
@@ -2574,10 +2574,10 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following are naming rules for both databases and schemas? (Select all that apply)",
         options: [
-          "The name must be unique within its parent (database name unique in the account; schema name unique in the database)",
           "The identifier must start with an alphabetic character",
           "It cannot contain spaces or special characters unless the entire identifier is enclosed in double quotes",
           "Identifiers enclosed in double quotes are case sensitive; those without are not",
+          "The name must be unique within its parent (database name unique in the account; schema name unique in the database)",
           "Names must always be entirely lowercase, even when double-quoted"
         ],
         correct: [0, 1, 2, 3],
@@ -2589,12 +2589,12 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following are valid ways to create a new database? (Select all that apply)",
         options: [
+          "Importing it directly from a competitor's data warehouse export file",
           "Cloning another database in the same account",
           "Replicating a database and its child objects to another account",
-          "Creating it from a share object provided by another Snowflake account",
-          "Importing it directly from a competitor's data warehouse export file"
+          "Creating it from a share object provided by another Snowflake account"
         ],
-        correct: [0, 1, 2],
+        correct: [1, 2, 3],
         explanation: "Databases can be created from a clone of another database in the same account, replicated (along with child objects) to another account, or created from a share object provided by another Snowflake account. Direct import from another vendor's export format isn't one of the methods described.",
         source: "Organizations, Accounts, Databases & Schemas lecture"
       },
@@ -2602,12 +2602,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is formed by combining the database name and the schema name together?",
         options: [
-          "A namespace, which can be prepended to a table name or set as the session context using USE DATABASE and USE SCHEMA",
-          "A new account identifier",
           "A virtual warehouse name",
+          "A new account identifier",
+          "A namespace, which can be prepended to a table name or set as the session context using USE DATABASE and USE SCHEMA",
           "A role name"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "The database name and schema name together form a namespace. You can prepend this namespace to a table name to reference it globally, or set it as the session context using the USE DATABASE and USE SCHEMA commands, after which you don't need to qualify table names.",
         source: "Organizations, Accounts, Databases & Schemas lecture",
         docLink: "https://docs.snowflake.com/en/sql-reference/sql/use-database"
@@ -2624,12 +2624,12 @@ const sectionsData = [
         type: "mcq",
         text: "What are the four basic table types in Snowflake?",
         options: [
+          "Managed, unmanaged, hybrid, and iceberg",
           "Permanent, temporary, transient, and external",
           "Standard, materialized, secure, and dynamic",
-          "Primary, replica, staging, and archive",
-          "Managed, unmanaged, hybrid, and iceberg"
+          "Primary, replica, staging, and archive"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "The four basic table types are permanent, temporary, transient, and external. Each has different requirements around data retention.",
         source: "Table Types lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/tables-temp-transient"
@@ -2638,12 +2638,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is the permanent table, and what is its maximum time travel retention period?",
         options: [
-          "The default and most commonly used table type, existing until explicitly dropped, with up to 90 days of time travel on Enterprise edition or higher (1 day on Standard)",
           "A table that only exists for the duration of a session, with no time travel available at all",
           "A table with no default type distinction, and unlimited time travel on all editions",
+          "The default and most commonly used table type, existing until explicitly dropped, with up to 90 days of time travel on Enterprise edition or higher (1 day on Standard)",
           "A table type available only on VPS edition, with a fixed 30-day time travel period"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "The permanent table is the default table type and the most commonly used. It exists until explicitly dropped, and can set a time travel retention period of up to 90 days on Enterprise edition or higher, or a maximum of 1 day on Standard edition.",
         source: "Table Types lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/data-time-travel"
@@ -2652,12 +2652,12 @@ const sectionsData = [
         type: "mcq",
         text: "What fail-safe period do permanent tables have?",
         options: [
-          "A non-configurable period of seven days",
           "A configurable period of up to 30 days",
           "No fail-safe period at all",
-          "A fail-safe period equal to whatever the time travel period is set to"
+          "A fail-safe period equal to whatever the time travel period is set to",
+          "A non-configurable period of seven days"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Permanent tables have access to the non-configurable seven-day fail-safe period, during which Snowflake can restore deleted data.",
         source: "Table Types lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/data-failsafe"
@@ -2666,9 +2666,9 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following describe temporary tables? (Select all that apply)",
         options: [
-          "They store non-permanent, transitory data, such as a step in a complex ETL process",
-          "They persist only for the duration of a session, and are completely purged once the session ends",
           "A temporary table cannot be converted to another type of table",
+          "They persist only for the duration of a session, and are completely purged once the session ends",
+          "They store non-permanent, transitory data, such as a step in a complex ETL process",
           "They can be given a time travel retention period of up to 90 days on Enterprise edition"
         ],
         correct: [0, 1, 2],
@@ -2680,12 +2680,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is the maximum time travel retention period for a temporary table, and does it have a fail-safe period?",
         options: [
-          "A maximum of 1 day regardless of Snowflake edition, and no fail-safe period at all",
           "Up to 90 days on Enterprise edition, with a standard 7-day fail-safe period",
-          "Exactly 30 days on all editions, with no fail-safe period",
-          "0 days of time travel and a 7-day fail-safe period"
+          "0 days of time travel and a 7-day fail-safe period",
+          "A maximum of 1 day regardless of Snowflake edition, and no fail-safe period at all",
+          "Exactly 30 days on all editions, with no fail-safe period"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Temporary tables have a maximum time travel retention period of 1 day regardless of the Snowflake edition, and they do not have a fail-safe period. Once a session ends, the table data cannot be recovered by Snowflake.",
         source: "Table Types lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/tables-temp-transient"
@@ -2694,12 +2694,12 @@ const sectionsData = [
         type: "mcq",
         text: "How do transient tables differ from permanent tables?",
         options: [
-          "Transient tables exist until explicitly dropped, like permanent tables, but have a maximum time travel retention period of 1 day regardless of edition and no fail-safe period",
-          "Transient tables are automatically dropped at the end of every session, like temporary tables",
           "Transient tables cannot be queried using SQL",
-          "Transient tables always have a longer fail-safe period than permanent tables"
+          "Transient tables always have a longer fail-safe period than permanent tables",
+          "Transient tables are automatically dropped at the end of every session, like temporary tables",
+          "Transient tables exist until explicitly dropped, like permanent tables, but have a maximum time travel retention period of 1 day regardless of edition and no fail-safe period"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Transient tables are similar to permanent tables in that they exist until explicitly dropped. However, they have a maximum time travel retention period of 1 day regardless of edition, and no fail-safe period, meaning data can't be recovered by Snowflake support once that 1-day window has passed.",
         source: "Table Types lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/tables-temp-transient"
@@ -2710,8 +2710,8 @@ const sectionsData = [
         options: [
           "Because fail-safe storage contributes to storage costs, and transient tables don't have a fail-safe period, potentially reducing cost",
           "Because transient tables support a longer time travel period than permanent tables",
-          "Because transient tables are the only type that supports semi-structured data",
-          "Because transient tables automatically replicate to another region"
+          "Because transient tables automatically replicate to another region",
+          "Because transient tables are the only type that supports semi-structured data"
         ],
         correct: [0],
         explanation: "Table data in fail-safe contributes to storage costs, so avoiding the fail-safe period by using a transient table is one reason you might choose it over a permanent table.",
@@ -2723,11 +2723,11 @@ const sectionsData = [
         text: "Which of the following describe external tables? (Select all that apply)",
         options: [
           "They provide the ability to query data that resides outside of Snowflake, for example in an AWS S3 bucket",
-          "They are read-only, and generally slower to return a result when queried",
+          "They store a full physical copy of the external data inside Snowflake's storage layer",
           "They do not support time travel or fail-safe",
-          "They store a full physical copy of the external data inside Snowflake's storage layer"
+          "They are read-only, and generally slower to return a result when queried"
         ],
-        correct: [0, 1, 2],
+        correct: [0, 2, 3],
         explanation: "External tables let you query data residing outside Snowflake, such as in an S3 bucket, by overlaying a structure onto it and recording metadata about the staged files. They are read-only, generally slower to query, and do not support time travel or fail-safe. The actual data stays outside Snowflake; it isn't copied into Snowflake's storage layer.",
         source: "Table Types lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/tables-external-intro"
@@ -2736,12 +2736,12 @@ const sectionsData = [
         type: "mcq",
         text: "Besides the four basic table types, which more specialized table types are covered later in the course?",
         options: [
-          "Iceberg and dynamic tables",
-          "Hybrid and secure tables",
           "Materialized and clustered tables",
-          "Shared and cloned tables"
+          "Iceberg and dynamic tables",
+          "Shared and cloned tables",
+          "Hybrid and secure tables"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Beyond the four basic table types, the lecture mentions Snowflake also has more specialized tables like Iceberg and dynamic tables, which are covered in greater detail later in the course.",
         source: "Table Types lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/tables-iceberg"
@@ -2758,12 +2758,12 @@ const sectionsData = [
         type: "mcq",
         text: "What does a standard view store?",
         options: [
-          "A SELECT query definition, not any data",
           "A full physical copy of the underlying table's data",
           "Only column names, with no query logic at all",
+          "A SELECT query definition, not any data",
           "A compiled binary of the query execution plan"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "A standard view is an object that stores a SELECT query definition, not any data. When a query is executed against the view, the data is retrieved from the source table.",
         source: "View Types lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/views-introduction"
@@ -2772,10 +2772,10 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following are true of standard views? (Select all that apply)",
         options: [
-          "They can be joined to tables or other views, and referenced in subqueries",
-          "They support ORDER BY, GROUP BY, and WHERE clauses",
+          "If the source table is dropped, querying the view returns an 'object does not exist' error",
           "They don't contribute to storage costs, since they don't store any data",
-          "If the source table is dropped, querying the view returns an 'object does not exist' error"
+          "They can be joined to tables or other views, and referenced in subqueries",
+          "They support ORDER BY, GROUP BY, and WHERE clauses"
         ],
         correct: [0, 1, 2, 3],
         explanation: "Standard views can be used much like a table: joined, referenced in subqueries, and used with ORDER BY, GROUP BY, and WHERE. Since they store no data, they don't contribute to storage costs. If the source table is dropped, querying the view returns an object does not exist error.",
@@ -2786,12 +2786,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is one common function of a standard view?",
         options: [
-          "Restricting the contents of a table, by revealing only a subset of its columns or rows",
-          "Permanently deleting rows from the source table",
           "Automatically indexing the source table for faster writes",
-          "Converting a table from row-oriented to columnar storage"
+          "Converting a table from row-oriented to columnar storage",
+          "Permanently deleting rows from the source table",
+          "Restricting the contents of a table, by revealing only a subset of its columns or rows"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "One function of a standard view is to restrict the contents of a table, revealing only a subset of the columns or a subset of the rows.",
         source: "View Types lecture"
       },
@@ -2799,12 +2799,12 @@ const sectionsData = [
         type: "mcq",
         text: "How does a materialized view differ from a standard view?",
         options: [
-          "Instead of storing no data, the result of a materialized view's query definition is actively maintained as a pre-computed dataset",
-          "A materialized view cannot reference more than one table",
           "A materialized view is only available with the VPS edition",
-          "A materialized view is identical to a standard view in every respect"
+          "A materialized view is identical to a standard view in every respect",
+          "A materialized view cannot reference more than one table",
+          "Instead of storing no data, the result of a materialized view's query definition is actively maintained as a pre-computed dataset"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Materialized views also store a query definition, but instead of storing no data, the result of that query definition is actively maintained, what Snowflake calls a pre-computed dataset.",
         source: "View Types lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/views-materialized"
@@ -2814,9 +2814,9 @@ const sectionsData = [
         text: "Why is a materialized view described as a 'serverless feature'?",
         options: [
           "Because it doesn't make use of user-managed virtual warehouses; Snowflake charges compute for the background process that keeps it up to date",
+          "Because it cannot be secured with the secure keyword",
           "Because it can only be queried through a REST API, never SQL",
-          "Because it requires no compute or storage cost whatsoever",
-          "Because it cannot be secured with the secure keyword"
+          "Because it requires no compute or storage cost whatsoever"
         ],
         correct: [0],
         explanation: "Materialized views are called a serverless feature because they don't make use of user-managed virtual warehouses. Instead, Snowflake charges compute for the background process that periodically updates the view with the latest results of the defined query.",
@@ -2827,12 +2827,12 @@ const sectionsData = [
         type: "msq",
         text: "Which cost implications does a materialized view have? (Select all that apply)",
         options: [
-          "Compute cost, charged for the background process that keeps the view updated",
-          "An additional storage cost to store the pre-computed results",
           "No cost of any kind, since it's described as serverless",
-          "A one-time flat fee charged only when the view is first created"
+          "A one-time flat fee charged only when the view is first created",
+          "An additional storage cost to store the pre-computed results",
+          "Compute cost, charged for the background process that keeps the view updated"
         ],
-        correct: [0, 1],
+        correct: [2, 3],
         explanation: "Materialized views incur compute cost for the background refresh process, and an additional storage cost to store the results. Being 'serverless' refers to not using a user-managed warehouse, not to being free.",
         source: "View Types lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/views-materialized"
@@ -2841,12 +2841,12 @@ const sectionsData = [
         type: "mcq",
         text: "What use case for materialized views is discussed further in the performance section?",
         options: [
-          "Boosting the performance of external tables",
-          "Replacing the need for permanent tables entirely",
+          "Bypassing the need for role-based access control",
           "Enabling multi-cluster warehouses",
-          "Bypassing the need for role-based access control"
+          "Boosting the performance of external tables",
+          "Replacing the need for permanent tables entirely"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "Materialized views can be used to boost the performance of external tables, a use case discussed further in the performance management section of the course.",
         source: "View Types lecture"
       },
@@ -2854,9 +2854,9 @@ const sectionsData = [
         type: "msq",
         text: "What does designating a view as secure do? (Select all that apply)",
         options: [
-          "Makes the query definition only visible to authorized users, so commands like GET_DDL and DESCRIBE won't return it to unauthorized users",
           "Bypasses certain query optimizer optimizations that might otherwise inadvertently expose hidden data",
           "Can be applied to both standard and materialized views",
+          "Makes the query definition only visible to authorized users, so commands like GET_DDL and DESCRIBE won't return it to unauthorized users",
           "Guarantees identical or better performance compared to a non-secure view"
         ],
         correct: [0, 1, 2],
@@ -2868,12 +2868,12 @@ const sectionsData = [
         type: "mcq",
         text: "What is a potential trade-off of making a view secure?",
         options: [
-          "A secure view might have worse performance under certain circumstances, since it doesn't make use of some query optimizations",
-          "A secure view can no longer be joined to any table",
+          "A secure view can only be created by the ACCOUNTADMIN role",
           "A secure view loses the ability to be queried at all",
-          "A secure view can only be created by the ACCOUNTADMIN role"
+          "A secure view can no longer be joined to any table",
+          "A secure view might have worse performance under certain circumstances, since it doesn't make use of some query optimizations"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "Although making a view secure helps ensure sensitive data isn't shown to the wrong audience, a secure view might, under certain circumstances, have worse performance, since it doesn't make use of certain query optimizer optimizations.",
         source: "View Types lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/views-secure"
@@ -2882,12 +2882,12 @@ const sectionsData = [
         type: "mcq",
         text: "Which commands can be used to check the type of a table or view?",
         options: [
-          "SHOW VIEWS, SHOW TABLES, and SHOW MATERIALIZED VIEWS, or an icon in the UI's object browser",
           "DESCRIBE ACCOUNT only",
+          "SHOW VIEWS, SHOW TABLES, and SHOW MATERIALIZED VIEWS, or an icon in the UI's object browser",
           "SELECT * FROM INFORMATION_SCHEMA.EDITIONS",
           "There is no way to check a table or view's type"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "You can check the type of a table or view by executing the SHOW VIEWS, SHOW TABLES, and SHOW MATERIALIZED VIEWS commands, or by identifying it in the UI via an icon in the object browser.",
         source: "View Types lecture"
       }
@@ -2904,9 +2904,9 @@ const sectionsData = [
         text: "What change does this update lecture describe Snowflake introducing?",
         options: [
           "Workspaces, a new primary environment for running SQL code that will eventually replace Worksheets",
+          "A new billing model based on number of worksheets created",
           "A brand new SQL dialect that replaces ANSI SQL entirely",
-          "The removal of the Snowsight UI in favor of SnowSQL only",
-          "A new billing model based on number of worksheets created"
+          "The removal of the Snowsight UI in favor of SnowSQL only"
         ],
         correct: [0],
         explanation: "Snowflake is introducing Workspaces, which changes the primary environment in which SQL code is run, and will eventually replace Worksheets as the standard environment.",
@@ -2930,12 +2930,12 @@ const sectionsData = [
         type: "mcq",
         text: "During the transition period, is it still fine to keep using Worksheets?",
         options: [
-          "Yes, it's perfectly fine and secure to continue using Worksheets for the time being, since both environments run in parallel",
-          "No, Worksheets stopped working the moment Workspaces was announced",
+          "Only for Business Critical edition accounts",
           "Only if you disable Workspaces entirely first",
-          "Only for Business Critical edition accounts"
+          "Yes, it's perfectly fine and secure to continue using Worksheets for the time being, since both environments run in parallel",
+          "No, Worksheets stopped working the moment Workspaces was announced"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "For now, Worksheets and Workspaces will run in parallel while people migrate. It's perfectly fine and secure to continue using Worksheets for the time being.",
         source: "Update: Worksheets vs. Workspaces lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight-worksheets-gs"
@@ -2944,12 +2944,12 @@ const sectionsData = [
         type: "mcq",
         text: "How is a Workspace structured, compared to a Worksheet?",
         options: [
-          "A Workspace is composed of a directory of files, similar to Visual Studio Code, rather than a single standalone file like a Worksheet",
-          "A Workspace and a Worksheet are structurally identical, just with different names",
           "A Workspace can only contain one file, while a Worksheet can contain many",
-          "A Workspace stores files locally on the user's machine, not in Snowflake"
+          "A Workspace stores files locally on the user's machine, not in Snowflake",
+          "A Workspace and a Worksheet are structurally identical, just with different names",
+          "A Workspace is composed of a directory of files, similar to Visual Studio Code, rather than a single standalone file like a Worksheet"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "A Workspace is a bit like Visual Studio Code: instead of Snowflake storing a standalone file (like a worksheet), a Workspace is composed of a directory of files, which can include SQL files that run just like a worksheet.",
         source: "Update: Worksheets vs. Workspaces lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces"
@@ -2958,12 +2958,12 @@ const sectionsData = [
         type: "mcq",
         text: "Where do you navigate to in Snowsight to find Workspaces?",
         options: [
-          "Projects, then Workspaces",
-          "Admin, then Workspaces",
+          "Monitoring, then Workspaces",
           "Data, then Workspaces",
-          "Monitoring, then Workspaces"
+          "Admin, then Workspaces",
+          "Projects, then Workspaces"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "To access Workspaces, you navigate to Projects, then Workspaces.",
         source: "Update: Worksheets vs. Workspaces lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces"
@@ -2972,12 +2972,12 @@ const sectionsData = [
         type: "mcq",
         text: "How do you add an existing SQL file to a Workspace?",
         options: [
-          "Go to Add, then upload files, and choose the relevant SQL file from the local directory",
-          "Paste the file's raw bytes directly into the browser address bar",
           "Email the file to Snowflake support for manual upload",
-          "Files cannot be added to a Workspace; only new files can be created there"
+          "Files cannot be added to a Workspace; only new files can be created there",
+          "Paste the file's raw bytes directly into the browser address bar",
+          "Go to Add, then upload files, and choose the relevant SQL file from the local directory"
         ],
-        correct: [0],
+        correct: [3],
         explanation: "To add a file to a Workspace, you go to Add, then upload files, and choose the relevant SQL file from your local directory, then double-click it to open it.",
         source: "Update: Worksheets vs. Workspaces lecture"
       },
@@ -2985,13 +2985,13 @@ const sectionsData = [
         type: "msq",
         text: "Which of the following areas are part of the Workspace layout? (Select all that apply)",
         options: [
+          "A dedicated billing dashboard built into every Workspace",
           "Context (database, schema, warehouse, role) shown in the top right corner",
           "A place to run statements in the top left",
           "A database explorer in the bottom left",
-          "A worksheets area for dragging over and migrating existing worksheets",
-          "A dedicated billing dashboard built into every Workspace"
+          "A worksheets area for dragging over and migrating existing worksheets"
         ],
-        correct: [0, 1, 2, 3],
+        correct: [1, 2, 3, 4],
         explanation: "The Workspace layout includes context shown in the top right, a place to run statements in the top left, a database explorer in the bottom left, and a worksheets area for migrating existing worksheets by dragging them over. There's no dedicated billing dashboard built into a Workspace.",
         source: "Update: Worksheets vs. Workspaces lecture"
       },
@@ -2999,12 +2999,12 @@ const sectionsData = [
         type: "mcq",
         text: "How can Workspaces be set as the default SQL editor for an account?",
         options: [
+          "By dropping and recreating the account entirely",
           "By going to the username in the bottom left, then Settings, then General, where SQL Worksheets can be set to open in Workspaces for all users",
           "By contacting Snowflake support and requesting a manual account migration",
-          "By dropping and recreating the account entirely",
           "It cannot currently be set as a default; each user must choose it every session"
         ],
-        correct: [0],
+        correct: [1],
         explanation: "Workspaces can be set as the default SQL editor for an account by going to the username in the bottom left, then Settings, then General, where an option specifies that SQL Worksheets will open in Workspaces for all users.",
         source: "Update: Worksheets vs. Workspaces lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces"
@@ -3013,12 +3013,12 @@ const sectionsData = [
         type: "mcq",
         text: "What happens to the Worksheets link in Snowsight's Global Nav once Workspaces is enabled?",
         options: [
-          "The link to Workspaces in the Global Nav replaces the Worksheets link",
-          "Both links remain permanently, side by side, with no change",
           "The Worksheets link is renamed but keeps its original icon and behavior",
-          "The Global Nav is removed entirely and replaced with a command palette"
+          "The Global Nav is removed entirely and replaced with a command palette",
+          "The link to Workspaces in the Global Nav replaces the Worksheets link",
+          "Both links remain permanently, side by side, with no change"
         ],
-        correct: [0],
+        correct: [2],
         explanation: "The link to Workspaces in the Global Nav (the navigation menu) replaces the Worksheets link.",
         source: "Update: Worksheets vs. Workspaces lecture",
         docLink: "https://docs.snowflake.com/en/user-guide/ui-snowsight-navigation"
